@@ -1,0 +1,136 @@
+import React, { Component } from "react";
+import banner from "../media/header-crop.jpg";
+import alufoil from "../media/alufoil.png";
+import flower from "../media/flower.jpg";
+import video from "../media/video.jpg";
+//import Instafeed from "instafeed.js";
+
+// import { connect } from "react-redux";
+// import shortid from "shortid";
+
+// import Header from "./Header";
+// import TargetContainer from "./TargetContainer";
+// import Buttons from "./Buttons";
+// import Adventurer from "./Adventurer";
+
+// import { getLetters } from "../actions/word";
+// import { correctWord } from "../actions/word";
+// import { wrongWord } from "../actions/word";
+
+// import { words } from "../data";
+import "./home.css";
+
+export default class Home extends Component {
+  state = {
+    posts: null
+  };
+
+  // componentDidMount() {
+  //   let userFeed = new Instafeed({
+  //     get: "user",
+  //     userId: "8987997106",
+  //     clientId: "924f677fa3854436947ab4372ffa688d",
+  //     accessToken: "8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9",
+  //     resolution: "standard_resolution",
+  //     template:
+  //       '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+  //     sortBy: "most-recent",
+  //     limit: 4,
+  //     links: false
+  //   });
+  //   userFeed.run();
+  //   //     this.pickWord();
+  // }
+
+  // componentDidMount() {
+  //   let userFeed = new Instafeed({
+  //     get: "user",
+  //     userId: "8987997106",
+  //     accessToken: "8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9",
+  //     resolution: "standard_resolution",
+  //     template:
+  //       '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+  //     sortBy: "most-recent",
+  //     limit: 4,
+  //     links: false
+  //   });
+  //   userFeed.run();
+  //   //     this.pickWord();
+  // }
+
+  componentDidMount() {
+    fetch(
+      "https://graph.instagram.com/me/media?limit=4&fields=media_type,media_url,caption&access_token=IGQVJWS3ZAEZATMtWlk5T3h5NEg1dXJ1dmpRcGJGUk5HR3I4N1gzSUk2LUJXNG54ODVXUWR3UlNKSmNUUF9jV0N3QnByRHpyNE10THdrSUVhOHdjejZAOS2tQSmYzSnZAoV3Via3IxLThR"
+    )
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+        this.setState({ posts: data.data });
+      });
+  }
+
+  //   pickWord = () => {
+  //     const numberOfWords = words.length;
+  //     const randomNumber = Math.floor(Math.random() * numberOfWords);
+  //     const pickedWord = words[randomNumber];
+  //     this.props.getLetters(pickedWord.word);
+  //     this.setState({ pickedWord: pickedWord });
+  //   };
+
+  //   handleClick = () => {
+  //     this.pickWord();
+  //     //generate a random Key for the animation to happen when rerendering
+  //     this.setState({ randomKeyForImage: shortid.generate() });
+  //   };
+
+  //   checkWord = () => {
+  //     const secondHalf = [...this.props.targetBlocks].splice(
+  //       this.props.letters.length
+  //     );
+  //     const guessedLetters = secondHalf.map(target => target.letter);
+  //     const guessedWord = guessedLetters.join("");
+  //     if (guessedWord === this.state.pickedWord.word) {
+  //       this.props.correctWord();
+  //     } else {
+  //       this.props.wrongWord();
+  //     }
+  //     this.setState({ randomKeyForPoints: shortid.generate() });
+  //   };
+
+  render() {
+    if (!this.state.posts) {
+      return <div>loading...</div>;
+    }
+    console.log("4 posts", this.state.posts[0].media_url);
+    return (
+      <div className="app">
+        <div className="banner">
+          <img src={banner} alt="banner"></img>
+        </div>
+        <div className="services">
+          <img className="services-img" src={flower} alt="alufoil"></img>
+          <img className="services-img" src={alufoil} alt="alufoil"></img>
+          <img className="services-img" src={video} alt="alufoil"></img>
+        </div>
+        <div>
+          <img src={this.state.posts[1].media_url}></img>>
+        </div>
+      </div>
+    );
+  }
+}
+
+// const mapStateToProps = state => {
+//   return {
+//     guess: state.guess,
+//     letters: state.letters,
+//     targetBlocks: state.targetBlocks,
+//     points: state.points
+//   };
+// };
+
+// export default connect(mapStateToProps, {
+//   correctWord,
+//   wrongWord,
+//   getLetters
+// })(GameContainer);
