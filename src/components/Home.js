@@ -60,7 +60,7 @@ export default class Home extends Component {
 
   componentDidMount() {
     fetch(
-      "https://graph.instagram.com/me/media?limit=4&fields=media_type,media_url,caption&access_token=IGQVJWS3ZAEZATMtWlk5T3h5NEg1dXJ1dmpRcGJGUk5HR3I4N1gzSUk2LUJXNG54ODVXUWR3UlNKSmNUUF9jV0N3QnByRHpyNE10THdrSUVhOHdjejZAOS2tQSmYzSnZAoV3Via3IxLThR"
+      "https://graph.instagram.com/me/media?limit=4&fields=id,media_type,media_url,thumbnail_url,caption&access_token=IGQVJWS3ZAEZATMtWlk5T3h5NEg1dXJ1dmpRcGJGUk5HR3I4N1gzSUk2LUJXNG54ODVXUWR3UlNKSmNUUF9jV0N3QnByRHpyNE10THdrSUVhOHdjejZAOS2tQSmYzSnZAoV3Via3IxLThR"
     )
       .then(res => res.json())
       .then(data => {
@@ -69,39 +69,10 @@ export default class Home extends Component {
       });
   }
 
-  //   pickWord = () => {
-  //     const numberOfWords = words.length;
-  //     const randomNumber = Math.floor(Math.random() * numberOfWords);
-  //     const pickedWord = words[randomNumber];
-  //     this.props.getLetters(pickedWord.word);
-  //     this.setState({ pickedWord: pickedWord });
-  //   };
-
-  //   handleClick = () => {
-  //     this.pickWord();
-  //     //generate a random Key for the animation to happen when rerendering
-  //     this.setState({ randomKeyForImage: shortid.generate() });
-  //   };
-
-  //   checkWord = () => {
-  //     const secondHalf = [...this.props.targetBlocks].splice(
-  //       this.props.letters.length
-  //     );
-  //     const guessedLetters = secondHalf.map(target => target.letter);
-  //     const guessedWord = guessedLetters.join("");
-  //     if (guessedWord === this.state.pickedWord.word) {
-  //       this.props.correctWord();
-  //     } else {
-  //       this.props.wrongWord();
-  //     }
-  //     this.setState({ randomKeyForPoints: shortid.generate() });
-  //   };
-
   render() {
     if (!this.state.posts) {
       return <div>loading...</div>;
     }
-    console.log("4 posts", this.state.posts[0].media_url);
     return (
       <div className="app">
         <div className="banner">
@@ -112,8 +83,23 @@ export default class Home extends Component {
           <img className="services-img" src={alufoil} alt="alufoil"></img>
           <img className="services-img" src={video} alt="alufoil"></img>
         </div>
-        <div>
-          <img src={this.state.posts[1].media_url}></img>>
+        <div className="instagram-container">
+          <div>
+            <h2>Instagram</h2>
+          </div>
+          {this.state.posts.map(post => {
+            if (
+              post.media_type === "IMAGE" ||
+              post.media_type === "CAROUSEL_ALBUM"
+            ) {
+              return (
+                <img key={post.id} src={post.media_url} alt="instagram"></img>
+              );
+            }
+            return (
+              <img key={post.id} src={post.thumbnail_url} alt="instagram"></img>
+            );
+          })}
         </div>
       </div>
     );
