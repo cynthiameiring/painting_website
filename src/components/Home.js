@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import banner from "../media/header-crop.jpg";
+import banner2 from "../media/brush-image.jpeg";
 import alufoil from "../media/alufoil.png";
 import flower from "../media/flower.jpg";
 import video from "../media/video.jpg";
+import aboutme from "../media/shoe.jpg";
 //import Instafeed from "instafeed.js";
 
 // import { connect } from "react-redux";
@@ -75,32 +77,57 @@ export default class Home extends Component {
     }
     return (
       <div className="app">
-        <div className="banner">
+        <header>
           <img src={banner} alt="banner"></img>
-        </div>
-        <div className="services">
-          <img className="services-img" src={flower} alt="alufoil"></img>
-          <img className="services-img" src={alufoil} alt="alufoil"></img>
-          <img className="services-img" src={video} alt="alufoil"></img>
-        </div>
-        <div className="instagram-container">
+          <div className="title">
+            <h2>Hyperrealistic paintings</h2>
+            <p>by</p>
+            <h2>Cynthia Meiring</h2>
+          </div>
+        </header>
+        <section className="services-section">
+          <div className="services-container">
+            <img className="services-img" src={flower} alt="alufoil"></img>
+            <img className="services-img" src={alufoil} alt="alufoil"></img>
+            <img className="services-img" src={video} alt="alufoil"></img>
+          </div>
+        </section>
+        <section className="about-me-section">
+          <div className="about-me-container">
+            <img src={aboutme}></img>
+          </div>
+        </section>
+
+        <section className="instagram-container">
           <div>
             <h2>Instagram</h2>
           </div>
-          {this.state.posts.map(post => {
-            if (
-              post.media_type === "IMAGE" ||
-              post.media_type === "CAROUSEL_ALBUM"
-            ) {
+          <div className="posts">
+            {this.state.posts.map(post => {
+              if (
+                post.media_type === "IMAGE" ||
+                post.media_type === "CAROUSEL_ALBUM"
+              ) {
+                return (
+                  <img key={post.id} src={post.media_url} alt="instagram"></img>
+                );
+              }
               return (
-                <img key={post.id} src={post.media_url} alt="instagram"></img>
+                <img
+                  key={post.id}
+                  src={post.thumbnail_url}
+                  alt="instagram"
+                ></img>
               );
-            }
-            return (
-              <img key={post.id} src={post.thumbnail_url} alt="instagram"></img>
-            );
-          })}
-        </div>
+            })}
+          </div>
+        </section>
+        <section className="newsletter-section">
+          <div className="newsletter-container"></div>
+        </section>
+        <section className="footer">
+          <img src={banner2}></img>
+        </section>
       </div>
     );
   }

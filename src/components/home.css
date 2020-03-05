@@ -1,45 +1,111 @@
 * {
   padding: 0;
   margin: 0;
-  background-color: #e9e8e8;
 }
 
-.banner img {
-  max-width: 100%;
-  margin: 0 auto;
-  z-index: 0;
+.app {
+  background-color: #eeeeeec7;
 }
-.services {
-  margin: auto;
+
+header {
+  background-color: black;
   display: flex;
-  flex-wrap: wrap;
-  width: 90%;
+  justify-content: center;
   align-items: center;
+}
+
+header img {
+  max-width: 100%;
+  opacity: 0.7;
+}
+
+header .title {
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.services-section {
+  display: flex;
   justify-content: center;
 }
 
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 5vw 0;
+}
+
+/* To use object-fit you need to give a height, but % doesnt work. vw is   */
 .services-img {
-  z-index: 1;
-  position: relative;
-  top: -100px;
-  box-sizing: border-box;
-  border: 15px solid #e9e8e8;
-  margin: 0 2%;
-  width: 27%;
+  /* border: 15px solid #e9e8e8; */
+  object-fit: cover;
+  width: 20vw;
+  height: 20vw;
+}
+.about-me-section {
+  display: flex;
+  justify-content: center;
+  background-color: #ddd;
+}
+
+.about-me-container {
+  width: 70%;
+}
+
+.about-me-container img {
+  width: 50%;
+  margin: 3vw 0;
+  object-fit: cover;
 }
 
 .instagram-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .instagram-container img {
-  width: 20%;
-  margin: 1%;
+  width: 23%;
+}
+.instagram-container h2 {
+  font-size: 20px;
+  margin: 2vw 0;
+}
+
+.posts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 5%;
+}
+
+.newsletter-section {
+  height: 15vw;
+  background-color: #c2d8db;
+}
+
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer img {
+  object-fit: cover;
+  opacity: 0.6;
+  max-height: 20vw;
+  width: 100%;
 }
 
 @media only screen and (max-width: 700px) {
-  .banner img {
+  header img {
     object-fit: cover;
     height: 400px;
     width: auto;
