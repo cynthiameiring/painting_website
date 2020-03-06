@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import banner from "../media/header-crop.jpg";
+import logo from "../media/Logo.png";
 import banner2 from "../media/brush-image.jpeg";
 import alufoil from "../media/alufoil.png";
 import flower from "../media/flower.jpg";
@@ -78,14 +79,24 @@ export default class Home extends Component {
     return (
       <div className="app">
         <header>
-          <img src={banner} alt="banner"></img>
+          <img src={banner} alt="banner" className="banner"></img>
+
+          <div className="header">
+            <img src={logo}></img>
+            <div className="menu">
+              <p className="menu-item">STORE</p>
+              <p className="menu-item">PROCESS</p>
+              <p className="menu-item">CONTACT</p>
+            </div>
+          </div>
+
           <div className="title">
-            <h2>Hyperrealistic paintings</h2>
-            <p>by</p>
-            <h2>Cynthia Meiring</h2>
+            <h1>CYNTHIA MEIRING</h1>
           </div>
         </header>
+
         <section className="services-section">
+          <h2>PHOTOREALISTIC PAINTING</h2>
           <div className="services-container">
             <img className="services-img" src={flower} alt="alufoil"></img>
             <img className="services-img" src={alufoil} alt="alufoil"></img>
@@ -100,7 +111,7 @@ export default class Home extends Component {
 
         <section className="instagram-container">
           <div>
-            <h2>Instagram</h2>
+            <h2>INSTAGRAM</h2>
           </div>
           <div className="posts">
             {this.state.posts.map(post => {
@@ -122,11 +133,16 @@ export default class Home extends Component {
             })}
           </div>
         </section>
-        <section className="newsletter-section">
-          <div className="newsletter-container"></div>
-        </section>
+
         <section className="footer">
           <img src={banner2}></img>
+          <div className="footer-container">
+            Newsletter
+            <div className="info-footer">
+              <p>{"Shipping & Return"}</p>
+              <p>Privacy policy</p>
+            </div>
+          </div>
         </section>
       </div>
     );

@@ -3,6 +3,23 @@
   margin: 0;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500,700&display=swap");
+
+h1 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  letter-spacing: 0.2em;
+  margin-top: 13vw;
+}
+h2 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: 0.1em;
+  margin-top: 5vw;
+}
+
 .app {
   background-color: #eeeeeec7;
 }
@@ -11,31 +28,52 @@ header {
   background-color: black;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-header img {
+.banner {
   max-width: 100%;
   opacity: 0.7;
+  z-index: 1;
 }
 
-header .title {
+.header {
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header img {
+  width: 10vw;
+  margin: 0.5vw;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item {
+  color: white;
+  margin: 2vw 4vw 0 0;
+}
+
+.title {
+  z-index: 2;
   color: white;
   position: absolute;
-  font-size: 20px;
-  vertical-align: middle;
   text-align: center;
 }
 
 .services-section {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .services-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 70%;
   margin: 5vw 0;
 }
@@ -50,16 +88,16 @@ header .title {
 .about-me-section {
   display: flex;
   justify-content: center;
-  background-color: #ddd;
+  background-color: #dee7ed;
 }
 
 .about-me-container {
-  width: 70%;
+  display: flex;
 }
 
 .about-me-container img {
   width: 50%;
-  margin: 3vw 0;
+  /* margin: 3vw 0; */
   object-fit: cover;
 }
 
@@ -74,7 +112,6 @@ header .title {
 }
 .instagram-container h2 {
   font-size: 20px;
-  margin: 2vw 0;
 }
 
 .posts {
@@ -85,16 +122,19 @@ header .title {
   margin-bottom: 5%;
 }
 
-.newsletter-section {
-  height: 15vw;
-  background-color: #c2d8db;
-}
-
 .footer {
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-container {
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .footer img {
