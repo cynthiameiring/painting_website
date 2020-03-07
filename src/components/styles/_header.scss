@@ -18,7 +18,7 @@
       position: absolute;
       width: 0px;
       height: 3px;
-      margin: 22px 0 0;
+      margin: 24px 0 0;
       transition: $animate;
       transition-duration: 0.5s;
       opacity: 0;
@@ -69,5 +69,5 @@ header {
 }
 
 .menu-light {
-  @include menu($white);
+  @include menu(white);
 }

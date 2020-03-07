@@ -84,9 +84,11 @@ export default class Home extends Component {
           <div className="logo">
             <img src={logo} alt="logo"></img>
           </div>
-          <div className="menu">
-            <p className="hover">STORE</p>
-            <p className="hover">PROCESS</p>
+          <div className="menu-light">
+            <h3 className="hover">STORE</h3>
+            <h3 className="hover">PROCESS</h3>
+            <h3 className="hover">ABOUT</h3>
+            <h3 className="hover">CONTACT</h3>
           </div>
 
           <div className="title">
@@ -95,12 +97,36 @@ export default class Home extends Component {
         </header>
 
         <section className="services-section">
-          <h2>PHOTOREALISTIC PAINTING</h2>
+          <h2>PHOTOREALISTIC PAINTINGS</h2>
           <hr />
           <div className="services-container">
-            <img src={flower} alt="alufoil"></img>
-            <img src={alufoil} alt="alufoil"></img>
-            <img src={wip} alt="alufoil"></img>
+            <div className="service">
+              <img src={flower} alt="flower" />
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis.
+              </p>
+              <button>Go to store</button>
+            </div>
+            <div className="service">
+              <img src={alufoil} alt="alufoil" />
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis.
+              </p>
+              <button>More info</button>
+            </div>
+            <div className="service">
+              <img src={wip} alt="work in progress" />
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis.
+              </p>
+              <button>See process</button>
+            </div>
           </div>
         </section>
 

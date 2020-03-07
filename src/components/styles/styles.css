@@ -1,4 +1,55 @@
-@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700&display=swap");
+header {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner {
+  max-width: 100%;
+  opacity: 0.65;
+  z-index: 1;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header img {
+  width: 10vw;
+  margin: 0.5vw;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu p {
+  color: white;
+  margin: 2vw 4vw 0 0;
+}
+
+.title {
+  z-index: 2;
+  color: white;
+  position: absolute;
+  text-align: center;
+}
+
 .services-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,6 +79,24 @@
      object-fit: cover;
   width: 20vw;
   height: 20vw;
+}
+
+.service {
+  width: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.service p {
+  margin: 1vw 0;
 }
 
 /* To use object-fit you need to give a height, but % doesnt work. vw is   */
@@ -193,7 +262,7 @@ header {
   text-align: center;
 }
 
-.menu {
+.menu-light {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,7 +274,7 @@ header {
           justify-content: flex-end;
 }
 
-.menu .hover {
+.menu-light .hover {
   color: white;
   text-align: center;
   margin: 2vw 2vw 0 0;
@@ -215,12 +284,12 @@ header {
   position: relative;
 }
 
-.menu .hover:before, .menu .hover:after {
+.menu-light .hover:before, .menu-light .hover:after {
   content: "";
   position: absolute;
   width: 0px;
   height: 3px;
-  margin: 22px 0 0;
+  margin: 24px 0 0;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   -webkit-transition-duration: 0.5s;
@@ -230,11 +299,11 @@ header {
   left: 0;
 }
 
-.menu .hover:hover {
+.menu-light .hover:hover {
   cursor: pointer;
 }
 
-.menu .hover:hover:before, .menu .hover:hover:after {
+.menu-light .hover:hover:before, .menu-light .hover:hover:after {
   width: 100%;
   opacity: 1;
 }
@@ -242,6 +311,11 @@ header {
 * {
   padding: 0;
   margin: 0;
+}
+
+p {
+  font-family: "Heebo", sans-serif;
+  font-weight: 300;
 }
 
 .app {
@@ -262,6 +336,12 @@ h2 {
   font-size: 22px;
   letter-spacing: 0.1em;
   margin: 5vw 0 1vw 0;
+}
+
+h3 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 hr {

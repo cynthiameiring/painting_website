@@ -1,3 +1,42 @@
+header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  max-width: 100%;
+  opacity: 0.65;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  justify-content: space-between;
+  img {
+    width: 10vw;
+    margin: 0.5vw;
+  }
+}
+
+.menu {
+  display: flex;
+  p {
+    color: white;
+    margin: 2vw 4vw 0 0;
+  }
+}
+
+.title {
+  z-index: 2;
+  color: white;
+  position: absolute;
+  text-align: center;
+}
+
 .services-section {
   display: flex;
   align-items: center;
@@ -13,6 +52,16 @@
     object-fit: cover;
     width: 20vw;
     height: 20vw;
+  }
+}
+
+.service {
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  p {
+    margin: 1vw 0;
   }
 }
 
