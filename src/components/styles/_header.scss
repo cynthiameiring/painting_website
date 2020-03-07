@@ -1,0 +1,73 @@
+@mixin menu($color) {
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  justify-content: flex-end;
+  .hover {
+    color: $color;
+    text-align: center;
+    margin: 2vw 2vw 0 0;
+    padding: 1vw;
+    transition: $animate;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: 3px;
+      margin: 22px 0 0;
+      transition: $animate;
+      transition-duration: 0.5s;
+      opacity: 0;
+      background-color: darken($color, 5%);
+      left: 0;
+    }
+    &:hover {
+      cursor: pointer;
+
+      &:before,
+      &:after {
+        width: 100%;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  max-width: 100%;
+  opacity: 0.65;
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  justify-content: flex-start;
+  img {
+    width: 10vw;
+    margin: 0.5vw;
+  }
+}
+
+.title {
+  z-index: 2;
+  color: white;
+  position: absolute;
+  text-align: center;
+}
+
+.menu-light {
+  @include menu($white);
+}

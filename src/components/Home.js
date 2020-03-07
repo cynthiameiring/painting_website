@@ -4,8 +4,8 @@ import logo from "../media/Logo.png";
 import banner2 from "../media/brush-image.jpeg";
 import alufoil from "../media/alufoil.png";
 import flower from "../media/flower.jpg";
-import video from "../media/video.jpg";
-import aboutme from "../media/shoe.jpg";
+import wip from "../media/wip.png";
+import aboutme from "../media/shoe-cropped.jpg";
 //import Instafeed from "instafeed.js";
 
 // import { connect } from "react-redux";
@@ -21,7 +21,7 @@ import aboutme from "../media/shoe.jpg";
 // import { wrongWord } from "../actions/word";
 
 // import { words } from "../data";
-import "./home.css";
+import "./styles/styles.css";
 
 export default class Home extends Component {
   state = {
@@ -81,13 +81,12 @@ export default class Home extends Component {
         <header>
           <img src={banner} alt="banner" className="banner"></img>
 
-          <div className="header">
-            <img src={logo}></img>
-            <div className="menu">
-              <p className="menu-item">STORE</p>
-              <p className="menu-item">PROCESS</p>
-              <p className="menu-item">CONTACT</p>
-            </div>
+          <div className="logo">
+            <img src={logo} alt="logo"></img>
+          </div>
+          <div className="menu">
+            <p className="hover">STORE</p>
+            <p className="hover">PROCESS</p>
           </div>
 
           <div className="title">
@@ -97,22 +96,36 @@ export default class Home extends Component {
 
         <section className="services-section">
           <h2>PHOTOREALISTIC PAINTING</h2>
+          <hr />
           <div className="services-container">
-            <img className="services-img" src={flower} alt="alufoil"></img>
-            <img className="services-img" src={alufoil} alt="alufoil"></img>
-            <img className="services-img" src={video} alt="alufoil"></img>
+            <img src={flower} alt="alufoil"></img>
+            <img src={alufoil} alt="alufoil"></img>
+            <img src={wip} alt="alufoil"></img>
           </div>
         </section>
+
         <section className="about-me-section">
+          <img src={aboutme} alt="about-me"></img>
           <div className="about-me-container">
-            <img src={aboutme}></img>
+            <h2>ABOUT THE ARTIST</h2>
+            <hr />
+            <p>
+              Aenean ultricies, nisl a feugiat semper, metus sapien hendrerit
+              mauris, eu finibus ante dolor quis purus. Nam non dapibus enim,
+              eget blandit ex. Aenean feugiat scelerisque scelerisque. Nullam at
+              nunc at est sollicitudin fermentum. Duis enim quam, lobortis eu
+              ornare posuere, dictum ac ante. Sed mollis, eros pretium tempus
+              suscipit, magna dui laoreet ligula, ac fringilla ligula diam ac
+              ante. Mauris egestas ante in libero consequat, at porttitor nulla
+              condimentum. Vestibulum mattis justo quis porttitor feugiat.
+            </p>
           </div>
         </section>
 
         <section className="instagram-container">
-          <div>
-            <h2>INSTAGRAM</h2>
-          </div>
+          <h2>INSTAGRAM</h2>
+          <hr />
+
           <div className="posts">
             {this.state.posts.map(post => {
               if (
@@ -135,7 +148,7 @@ export default class Home extends Component {
         </section>
 
         <section className="footer">
-          <img src={banner2}></img>
+          <img src={banner2} alt="footer"></img>
           <div className="footer-container">
             Newsletter
             <div className="info-footer">

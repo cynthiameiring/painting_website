@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500,700&display=swap");
+.services-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.services-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 65%;
+  margin: 5vw 0 7vw 0;
+}
+
+.services-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 20vw;
+  height: 20vw;
+}
+
+/* To use object-fit you need to give a height, but % doesnt work. vw is   */
+.about-me-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #dee7ed;
+}
+
+.about-me-section img {
+  width: 50vw;
+  /* margin: 3vw 0; */
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-me-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50vw;
+}
+
+.about-me-container p {
+  margin: 3vw;
+  line-height: 2vw;
+}
+
+.instagram-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.instagram-container img {
+  width: 23%;
+}
+
+.posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65%;
+  margin: 5vw 0 7vw 0;
+}
+
+.footer {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-container {
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.footer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.6;
+  max-height: 20vw;
+  width: 100%;
+}
+
+.footer {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.6;
+  max-height: 20vw;
+  width: 100%;
+}
+
+.footer-container {
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+header {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner {
+  max-width: 100%;
+  opacity: 0.65;
+  z-index: 1;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.logo img {
+  width: 10vw;
+  margin: 0.5vw;
+}
+
+.title {
+  z-index: 2;
+  color: white;
+  position: absolute;
+  text-align: center;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu .hover {
+  color: white;
+  text-align: center;
+  margin: 2vw 2vw 0 0;
+  padding: 1vw;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  position: relative;
+}
+
+.menu .hover:before, .menu .hover:after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  margin: 22px 0 0;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  opacity: 0;
+  background-color: #f2f2f2;
+  left: 0;
+}
+
+.menu .hover:hover {
+  cursor: pointer;
+}
+
+.menu .hover:hover:before, .menu .hover:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  background-color: #eeeeeec7;
+}
+
+h1 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  letter-spacing: 0.2em;
+  margin-top: 13vw;
+}
+
+h2 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: 0.1em;
+  margin: 5vw 0 1vw 0;
+}
+
+hr {
+  width: 20vw;
+  border: 2px solid #b5cbd0;
+}
+/*# sourceMappingURL=styles.css.map */
