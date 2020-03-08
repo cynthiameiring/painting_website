@@ -20,6 +20,10 @@ p {
 .app {
   background-color: $background-color1;
 }
+.overlay {
+  height: 100%;
+  width: 100%;
+}
 
 h1 {
   font-family: $font-family;
@@ -44,4 +48,16 @@ h3 {
 hr {
   width: 20vw;
   border: 2px solid #b5cbd0;
+}
+
+@media (max-width: 850px) {
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
 }

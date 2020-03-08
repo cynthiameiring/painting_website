@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Header from "./Header";
-
+import { connect } from "react-redux";
 import footer from "../media/brush-image.jpeg";
 import alufoil from "../media/alufoil.png";
 import flower from "../media/flower.jpg";
@@ -9,10 +9,9 @@ import aboutme from "../media/shoe-cropped.jpg";
 
 import "./styles/styles.css";
 
-export default class Home extends Component {
+class Home extends Component {
   state = {
-    posts: null,
-    open: false
+    posts: null
   };
 
   componentDidMount() {
@@ -25,16 +24,13 @@ export default class Home extends Component {
         this.setState({ posts: data.data });
       });
   }
-  handleClick() {
-    this.setState({
-      open: !this.state.open
-    });
-  }
 
   render() {
-    console.log("posts", this.state.posts);
+    const menuOpen = this.props.menuOpen;
+    //console.log("posts", this.state.posts);
     return (
       <div className="app">
+        <div className={menuOpen ? "overlay" : ""}></div>
         <Header />
         <section className="services-section">
           <h2>PHOTOREALISTIC PAINTINGS</h2>
@@ -130,17 +126,10 @@ export default class Home extends Component {
   }
 }
 
-// const mapStateToProps = state => {
-//   return {
-//     guess: state.guess,
-//     letters: state.letters,
-//     targetBlocks: state.targetBlocks,
-//     points: state.points
-//   };
-// };
+const mapStateToProps = state => {
+  return {
+    menuOpen: state.menuOpen
+  };
+};
 
-// export default connect(mapStateToProps, {
-//   correctWord,
-//   wrongWord,
-//   getLetters
-// })(GameContainer);
+export default connect(mapStateToProps, {})(Home);

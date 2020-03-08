@@ -187,31 +187,23 @@ header {
           justify-content: center;
 }
 
-.banner {
+header .banner-img {
   max-width: 100%;
-  opacity: 0.65;
+  opacity: 0.6;
   z-index: 1;
 }
 
 .logo {
   visibility: visible;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 2;
   position: absolute;
-  width: 100%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.logo img {
+  left: 0;
+  z-index: 2;
   width: 10vw;
   margin: 0.5vw;
 }
 
 .title {
+  visibility: visible;
   z-index: 2;
   color: white;
   position: absolute;
@@ -312,33 +304,65 @@ header {
   opacity: 1;
 }
 
-.hamburger-container {
+.hamburger-btn {
   visibility: hidden;
-  width: 100%;
+  right: 0;
+  z-index: 5;
   position: absolute;
-  z-index: 3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.hamburger-container .hamburger-btn {
-  z-index: 3;
-  position: relative;
   background-color: transparent;
   border: none;
-  padding: 3vw;
+  padding: 3vw 5vw;
 }
 
-.hamburger-container .hamburger-btn img {
+.hamburger-btn img {
   width: 6vw;
 }
 
+.pullout-menu {
+  overflow: hidden;
+  display: block;
+  -webkit-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+  padding-top: 16vw;
+  width: 0px;
+  height: 50vw;
+  background-color: #6a9bac;
+  position: absolute;
+  z-index: 4;
+  right: 0px;
+  height: 100%;
+}
+
+.pullout-menu .menu-item {
+  visibility: hidden;
+}
+
+.pullout-menu-show {
+  display: block;
+  -webkit-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+  padding-top: 16vw;
+  width: 50vw;
+  height: 50vw;
+  background-color: #6a9bac;
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  height: 100%;
+}
+
+.pullout-menu-show .menu-item {
+  color: white;
+  text-align: center;
+  line-height: 6vw;
+  font-size: 22px;
+}
+
 @media (max-width: 850px) {
-  .hamburger-container {
+  .pullout-menu {
+    visibility: visible;
+  }
+  .hamburger-btn {
     visibility: visible;
   }
   .menu-light {
@@ -366,6 +390,11 @@ p {
   background-color: #eeeeeec7;
 }
 
+.overlay {
+  height: 100%;
+  width: 100%;
+}
+
 h1 {
   font-family: "Heebo", sans-serif;
   font-weight: 500;
@@ -391,5 +420,18 @@ h3 {
 hr {
   width: 20vw;
   border: 2px solid #b5cbd0;
+}
+
+@media (max-width: 850px) {
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

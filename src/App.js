@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-//import store from "./store";
-//import { Provider } from "react-redux";
+import store from "./store";
+import { Provider } from "react-redux";
 // import { Route } from "react-router-dom";
 
 import Home from "./components/Home";
@@ -8,9 +8,9 @@ import Home from "./components/Home";
 class App extends Component {
   render() {
     return (
-      // <Provider store={store}>
-      <Home />
-      // </Provider>
+      <Provider store={store}>
+        <Home />
+      </Provider>
     );
   }
 }
