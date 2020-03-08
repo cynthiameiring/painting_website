@@ -1,55 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700&display=swap");
-header {
-  background-color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.banner {
-  max-width: 100%;
-  opacity: 0.65;
-  z-index: 1;
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 2;
-  position: absolute;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.header img {
-  width: 10vw;
-  margin: 0.5vw;
-}
-
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.menu p {
-  color: white;
-  margin: 2vw 4vw 0 0;
-}
-
-.title {
-  z-index: 2;
-  color: white;
-  position: absolute;
-  text-align: center;
-}
-
 .services-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,19 +19,18 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 65%;
-  margin: 5vw 0 7vw 0;
+  width: 65vw;
+  padding: 5vw 5vw 7vw 5vw;
 }
 
 .services-container img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 20vw;
-  height: 20vw;
+  width: 100%;
 }
 
-.service {
-  width: 20vw;
+.services-container .service {
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,8 +43,9 @@ header {
           flex-direction: column;
 }
 
-.service p {
-  margin: 1vw 0;
+.services-container .service p {
+  margin: 2vw 0;
+  text-align: center;
 }
 
 /* To use object-fit you need to give a height, but % doesnt work. vw is   */
@@ -130,7 +79,7 @@ header {
 
 .about-me-container p {
   margin: 3vw;
-  line-height: 2vw;
+  text-align: center;
 }
 
 .instagram-container {
@@ -222,6 +171,12 @@ header {
   text-align: center;
 }
 
+@media (max-width: 850px) {
+  .services-container {
+    width: 90vw;
+  }
+}
+
 header {
   background-color: black;
   display: -webkit-box;
@@ -239,6 +194,7 @@ header {
 }
 
 .logo {
+  visibility: visible;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,10 +219,11 @@ header {
 }
 
 .menu-light {
+  visibility: visible;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   width: 100%;
   -webkit-box-pack: end;
@@ -274,7 +231,7 @@ header {
           justify-content: flex-end;
 }
 
-.menu-light .hover {
+.menu-light .menu-item {
   color: white;
   text-align: center;
   margin: 2vw 2vw 0 0;
@@ -284,28 +241,115 @@ header {
   position: relative;
 }
 
-.menu-light .hover:before, .menu-light .hover:after {
+.menu-light .menu-item:before, .menu-light .menu-item:after {
   content: "";
   position: absolute;
   width: 0px;
   height: 3px;
-  margin: 24px 0 0;
+  margin: 26px 0 0;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
   opacity: 0;
   background-color: #f2f2f2;
   left: 0;
 }
 
-.menu-light .hover:hover {
+.menu-light .menu-item:hover {
   cursor: pointer;
 }
 
-.menu-light .hover:hover:before, .menu-light .hover:hover:after {
+.menu-light .menu-item:hover:before, .menu-light .menu-item:hover:after {
   width: 100%;
   opacity: 1;
+}
+
+.menu-dark {
+  visibility: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu-dark .menu-item {
+  color: black;
+  text-align: center;
+  margin: 2vw 2vw 0 0;
+  padding: 1vw;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  position: relative;
+}
+
+.menu-dark .menu-item:before, .menu-dark .menu-item:after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  margin: 26px 0 0;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  opacity: 0;
+  background-color: black;
+  left: 0;
+}
+
+.menu-dark .menu-item:hover {
+  cursor: pointer;
+}
+
+.menu-dark .menu-item:hover:before, .menu-dark .menu-item:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+.hamburger-container {
+  visibility: hidden;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.hamburger-container .hamburger-btn {
+  z-index: 3;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  padding: 3vw;
+}
+
+.hamburger-container .hamburger-btn img {
+  width: 6vw;
+}
+
+@media (max-width: 850px) {
+  .hamburger-container {
+    visibility: visible;
+  }
+  .menu-light {
+    visibility: hidden;
+  }
+  .menu-dark {
+    visibility: hidden;
+  }
+  .logo {
+    visibility: hidden;
+  }
 }
 
 * {

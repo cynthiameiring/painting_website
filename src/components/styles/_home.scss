@@ -1,42 +1,3 @@
-header {
-  background-color: black;
-  display: flex;
-  justify-content: center;
-}
-
-.banner {
-  max-width: 100%;
-  opacity: 0.65;
-  z-index: 1;
-}
-
-.header {
-  display: flex;
-  z-index: 2;
-  position: absolute;
-  width: 100%;
-  justify-content: space-between;
-  img {
-    width: 10vw;
-    margin: 0.5vw;
-  }
-}
-
-.menu {
-  display: flex;
-  p {
-    color: white;
-    margin: 2vw 4vw 0 0;
-  }
-}
-
-.title {
-  z-index: 2;
-  color: white;
-  position: absolute;
-  text-align: center;
-}
-
 .services-section {
   display: flex;
   align-items: center;
@@ -46,22 +7,21 @@ header {
 .services-container {
   display: flex;
   justify-content: space-between;
-  width: 65%;
-  margin: 5vw 0 7vw 0;
+  width: 65vw;
+  padding: 5vw 5vw 7vw 5vw;
   img {
     object-fit: cover;
-    width: 20vw;
-    height: 20vw;
+    width: 100%;
   }
-}
-
-.service {
-  width: 20vw;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  p {
-    margin: 1vw 0;
+  .service {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    p {
+      margin: 2vw 0;
+      text-align: center;
+    }
   }
 }
 
@@ -84,7 +44,7 @@ header {
   width: 50vw;
   p {
     margin: 3vw;
-    line-height: 2vw;
+    text-align: center;
   }
 }
 
@@ -146,4 +106,10 @@ header {
   font-size: 20px;
   vertical-align: middle;
   text-align: center;
+}
+
+@media (max-width: 850px) {
+  .services-container {
+    width: 90vw;
+  }
 }

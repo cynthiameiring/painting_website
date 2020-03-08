@@ -1,65 +1,19 @@
 import React, { Component } from "react";
-import banner from "../media/header-crop.jpg";
-import logo from "../media/Logo.png";
-import banner2 from "../media/brush-image.jpeg";
+import Header from "./Header";
+
+import footer from "../media/brush-image.jpeg";
 import alufoil from "../media/alufoil.png";
 import flower from "../media/flower.jpg";
 import wip from "../media/wip.png";
 import aboutme from "../media/shoe-cropped.jpg";
-//import Instafeed from "instafeed.js";
 
-// import { connect } from "react-redux";
-// import shortid from "shortid";
-
-// import Header from "./Header";
-// import TargetContainer from "./TargetContainer";
-// import Buttons from "./Buttons";
-// import Adventurer from "./Adventurer";
-
-// import { getLetters } from "../actions/word";
-// import { correctWord } from "../actions/word";
-// import { wrongWord } from "../actions/word";
-
-// import { words } from "../data";
 import "./styles/styles.css";
 
 export default class Home extends Component {
   state = {
-    posts: null
+    posts: null,
+    open: false
   };
-
-  // componentDidMount() {
-  //   let userFeed = new Instafeed({
-  //     get: "user",
-  //     userId: "8987997106",
-  //     clientId: "924f677fa3854436947ab4372ffa688d",
-  //     accessToken: "8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9",
-  //     resolution: "standard_resolution",
-  //     template:
-  //       '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
-  //     sortBy: "most-recent",
-  //     limit: 4,
-  //     links: false
-  //   });
-  //   userFeed.run();
-  //   //     this.pickWord();
-  // }
-
-  // componentDidMount() {
-  //   let userFeed = new Instafeed({
-  //     get: "user",
-  //     userId: "8987997106",
-  //     accessToken: "8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9",
-  //     resolution: "standard_resolution",
-  //     template:
-  //       '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
-  //     sortBy: "most-recent",
-  //     limit: 4,
-  //     links: false
-  //   });
-  //   userFeed.run();
-  //   //     this.pickWord();
-  // }
 
   componentDidMount() {
     fetch(
@@ -71,31 +25,17 @@ export default class Home extends Component {
         this.setState({ posts: data.data });
       });
   }
+  handleClick() {
+    this.setState({
+      open: !this.state.open
+    });
+  }
 
   render() {
-    if (!this.state.posts) {
-      return <div>loading...</div>;
-    }
+    console.log("posts", this.state.posts);
     return (
       <div className="app">
-        <header>
-          <img src={banner} alt="banner" className="banner"></img>
-
-          <div className="logo">
-            <img src={logo} alt="logo"></img>
-          </div>
-          <div className="menu-light">
-            <h3 className="hover">STORE</h3>
-            <h3 className="hover">PROCESS</h3>
-            <h3 className="hover">ABOUT</h3>
-            <h3 className="hover">CONTACT</h3>
-          </div>
-
-          <div className="title">
-            <h1>CYNTHIA MEIRING</h1>
-          </div>
-        </header>
-
+        <Header />
         <section className="services-section">
           <h2>PHOTOREALISTIC PAINTINGS</h2>
           <hr />
@@ -104,8 +44,7 @@ export default class Home extends Component {
               <img src={flower} alt="flower" />
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis.
+                accusantium doloremque.
               </p>
               <button>Go to store</button>
             </div>
@@ -113,8 +52,7 @@ export default class Home extends Component {
               <img src={alufoil} alt="alufoil" />
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis.
+                accusantium doloremque.
               </p>
               <button>More info</button>
             </div>
@@ -122,14 +60,12 @@ export default class Home extends Component {
               <img src={wip} alt="work in progress" />
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis.
+                accusantium doloremque.
               </p>
               <button>See process</button>
             </div>
           </div>
         </section>
-
         <section className="about-me-section">
           <img src={aboutme} alt="about-me"></img>
           <div className="about-me-container">
@@ -147,34 +83,40 @@ export default class Home extends Component {
             </p>
           </div>
         </section>
-
         <section className="instagram-container">
           <h2>INSTAGRAM</h2>
           <hr />
 
           <div className="posts">
-            {this.state.posts.map(post => {
-              if (
-                post.media_type === "IMAGE" ||
-                post.media_type === "CAROUSEL_ALBUM"
-              ) {
+            {!this.state.posts ? (
+              <div>loading</div>
+            ) : (
+              this.state.posts.map(post => {
+                if (
+                  post.media_type === "IMAGE" ||
+                  post.media_type === "CAROUSEL_ALBUM"
+                ) {
+                  return (
+                    <img
+                      key={post.id}
+                      src={post.media_url}
+                      alt="instagram"
+                    ></img>
+                  );
+                }
                 return (
-                  <img key={post.id} src={post.media_url} alt="instagram"></img>
+                  <img
+                    key={post.id}
+                    src={post.thumbnail_url}
+                    alt="instagram"
+                  ></img>
                 );
-              }
-              return (
-                <img
-                  key={post.id}
-                  src={post.thumbnail_url}
-                  alt="instagram"
-                ></img>
-              );
-            })}
+              })
+            )}
           </div>
         </section>
-
         <section className="footer">
-          <img src={banner2} alt="footer"></img>
+          <img src={footer} alt="footer "></img>
           <div className="footer-container">
             Newsletter
             <div className="info-footer">

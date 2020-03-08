@@ -1,10 +1,11 @@
 @mixin menu($color) {
+  visibility: visible;
   display: flex;
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   width: 100%;
   justify-content: flex-end;
-  .hover {
+  .menu-item {
     color: $color;
     text-align: center;
     margin: 2vw 2vw 0 0;
@@ -18,9 +19,9 @@
       position: absolute;
       width: 0px;
       height: 3px;
-      margin: 24px 0 0;
+      margin: 26px 0 0;
       transition: $animate;
-      transition-duration: 0.5s;
+      transition-duration: 0.25s;
       opacity: 0;
       background-color: darken($color, 5%);
       left: 0;
@@ -36,7 +37,6 @@
     }
   }
 }
-
 header {
   background-color: black;
   display: flex;
@@ -50,6 +50,7 @@ header {
 }
 
 .logo {
+  visibility: visible;
   display: flex;
   z-index: 2;
   position: absolute;
@@ -70,4 +71,43 @@ header {
 
 .menu-light {
   @include menu(white);
+}
+
+.menu-dark {
+  @include menu(black);
+}
+
+.hamburger-container {
+  visibility: hidden;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  justify-content: flex-end;
+  .hamburger-btn {
+    z-index: 3;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 3vw;
+
+    img {
+      width: 6vw;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .hamburger-container {
+    visibility: visible;
+  }
+  .menu-light {
+    visibility: hidden;
+  }
+  .menu-dark {
+    visibility: hidden;
+  }
+  .logo {
+    visibility: hidden;
+  }
 }
