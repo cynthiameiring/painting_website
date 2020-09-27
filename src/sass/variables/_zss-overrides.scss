@@ -1,0 +1,17 @@
+$zss--colors: (
+  black: #000,
+  blue--calypso: #376d7b,
+  blue--tranquil: #e3edef,
+  green--yet-stream: #c5d9d9,
+  grey--wild-sand: #f0eeea,
+  white: #fefffe,
+  yellow--tulip-tree: #eaaf3a,
+  yellow--golden: #ffdd03,
+);
+
+//
+// Spacing scale, used to generated margins and paddings.
+//
+$zss--spacing-scale: 0 0.25rem 0.5rem 1rem 2rem 4rem 8rem;
+$zss--type-scale: 56px 40px 32px 24px 20px 18px 16px 14px;
+$zss--base-font-size: 18px;
