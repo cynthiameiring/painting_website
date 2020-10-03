@@ -74,7 +74,7 @@
 //
 // @import "visuals/blobs";
 @import "visuals/border";
-// @import "visuals/clip";
+@import "visuals/clip";
 // @import "visuals/forms";
 // @import "visuals/gradient";
 // @import "visuals/hover";
@@ -132,9 +132,9 @@
 //
 // @import "hacks/font";
 // @import "hacks/height";
-// @import "hacks/margin";
-// @import "hacks/padding";
-// @import "hacks/position";
+@import "hacks/margin";
+@import "hacks/padding";
+@import "hacks/position";
 // @import "hacks/width";
 @import "hacks/z-index";
 

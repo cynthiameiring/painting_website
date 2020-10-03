@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+import Navigation from "./Navigation";
 import Header from "./Header";
+import Card from "./Card";
 import { connect } from "react-redux";
 
 class Home extends Component {
@@ -7,14 +9,12 @@ class Home extends Component {
     posts: null,
   };
 
-  componentDidMount() {}
-
   render() {
-    const menuOpen = this.props.menuOpen;
     return (
       <div className="app">
-        <div className={menuOpen ? "overlay-visible" : "overlay-hidden"}></div>
+        <Navigation />
         <Header />
+        {/* <Card /> */}
       </div>
     );
   }
