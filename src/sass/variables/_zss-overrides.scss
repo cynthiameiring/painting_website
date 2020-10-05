@@ -2,9 +2,9 @@ $zss--colors: (
   black: #000,
   blue--calypso: #376d7b,
   blue--tranquil: #e3edef,
-  green--yet-stream: #c5d9d9,
-  grey--wild-sand: #f0eeea,
+  grey--whisper: #faf7f7,
   white: #fefffe,
+  white--white-smoke: #f2f2f2,
   yellow--tulip-tree: #eaaf3a,
   yellow--golden: #ffdd03,
 );
@@ -14,8 +14,6 @@ $zss--border-colors: $zss--colors;
 $zss--spacing-scale: 0 4px 8px 12px 16px 24px 32px 48px 72px;
 $zss--type-scale: 64px 48px 40px 32px 24px 20px 18px 16px 14px; // not in the scale: 80px, used on the homepage
 $zss--base-font-size: nth($zss--type-scale, 8);
-
-// we use 400 (regular), 600 (semi-bold) and 700 (bold) as font weights.
 
 $zss--line-height-scale: 0 1 1.2 1.5 1.75 2;
 $zss--base-line-height: 1.5;

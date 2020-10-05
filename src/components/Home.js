@@ -1,29 +1,19 @@
 import React, { Component } from "react";
 import Navigation from "./Navigation";
 import Header from "./Header";
-import Card from "./Card";
+import TextImage from "./TextImage";
 import { connect } from "react-redux";
+import CardContainer from "./CardContainer";
 
-class Home extends Component {
-  state = {
-    posts: null,
-  };
-
+export default class Home extends Component {
   render() {
     return (
-      <div className="app">
+      <div>
         <Navigation />
         <Header />
-        {/* <Card /> */}
+        <TextImage />
+        <CardContainer />
       </div>
     );
   }
 }
-
-const mapStateToProps = (state) => {
-  return {
-    menuOpen: state.menuOpen,
-  };
-};
-
-export default connect(mapStateToProps, {})(Home);

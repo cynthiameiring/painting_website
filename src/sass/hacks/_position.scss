@@ -1,3 +1,14 @@
 ._top--15 {
   top: 15%;
 }
+
+._left--15 {
+  left: 15%;
+}
+
+._top--image--line-art {
+  top: 16px;
+  @include media-from(xl) {
+    top: 32px;
+  }
+}

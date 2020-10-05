@@ -48,7 +48,7 @@
 // Components
 //
 // @import "components/brand";
-// @import "components/buttons";
+@import "components/buttons";
 // @import "components/forms";
 // @import "components/header";
 // @import "components/icons";
@@ -81,7 +81,8 @@
 // @import "visuals/icons";
 // @import "visuals/input";
 // @import "visuals/lists";
-// @import "visuals/rectangle";
+@import "visuals/opacity";
+@import "visuals/rectangle";
 // @import "visuals/triangle";
 // @import "visuals/shadow";
 
@@ -116,10 +117,10 @@
 @import "../../node_modules/zss/src/utilities/vertical-align";
 @import "../../node_modules/zss/src/utilities/width";
 @import "../../node_modules/zss/src/utilities/z-index";
-// @import "utilities/box-shadow";
+@import "utilities/box-shadow";
 // @import "utilities/flex";
 // @import "utilities/font-family";
-// @import "utilities/height";
+@import "utilities/height";
 // @import "utilities/outline";
 // @import "utilities/padding";
 // @import "utilities/position";
@@ -130,7 +131,7 @@
 //
 // Hacks
 //
-// @import "hacks/font";
+@import "hacks/font";
 // @import "hacks/height";
 @import "hacks/margin";
 @import "hacks/padding";

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import headerImageLarge from "../media/HeaderImage.jpg";
+import headerImageLarge from "../media/HeaderImageLarge.jpg";
+import headerImageMedium from "../media/HeaderImageMedium.jpg";
+import headerImageSmall from "../media/HeaderImageSmall.jpg";
 
 import { connect } from "react-redux";
 
@@ -10,15 +12,15 @@ export default class Header extends Component {
 
   render() {
     return (
-      <div class="u-relative">
-        <div class="u-absolute  _top--15  u-width--100  u-height--100  u-z--1  u-padding--l3  u-padding--l0@lg">
-          <div class="o-grid  o-grid--fixed  u-width--100">
-            <div class="o-grid__row">
-              <div class="o-grid__col  o-grid__col--6@xs">
-                <h1 class="u-size--7  u-size--4@sm  u-size--3@md  u-size--2@lg  u-size--1@xl">
-                  Photorealistic <br /> artworks
+      <div className="u-relative  u-padding--b5@md">
+        <div className="u-absolute  _top--15  u-width--100  u-z--1  u-padding--l3  u-padding--l0@lg">
+          <div className="o-grid  o-grid--fixed  u-width--100">
+            <div className="o-grid__row">
+              <div className="o-grid__col  o-grid__col--6@xs">
+                <h1 className="u-size--6  u-size--4@sm  u-size--3@md  u-size--2@lg  u-size--1@xl  u-weight--600">
+                  Contemporary <br /> realism
                 </h1>
-                <p class="u-size--9  u-size--8@sm  u-size--7@md  u-size--6@lg  u-lh--5">
+                <p className="_font-size--header-home  u-weight--300  u-lh--5">
                   by Cynthia Meiring
                 </p>
               </div>
@@ -26,13 +28,13 @@ export default class Header extends Component {
           </div>
         </div>
         <picture>
-          {/* <source media="(min-width: 990px)" srcset={headerImageLarge} /> */}
-          {/* <source media="(min-width: 550px)" srcset={headerImageSmall} /> */}
-          <source media="(min-width: 0px)" srcset={headerImageLarge} />
+          <source media="(min-width: 1240px)" srcSet={headerImageLarge} />
+          <source media="(min-width: 990px)" srcSet={headerImageMedium} />
+          <source media="(min-width: 0px)" srcSet={headerImageSmall} />
           <img
-            srcset={{ headerImageSmall }}
-            alt="header image"
-            class="u-width--100  u-block  v-clip--header  u-z--0"
+            srcSet={headerImageMedium}
+            alt="header"
+            className="u-width--100  u-block  v-clip--header  u-z--0  u-opacity--66"
           />
         </picture>
       </div>

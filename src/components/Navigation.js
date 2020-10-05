@@ -5,13 +5,14 @@ import HamburgerMenu from "react-hamburger-menu";
 
 import { toggleMenu } from "../actions/menu";
 
-class Header extends Component {
+class Navigation extends Component {
   state = {
     menuItems: ["Gallery", "About", "Process", "Contact"],
     menuOpen: false,
   };
 
   handleClick() {
+    this.props.toggleMenu(!this.state.menuOpen);
     this.setState({
       menuOpen: !this.state.menuOpen,
     });
@@ -19,21 +20,21 @@ class Header extends Component {
 
   render() {
     return (
-      <header class="u-width--100">
+      <header className="u-width--100">
         {/* Desktop view */}
-        <div class="u-hidden  u-flex@lg  u-padding--t5  u-padding--l5  u-padding--b3  u-padding--r6">
+        <div className="u-hidden  u-flex@md  u-padding--l5  u-padding--y3  u-padding--r6">
           <img src={logo} style={{ height: "120px" }} alt="logo" />
 
-          <nav class="u-margin--l-auto" data-component="navigation--main">
-            <ol class="o-list-reset  u-flex  u-flex--row">
+          <nav className="u-margin--l-auto" data-component="navigation--main">
+            <ol className="o-list-reset  u-flex  u-flex--row">
               {this.state.menuItems.map((item) => (
                 <li
-                  class="o-list-reset__item"
+                  className="o-list-reset__item"
                   data-component="navigation--main-item"
                 >
                   <a
-                    class="u-margin--l7  u-padding--t4  u-inline-block  u-no-decoration  u-size--5  u-black  u-weight--500  has-hover-propagation  v-border--nav"
-                    href=""
+                    className="u-margin--l7  u-padding--t4  u-inline-block  u-no-decoration  u-size--6  u-black  u-weight--500  has-hover-propagation  v-border--nav"
+                    href={"/" + item}
                   >
                     {item}
                   </a>
@@ -44,17 +45,20 @@ class Header extends Component {
         </div>
 
         {/* Mobile view */}
-        <div class="u-hidden@lg  u-width--100  u-height--100">
+        <div className="u-hidden@md  u-width--100  u-height--100">
           <img
-            class="u-padding--2"
+            className="u-padding--2"
             src={logo}
             style={{ height: "100px" }}
             alt="logo"
           />
-          <div class="u-flex  u-absolute  u-right--0  u-top--0  z-index--hamburger  u-flex--items--center  u-flex--justify--end  u-padding--6">
+          <a
+            className="u-flex  u-absolute  u-right--0  u-top--0  z-index--hamburger  u-flex--items--center  u-flex--justify--end  u-padding--6  u-pointer"
+            onClick={this.handleClick.bind(this)}
+          >
             <HamburgerMenu
               isOpen={this.state.menuOpen}
-              menuClicked={this.handleClick.bind(this)}
+              // menuClicked={this.handleClick.bind(this)}
               width={18}
               height={15}
               strokeWidth={2}
@@ -63,24 +67,24 @@ class Header extends Component {
               borderRadius={0}
               animationDuration={0.5}
             />
-            <span class="u-size--5  u-black  u-weight--700  u-margin--l3">
+            <span className="u-size--5  u-black  u-weight--700  u-margin--l3">
               {this.state.menuOpen ? "Close" : "Menu"}
             </span>
-          </div>
+          </a>
           <nav
-            class={
+            className={
               "c-menu--mobile  u-absolute  u-right--0  u-top--0" +
               (this.state.menuOpen ? "  open" : "")
             }
           >
-            <ol class="o-list-reset">
+            <ol className="o-list-reset">
               {this.state.menuItems.map((item) => (
                 <li
-                  class="o-list-reset__item"
+                  className="o-list-reset__item"
                   data-component="navigation--main-item"
                 >
                   <a
-                    class="u-padding--y2  u-inline-block  u-no-decoration  u-size--5  u-black  u-weight--700  has-hover-propagation"
+                    className="u-padding--y2  u-inline-block  u-no-decoration  u-size--5  u-black  u-weight--700  has-hover-propagation"
                     href={"/" + item}
                   >
                     {item}
@@ -103,4 +107,4 @@ const mapStateToProps = (state) => {
 
 export default connect(mapStateToProps, {
   toggleMenu,
-})(Header);
+})(Navigation);
