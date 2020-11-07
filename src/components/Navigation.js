@@ -25,7 +25,10 @@ class Navigation extends Component {
         <div className="u-hidden  u-flex@md  u-padding--l5  u-padding--y3  u-padding--r6">
           <img src={logo} style={{ height: "120px" }} alt="logo" />
 
-          <nav className="u-margin--l-auto" data-component="navigation--main">
+          <nav
+            className="u-margin--l-auto  u-flex  u-flex--items--center"
+            data-component="navigation--main"
+          >
             <ol className="o-list-reset  u-flex  u-flex--row">
               {this.state.menuItems.map((item) => (
                 <li
@@ -33,8 +36,8 @@ class Navigation extends Component {
                   data-component="navigation--main-item"
                 >
                   <a
-                    className="u-margin--l7  u-padding--t4  u-inline-block  u-no-decoration  u-size--6  u-black  u-weight--500  has-hover-propagation  v-border--nav"
-                    href={"/" + item}
+                    className="u-margin--l7  u-inline-block  u-no-decoration  u-size--6  u-black  u-weight--500  has-hover-propagation  v-border--nav"
+                    href={"/" + item.toLowerCase()}
                   >
                     {item}
                   </a>

@@ -1,21 +1,26 @@
 import React, { Component } from "react";
+import Navigation from "./components/Navigation";
+
 import { connect } from "react-redux";
 
-// import { Route } from "react-router-dom";
-import Home from "./components/Home";
+import { Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
 import "./sass/main.scss";
 
 class App extends Component {
   render() {
     return (
       <div
-        className={
-          // "u-bg--grey--whisper" +
-          this.props.menuOpen ? "u-fixed  u-of--hidden" : ""
-        }
-        // className="u-bg--grey--whisper"
+      // className={
+      //   // "u-bg--grey--whisper" +
+      //   this.props.menuOpen ? "u-fixed  u-of--hidden" : ""
+      // }
+      // className="u-ff--sarabun"
       >
-        <Home />
+        <Navigation />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
       </div>
     );
   }

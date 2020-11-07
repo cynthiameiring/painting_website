@@ -20,7 +20,7 @@ export default class Header extends Component {
                 <h1 className="u-size--6  u-size--4@sm  u-size--3@md  u-size--2@lg  u-size--1@xl  u-weight--600">
                   Contemporary <br /> realism
                 </h1>
-                <p className="_font-size--header-home  u-weight--300  u-lh--5">
+                <p className="_font-size--header-home  u-weight--300  u-lh--5  u-ff--aurore">
                   by Cynthia Meiring
                 </p>
               </div>
@@ -34,7 +34,7 @@ export default class Header extends Component {
           <img
             srcSet={headerImageMedium}
             alt="header"
-            className="u-width--100  u-block  v-clip--header  u-z--0  u-opacity--66"
+            className="u-width--100  u-block  v-clip--header  u-z--0"
           />
         </picture>
       </div>

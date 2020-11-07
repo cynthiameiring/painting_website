@@ -1,7 +1,38 @@
 .u-box-shadow--1 {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.u-box-shadow--2 {
+  box-shadow: 0 12px 35px 0 rgba(0, 0, 0, 0.1);
+}
+.u-box-shadow--3 {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
-.u-box-shadow--2 {
-  box-shadow: -8px 8px 8px 0px rgba(0, 0, 0, 0.1);
+.u-hover--box-shadow--1 {
+  @include hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+.u-hover--box-shadow--3 {
+  @include hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+@each $breakpoint, $size in $zss--breakpoints {
+  @include media-from($breakpoint) {
+    .u-box-shadow--1\@#{$breakpoint} {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    .u-box-shadow--2\@#{$breakpoint} {
+      box-shadow: 0 12px 35px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .u-hover--box-shadow--1\@#{$breakpoint} {
+      @include hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
 }

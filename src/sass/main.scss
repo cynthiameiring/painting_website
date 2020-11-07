@@ -10,6 +10,7 @@
 @import "../../node_modules/zss/src/variables/zss-defaults";
 // @import "variables/global";
 @import "variables/zss-overrides";
+@import "variables/global";
 
 //
 // Mixins and helpers
@@ -72,6 +73,7 @@
 //
 // Visual effects
 //
+@import "visuals/background";
 // @import "visuals/blobs";
 @import "visuals/border";
 @import "visuals/clip";
@@ -83,6 +85,7 @@
 // @import "visuals/lists";
 @import "visuals/opacity";
 @import "visuals/rectangle";
+@import "visuals/transform";
 // @import "visuals/triangle";
 // @import "visuals/shadow";
 

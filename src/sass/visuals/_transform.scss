@@ -1,0 +1,7 @@
+.v-transform--grow {
+  transition: all 0.2s ease-in-out;
+
+  @include hover {
+    transform: scale(1.03);
+  }
+}
