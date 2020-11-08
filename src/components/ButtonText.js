@@ -22,6 +22,7 @@ export default class ButtonText extends Component {
           onClick={this.props.handleClick}
           href={this.props.src}
           className="u-black  u-no-decoration"
+          target={this.props.newTab ? "_blank" : "_self"}
         >
           {this.props.text}
         </a>
