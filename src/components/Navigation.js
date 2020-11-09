@@ -2,12 +2,13 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import logo from "../media/LogoBlack.png";
 import HamburgerMenu from "react-hamburger-menu";
+import { Link } from "react-router-dom";
 
 import { toggleMenu } from "../actions/menu";
 
 class Navigation extends Component {
   state = {
-    menuItems: ["Gallery", "About", "Process", "Contact"],
+    menuItems: ["Artworks", "Gallery", "About", "Process", "Contact"],
     menuOpen: false,
   };
 
@@ -22,8 +23,10 @@ class Navigation extends Component {
     return (
       <header className="u-width--100">
         {/* Desktop view */}
-        <div className="u-hidden  u-flex@md  u-padding--l5  u-padding--y3  u-padding--r6">
-          <img src={logo} style={{ height: "120px" }} alt="logo" />
+        <div className="u-hidden  u-flex@lg  u-padding--l5  u-padding--y3  u-padding--r8">
+          <Link to="/">
+            <img src={logo} style={{ height: "120px" }} alt="logo" />
+          </Link>
 
           <nav
             className="u-margin--l-auto  u-flex  u-flex--items--center"
@@ -35,12 +38,12 @@ class Navigation extends Component {
                   className="o-list-reset__item"
                   data-component="navigation--main-item"
                 >
-                  <a
+                  <Link
                     className="u-margin--l7  u-inline-block  u-no-decoration  u-size--6  u-black  u-weight--500  has-hover-propagation  v-border--nav"
-                    href={"/" + item.toLowerCase()}
+                    to={"/" + item.toLowerCase()}
                   >
                     {item}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ol>
@@ -48,14 +51,16 @@ class Navigation extends Component {
         </div>
 
         {/* Mobile view */}
-        <div className="u-hidden@md  u-width--100  u-height--100">
-          <img
-            className="u-padding--2"
-            src={logo}
-            style={{ height: "100px" }}
-            alt="logo"
-          />
-          <a
+        <div className="u-hidden@lg  u-width--100  u-height--100">
+          <Link to="/">
+            <img
+              className="u-padding--2"
+              src={logo}
+              style={{ height: "100px" }}
+              alt="logo"
+            />
+          </Link>
+          <div
             className="u-flex  u-absolute  u-right--0  u-top--0  z-index--hamburger  u-flex--items--center  u-flex--justify--end  u-padding--6  u-pointer"
             onClick={this.handleClick.bind(this)}
           >
@@ -73,7 +78,7 @@ class Navigation extends Component {
             <span className="u-size--5  u-black  u-weight--700  u-margin--l3">
               {this.state.menuOpen ? "Close" : "Menu"}
             </span>
-          </a>
+          </div>
           <nav
             className={
               "c-menu--mobile  u-absolute  u-right--0  u-top--0" +

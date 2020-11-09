@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import TextImage from "../components/TextImage";
 
-export default class About extends Component {
+export default class Contact extends Component {
   render() {
     return (
       <div class="u-padding--t7">

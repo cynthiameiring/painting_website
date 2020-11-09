@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import shoes from "../media/shoe-cropped.jpg";
 import blob1 from "../media/svg/blob1.svg";
 import ButtonText from "./ButtonText";
-import Guitar from "../media/Guitar-finished.jpeg";
 
 import { connect } from "react-redux";
 
@@ -17,8 +16,6 @@ export default class TextImage extends Component {
   };
 
   componentDidMount() {}
-
-  // {`pill ${ this.props.styleName }`}
 
   render() {
     let imagePos = "";
@@ -40,7 +37,7 @@ export default class TextImage extends Component {
             >
               <div className="u-relative  u-width--100">
                 <img
-                  src={Guitar}
+                  src={require("../media/Guitar-finished.jpeg")}
                   alt="Posing with shoe painting"
                   className="u-relative  u-width--100  u-block"
                 />

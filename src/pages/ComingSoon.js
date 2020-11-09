@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ButtonText from "../components/ButtonText";
-import Guitar from "../media/Guitar-finished.jpeg";
+import Guitar from "../media/Guitar-finished-resized.jpeg";
 
 export default class ComingSoon extends Component {
   render() {
@@ -17,12 +17,6 @@ export default class ComingSoon extends Component {
     return (
       <div
         className="u-padding--b8  _margin--top--20vh"
-        // style={{
-        //   position: "fixed",
-        //   top: "50%",
-        //   left: "50%",
-        //   transform: "translate(-50%, -50%)",
-        // }}
         style={{
           height: "100%",
           display: "flex",

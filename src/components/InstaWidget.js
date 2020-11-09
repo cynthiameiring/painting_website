@@ -18,7 +18,7 @@ export default class InstaWidget extends Component {
                 src="https://snapwidget.com/embed/879762"
                 className="snapwidget-widget  u-margin--b6"
                 allowtransparency="true"
-                frameborder="0"
+                frameBorder="0"
                 scrolling="no"
                 style={{
                   border: "none",
