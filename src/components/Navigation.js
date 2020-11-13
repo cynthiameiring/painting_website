@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import logo from "../media/LogoBlack.png";
 import HamburgerMenu from "react-hamburger-menu";
 import { Link } from "react-router-dom";
-
 import { toggleMenu } from "../actions/menu";
 
 class Navigation extends Component {
@@ -66,7 +65,7 @@ class Navigation extends Component {
           >
             <HamburgerMenu
               isOpen={this.state.menuOpen}
-              // menuClicked={this.handleClick.bind(this)}
+              menuClicked={() => {}}
               width={18}
               height={15}
               strokeWidth={2}

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Route } from "react-router-dom";
 import "./sass/main.scss";
+import { breakpoint } from "./actions/breakpoint";
 
 import ComingSoon from "./pages/ComingSoon";
 
@@ -12,27 +13,32 @@ import RecentWorks from "./pages/RecentWorks";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 
-class App extends Component {
-  render() {
-    return (
-      <div
-      // className={
-      //   // "u-bg--grey--whisper" +
-      //   this.props.menuOpen ? "u-fixed  u-of--hidden" : ""
-      // }
-      // className="u-ff--sarabun"
-      >
-        <Navigation />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/artworks" component={RecentWorks} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/gallery" component={Gallery} />
+function App(props) {
+  window.addEventListener("resize", function () {
+    props.breakpoint(window.innerWidth);
+  });
+  window.addEventListener("load", function () {
+    props.breakpoint(window.innerWidth);
+  });
 
-        {/* <ComingSoon /> */}
-      </div>
-    );
-  }
+  return (
+    <div
+      className={
+        // "u-bg--grey--whisper" +
+        props.menuOpen ? "u-fixed  u-of--hidden" : ""
+      }
+      // className="u-ff--sarabun"
+    >
+      <Navigation />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/artworks" component={RecentWorks} />
+      <Route exact path="/contact" component={Contact} />
+      <Route exact path="/gallery" component={Gallery} />
+
+      {/* <ComingSoon /> */}
+    </div>
+  );
 }
 
 const mapStateToProps = (state) => {
@@ -41,4 +47,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, {})(App);
+export default connect(mapStateToProps, { breakpoint })(App);

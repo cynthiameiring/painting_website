@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 import shoes from "../media/shoe-cropped.jpg";
-import blob1 from "../media/svg/blob1.svg";
-import ButtonText from "./ButtonText";
-
-import { connect } from "react-redux";
 
 export default class TextImage extends Component {
   handleClick = () => {

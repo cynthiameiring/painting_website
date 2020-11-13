@@ -3,10 +3,13 @@ import headerImageLarge from "../media/HeaderImageLarge.jpg";
 import headerImageMedium from "../media/HeaderImageMedium.jpg";
 import headerImageSmall from "../media/HeaderImageSmall.jpg";
 
-import { connect } from "react-redux";
+import { headerImageLoaded } from "../actions/menu";
 
-export default class Header extends Component {
-  state = {};
+import { connect } from "react-redux";
+import Fade from "react-reveal/Fade";
+
+class Header extends Component {
+  state = { loaded: false };
 
   componentDidMount() {}
 
@@ -17,12 +20,16 @@ export default class Header extends Component {
           <div className="o-grid  o-grid--fixed  u-width--100">
             <div className="o-grid__row">
               <div className="o-grid__col  o-grid__col--6@xs">
-                <h1 className="u-size--6  u-size--4@sm  u-size--3@md  u-size--2@lg  u-size--1@xl  u-weight--600">
-                  Contemporary <br /> realism
-                </h1>
-                <p className="_font-size--header-home  u-weight--300  u-lh--5  u-ff--aurore">
-                  by Cynthia Meiring
-                </p>
+                {this.state.loaded ? (
+                  <Fade left>
+                    <h1 className="u-size--6  u-size--4@sm  u-size--3@md  u-size--2@lg  u-size--1@xl  u-weight--600">
+                      Contemporary <br /> realism
+                    </h1>
+                    {/* <p className="_font-size--header-home  u-weight--300  u-lh--5  u-ff--aurore">
+                      by Cynthia Meiring
+                    </p> */}
+                  </Fade>
+                ) : null}
               </div>
             </div>
           </div>
@@ -35,6 +42,12 @@ export default class Header extends Component {
             srcSet={headerImageMedium}
             alt="header"
             className="u-width--100  u-block  v-clip--header  u-z--0"
+            onLoad={() => {
+              setTimeout(() => {
+                this.setState({ loaded: true });
+                this.props.headerImageLoaded(true);
+              }, 500);
+            }}
           />
         </picture>
       </div>
@@ -44,8 +57,10 @@ export default class Header extends Component {
 
 // const mapStateToProps = (state) => {
 //   return {
-//     menuOpen: state.menuOpen,
+//     headerImagedLoaded: state.loaded,
 //   };
 // };
 
-// export default connect(mapStateToProps, {})(Home);
+export default connect(null, {
+  headerImageLoaded,
+})(Header);
