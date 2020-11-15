@@ -25,7 +25,7 @@ export default class ButtonText extends Component {
           className="u-black  u-no-decoration"
           target={this.props.newTab ? "_blank" : "_self"}
         > */}
-        <CustomTag>{this.props.text}</CustomTag>
+        <CustomTag className="u-weight--400">{this.props.text}</CustomTag>
       </div>
     );
   }

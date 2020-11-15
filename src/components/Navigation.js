@@ -3,12 +3,15 @@ import { connect } from "react-redux";
 import logo from "../media/LogoBlack.png";
 import HamburgerMenu from "react-hamburger-menu";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 import { toggleMenu } from "../actions/menu";
 
 class Navigation extends Component {
   state = {
     menuItems: ["Artworks", "Gallery", "About", "Process", "Contact"],
     menuOpen: false,
+    activePage: "",
   };
 
   handleClick() {
@@ -16,6 +19,10 @@ class Navigation extends Component {
     this.setState({
       menuOpen: !this.state.menuOpen,
     });
+  }
+
+  navigateTo(page) {
+    console.log(page);
   }
 
   render() {
@@ -37,12 +44,17 @@ class Navigation extends Component {
                   className="o-list-reset__item"
                   data-component="navigation--main-item"
                 >
-                  <Link
-                    className="u-margin--l7  u-inline-block  u-no-decoration  u-size--6  u-black  u-weight--500  has-hover-propagation  v-border--nav"
+                  <NavLink
+                    activeClassName="v-border--nav--active"
+                    className="u-margin--l7  u-inline-block  u-no-decoration  u-size--6  u-black  u-weight--600  has-hover-propagation  v-border--nav"
                     to={"/" + item.toLowerCase()}
+                    // onClick={() => this.navigateTo(item.toLowerCase())}
+                    onClick={() =>
+                      this.setState({ activePage: item.toLowerCase() })
+                    }
                   >
                     {item}
-                  </Link>
+                  </NavLink>
                 </li>
               ))}
             </ol>
@@ -74,7 +86,7 @@ class Navigation extends Component {
               borderRadius={0}
               animationDuration={0.5}
             />
-            <span className="u-size--5  u-black  u-weight--700  u-margin--l3">
+            <span className="u-size--6@xs  u-size--5@sm  u-black  u-weight--700  u-margin--l3">
               {this.state.menuOpen ? "Close" : "Menu"}
             </span>
           </div>

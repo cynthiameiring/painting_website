@@ -17,7 +17,7 @@ export default class Card extends Component {
         <a className="has-hover-propagation">
           {/* <article className="u-bg--white  u-height--100"> */}
           <div
-            className="u-padding--3@sm  u-flex  u-flex--column  u-box-shadow-hover--4@xl  u-flex--items--center  has-hover-propagation"
+            className="u-padding--4@sm  u-flex  u-flex--column  u-box-shadow-hover--4@xl  u-flex--items--center  has-hover-propagation"
             // style={{ height: "60%" }}
           >
             <img

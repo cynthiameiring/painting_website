@@ -11,3 +11,10 @@ export const headerImageLoaded = (boolean) => {
     payload: boolean,
   };
 };
+
+// export const navigateTo = (page) = {
+//   return {
+//     type: "ACTIVE_PAGE",
+
+//   }
+// }

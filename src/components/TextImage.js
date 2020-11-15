@@ -43,7 +43,7 @@ function TextImage(props) {
             className={`o-grid__col  o-grid__col--12@xs  o-grid__col--6@sm  ${textPos}  u-flex  u-flex--items--center  u-flex--justify--center`}
           >
             <div className="u-padding--b5">
-              <h2 className="u-margin--b4  u-margin--b6@md  u-size--6  u-size--5@md  u-size--4@lg  u-size--3@xl  u-weight--600  u-lh--2  v-rectangle  v-rectangle--mobile">
+              <h2 className="u-margin--b4  u-margin--b6@md  u-size--6  u-size--5@md  u-size--4@lg  u-weight--600  u-lh--2  v-rectangle  v-rectangle--mobile">
                 {props.title}
               </h2>
               <TextTruncate

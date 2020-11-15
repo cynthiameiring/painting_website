@@ -14,12 +14,12 @@ import data from "../data.js";
 
 class Home extends Component {
   state = {
-    recentWorks: {},
+    recentWorks: data.pages.find((p) => p.title === "Recent artworks"),
   };
   componentDidMount() {
-    this.setState({
-      recentWorks: data.pages.find((p) => p.title === "Recent artworks"),
-    });
+    // this.setState({
+    //   recentWorks: data.pages.find((p) => p.title === "Recent artworks"),
+    // });
   }
   render() {
     return (
@@ -51,10 +51,11 @@ class Home extends Component {
               </div>
               <div className="u-padding--y4  u-padding--y7@sm  u-padding--y8@lg  u-relative  u-bg--white--white-smoke  u-bg--white@lg">
                 <div className="o-grid  o-grid--fixed  u-width--100  u-z--1  u-relative">
-                  <div className="o-grid__row  u-flex">
-                    <div className="o-grid__col  o-grid__col--12@xs">
+                  <div className="o-grid__row  u-flex  u-flex  u-flex--column  u-flex--items--center">
+                    <div className="o-grid__col  o-grid__col--12@xs u-size--6  u-size--5@md  u-size--4@lg  u-weight--600">
                       Get in touch
                     </div>
+                    <hr className="v-rectangle--middle" />
                   </div>
                   <div className="o-grid__row  u-flex">
                     <div className="o-grid__col  u-hidden  o-grid__col--4@lg  u-block@lg">
