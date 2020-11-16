@@ -14,23 +14,10 @@
   }
 }
 
-// .v-rectangle {
-//   @include media-from(lg) {
-//     &::after {
-//       content: "";
-//       display: block;
-//       margin-top: 24px;
-//       height: 4px;
-//       width: 48px;
-//       background-color: get-color(black);
-//     }
-//   }
-// }
-
 .v-rectangle--middle {
   vertical-align: middle;
   margin-top: 18px;
-  margin-bottom: 18px;
+  margin-bottom: 32px;
   height: 4px;
   width: 40px;
   background-color: get-color(black);

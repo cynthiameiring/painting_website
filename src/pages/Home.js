@@ -7,6 +7,7 @@ import { connect } from "react-redux";
 import CardContainer from "../components/CardContainer";
 import Fade from "react-reveal/Fade";
 import Card from "../components/Card";
+import processVideo from "../media/videos/Countdown.mp4";
 
 import shoes from "../media/shoe.jpg";
 import video from "../media/video.jpg";
@@ -26,74 +27,70 @@ class Home extends Component {
       <div className="">
         <Header />
         {this.props.headerImageLoaded ? (
-          <div>
-            <Fade bottom>
+          <Fade bottom>
+            <TextImage
+              image={this.state.recentWorks.image.url}
+              alt={this.state.recentWorks.image.alt}
+              text={this.state.recentWorks.teaserText}
+              src="/artworks"
+              title={this.state.recentWorks.title}
+              imagePosition="left"
+              buttonText="Go to gallery"
+            />
+            <div className="u-block  u-hidden@lg">
               <TextImage
-                src={this.state.recentWorks.image.url}
-                alt={this.state.recentWorks.image.alt}
                 text={this.state.recentWorks.teaserText}
-                title={this.state.recentWorks.title}
-                imagePosition="left"
+                title={"Process"}
+                imagePosition="right"
+                videoUrl={processVideo}
+                buttonText="Go to gallery"
               />
-            </Fade>
-            {/* <Quote /> */}
-
-            {/* <ScrollAnimation animateIn="zoomIn" animateOnce={true}> */}
-            <Fade bottom>
-              <div className="u-block  u-hidden@lg">
-                <TextImage
-                  src={this.state.recentWorks.image.url}
-                  alt={this.state.recentWorks.image.alt}
-                  text={this.state.recentWorks.teaserText}
-                  title={"Process"}
-                  imagePosition="right"
-                />
-              </div>
-              <div className="u-padding--y4  u-padding--y7@sm  u-padding--y8@lg  u-relative  u-bg--white--white-smoke  u-bg--white@lg">
-                <div className="o-grid  o-grid--fixed  u-width--100  u-z--1  u-relative">
-                  <div className="o-grid__row  u-flex  u-flex  u-flex--column  u-flex--items--center">
-                    <div className="o-grid__col  o-grid__col--12@xs u-size--6  u-size--5@md  u-size--4@lg  u-weight--600">
-                      Get in touch
-                    </div>
-                    <hr className="v-rectangle--middle" />
+            </div>
+            <div className="u-padding--y4  u-padding--y7@sm  u-padding--y8@lg  u-bg--white">
+              <div className="o-grid  o-grid--fixed  u-width--100  u-z--1">
+                <div className="o-grid__row  u-flex  u-flex  u-flex--column  u-flex--items--center">
+                  <div className="o-grid__col  o-grid__col--12@xs u-size--6  u-size--5@md  u-size--4@lg  u-weight--600">
+                    Get in touch
                   </div>
-                  <div className="o-grid__row  u-flex">
-                    <div className="o-grid__col  u-hidden  o-grid__col--4@lg  u-block@lg">
-                      <Card image={shoes} title="Process" />
-                    </div>
-                    <div className="o-grid__col  o-grid__col--6@xs  o-grid__col--4@lg">
-                      <Card image={video} title="Contact" />
-                    </div>
-                    <div className="o-grid__col  o-grid__col--6@xs  o-grid__col--4@lg">
-                      <Card image={shoes} title="About" />
-                    </div>
+                  <hr className="v-rectangle--middle" />
+                </div>
+                <div className="o-grid__row  u-flex">
+                  <div className="o-grid__col  u-hidden  o-grid__col--4@lg  u-block@lg">
+                    <Card
+                      image={shoes}
+                      title="Process"
+                      url="/process"
+                      videoUrl={processVideo}
+                    />
+                  </div>
+                  <div className="o-grid__col  o-grid__col--6@xs  o-grid__col--4@lg">
+                    <Card image={video} title="Contact" url="/contact" />
+                  </div>
+                  <div className="o-grid__col  o-grid__col--6@xs  o-grid__col--4@lg">
+                    <Card image={shoes} title="About" url="/about" />
                   </div>
                 </div>
               </div>
-
-              {/* </ScrollAnimation> */}
-            </Fade>
-
-            {/* <TextImage2 /> */}
-            {/* <ScrollAnimation animateIn="slideInUp" animateOnce={true}> */}
-            <Fade bottom>
-              <TextImage
-                src={this.state.recentWorks.image.url}
-                alt={this.state.recentWorks.image.alt}
-                text={this.state.recentWorks.teaserText}
-                title={this.state.recentWorks.title}
-                imagePosition="left"
-              />
-            </Fade>
+            </div>
 
             {/* </ScrollAnimation> */}
 
-            {/* <TextImage imagePosition="right" /> */}
+            {/* <TextImage2 /> */}
+            {/* <ScrollAnimation animateIn="slideInUp" animateOnce={true}> */}
 
-            <Fade bottom>
+            <TextImage
+              image={this.state.recentWorks.image.url}
+              alt={this.state.recentWorks.image.alt}
+              text={this.state.recentWorks.teaserText}
+              title="Gallery"
+              imagePosition="left"
+              src="/gallery"
+              buttonText="Go to gallery"
+            />
+            <div className="u-padding--y4  u-padding--y7@sm  u-padding--y8@lg  u-bg--white">
               <InstaWidget />
-            </Fade>
-          </div>
+            </div>
+          </Fade>
         ) : null}
       </div>
     );

@@ -102,12 +102,13 @@ class Navigation extends Component {
                   className="o-list-reset__item"
                   data-component="navigation--main-item"
                 >
-                  <a
-                    className="u-padding--y2  u-inline-block  u-no-decoration  u-size--5  u-black  u-weight--700  has-hover-propagation"
-                    href={"/" + item}
+                  <Link
+                    to={"/" + item.toLocaleLowerCase()}
+                    className="u-padding--y2 u-inline-block u-no-decoration  u-size--5 u-black u-weight--700 has-hover-propagation"
+                    onClick={() => this.setState({ menuOpen: false })}
                   >
                     {item}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ol>

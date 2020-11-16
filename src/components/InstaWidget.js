@@ -6,10 +6,10 @@ export default class InstaWidget extends Component {
 
   render() {
     return (
-      <div className="o-grid  o-grid--fixed  u-width--100">
+      <div className="o-grid  o-grid--fixed  u-width--100  u-bg--white">
         <div className="o-grid__row  u-flex">
           <div className="o-grid__col  o-grid__col--12@xs">
-            <div className="u-padding--y4  u-padding--y7@sm  u-padding--y8@lg  u-flex  u-flex--column  u-flex--items--center">
+            <div className="u-flex  u-flex--column  u-flex--items--center">
               <div className="u-size--6  u-size--5@md  u-size--4@lg  u-weight--600">
                 Instagram
               </div>
@@ -47,7 +47,7 @@ export default class InstaWidget extends Component {
               <ButtonText
                 text="Go to Instagram"
                 src="https://www.instagram.com/cynthia_meiring_art"
-                handleClick={this.handleClick}
+                externalLink={true}
               />
             </div>
           </div>

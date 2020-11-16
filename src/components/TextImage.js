@@ -5,15 +5,6 @@ import TextTruncate from "react-text-truncate";
 import { connect } from "react-redux";
 
 function TextImage(props) {
-  // state = {
-  //   menuItems: ["Gallery", "About", "Process", "Contact"],
-  //   menuOpen: false,
-  // };
-
-  function handleClick() {
-    console.log("jajaja");
-  }
-
   let imagePos = "";
   let textPos = "";
   if (props.imagePosition === "right") {
@@ -32,11 +23,22 @@ function TextImage(props) {
             className={`o-grid__col  o-grid__col--12@xs  o-grid__col--6@sm  ${imagePos}`}
           >
             <div className="u-relative  u-width--100">
-              <img
-                src={props.src}
-                alt="Posing with shoe painting"
-                className="u-relative  u-width--100  u-block"
-              />
+              {props.videoUrl ? (
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  className="u-height--100  u-width--100"
+                >
+                  <source src={props.videoUrl} type="video/mp4" />
+                </video>
+              ) : (
+                <img
+                  src={props.image}
+                  alt="Posing with shoe painting"
+                  className="u-height--100  u-width--100"
+                />
+              )}
             </div>
           </div>
           <div
@@ -56,7 +58,7 @@ function TextImage(props) {
                 text={props.text}
                 containerClassName="u-weight--200  u-size--9  u-size--8@md  u-margin--b6"
               />
-              <ButtonText text="Go to gallery" handleClick={handleClick} />
+              <ButtonText text={props.buttonText} src={props.src} />
             </div>
           </div>
         </div>

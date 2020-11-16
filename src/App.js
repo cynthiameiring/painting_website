@@ -25,7 +25,9 @@ function App(props) {
     <div
       className={
         // "u-bg--grey--whisper" +
-        props.menuOpen ? "u-fixed  u-of--hidden" : ""
+        props.menuOpen
+          ? "u-fixed  u-of--hidden  u-width--100  u-height--100"
+          : "u-width--100  u-height--100"
       }
       // className="u-ff--sarabun"
     >
