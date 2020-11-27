@@ -65,15 +65,18 @@ class Navigation extends Component {
         <div className="u-hidden@lg  u-width--100  u-height--100">
           <Link to="/">
             <img
-              className="u-padding--2"
+              className="u-padding--2  z-index--hamburger  u-relative"
               src={logo}
               style={{ height: "100px" }}
               alt="logo"
+              onClick={
+                this.state.menuOpen ? () => this.handleClick() : undefined
+              }
             />
           </Link>
           <div
             className="u-flex  u-absolute  u-right--0  u-top--0  z-index--hamburger  u-flex--items--center  u-flex--justify--end  u-padding--6  u-pointer"
-            onClick={this.handleClick.bind(this)}
+            onClick={() => this.handleClick()}
           >
             <HamburgerMenu
               isOpen={this.state.menuOpen}
@@ -106,7 +109,7 @@ class Navigation extends Component {
                   <Link
                     to={"/" + item.toLocaleLowerCase()}
                     className="u-padding--y2 u-inline-block u-no-decoration  u-size--5 u-black u-weight--700 has-hover-propagation"
-                    onClick={() => this.setState({ menuOpen: false })}
+                    onClick={() => this.handleClick()}
                   >
                     {item}
                   </Link>

@@ -20,11 +20,8 @@
   transition: all 0.45s ease-Out;
 
   @include hover {
-    background-color: #777;
-
     span,
     a {
-      color: white;
       font-weight: 700;
     }
   }

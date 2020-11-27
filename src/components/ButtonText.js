@@ -5,6 +5,7 @@ export default class ButtonText extends Component {
   componentDidMount() {}
 
   render() {
+    console.log(this.props.src);
     return this.props.externalLink ? (
       <a
         className="button  has-hover-propagation"
@@ -22,8 +23,5 @@ export default class ButtonText extends Component {
         <span className="u-weight--400">{this.props.text}</span>
       </Link>
     );
-    // <div className="button  has-hover-propagation">
-    //   <span className="u-weight--400">{this.props.text}</span>
-    // </div>
   }
 }

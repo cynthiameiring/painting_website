@@ -61,7 +61,7 @@ function TextImage(props) {
               <ButtonText
                 text={props.buttonText}
                 src={props.src}
-                hoverpropagation={true}
+                hoverpropagation={false}
               />
             </div>
           </div>

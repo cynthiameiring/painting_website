@@ -1,5 +1,7 @@
 import guitarFinished from "./media/Guitar-finished.jpeg";
-import indianRingFinished from "./media/Guitar-finished.jpeg";
+import indianRingFinished from "./media/flower.jpg";
+import shoe from "./media/shoe.jpg";
+import video from "./media/video.jpg";
 
 export default {
   pages: [
@@ -36,7 +38,7 @@ export default {
         {
           id: 1,
           title: "Fado guitar",
-          src: "/artworks/guitar",
+          status: "Sold",
           teaserImage: {
             url: guitarFinished,
             alt: "Posing with shoe painting",
@@ -47,15 +49,27 @@ export default {
               alt: "Posing with shoe painting",
             },
             {
-              url: "../media/Guitar-finished.jpeg",
+              url: shoe,
               alt: "Posing with shoe painting",
             },
+            {
+              url: video,
+              alt: "Posing with shoe painting",
+            },
+          ],
+          productDetails: [
+            "Certificate of Authentication is included",
+            "Size without frame: 595 x 840 mm (A1)",
+            "Acid free, 300 gr/m2 paper",
+            "White wooden frame, size: 700 x 975 x 30 mm",
+            "A layer of fixative spray is applied to protect the artwork",
+            "Material used: Caran d'Ache Luminance colour pencils",
           ],
         },
         {
           id: 2,
           title: "Indian ring",
-          src: "/artworks/indian-ring",
+          status: "Available",
           teaserImage: {
             url: indianRingFinished,
             alt: "Indian ring main picture",
@@ -69,6 +83,14 @@ export default {
               url: "../media/Guitar-finished.jpeg",
               alt: "Indian ring detail picture2",
             },
+          ],
+          productDetails: [
+            "Certificate of Authentication is included",
+            "Size without frame: 595 x 840 mm (A1)",
+            "Acid free, 300 gr/m2 paper",
+            "White wooden frame, size: 700 x 975 x 30 mm",
+            "A layer of fixative spray is applied to protect the artwork",
+            "Material used: Caran d'Ache Luminance colour pencils",
           ],
         },
       ],

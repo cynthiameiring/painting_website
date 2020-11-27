@@ -13,6 +13,7 @@ import RecentWorks from "./pages/RecentWorks";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Process from "./pages/Process";
+import ArtDetailPage from "./pages/ArtDetailPage";
 
 function App(props) {
   window.addEventListener("resize", function () {
@@ -25,12 +26,11 @@ function App(props) {
   return (
     <div
       className={
-        // "u-bg--grey--whisper" +
-        props.menuOpen
+        "u-padding--b8  " +
+        (props.menuOpen
           ? "u-fixed  u-of--hidden  u-width--100  u-height--100"
-          : "u-width--100  u-height--100"
+          : "u-width--100  u-height--100")
       }
-      // className="u-ff--sarabun"
     >
       <Navigation />
       <Route exact path="/" component={Home} />
@@ -39,9 +39,11 @@ function App(props) {
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/gallery" component={Gallery} />
       <Route exact path="/process" component={Process} />
+      <Route path="/artworks/:id" component={ArtDetailPage} />
 
       {/* <ComingSoon /> */}
-      <div className="u-width--100  u-absolute  u-bottom--0  u-text--center  u-padding--4">
+
+      <div className="u-width--100  u-absolute  u-bottom--0  u-text--center  u-padding--b8">
         <p style={{ color: "#777", fontSize: "14px" }}>
           &copy; 2020, Cynthia Meiring
         </p>
@@ -53,6 +55,7 @@ function App(props) {
 const mapStateToProps = (state) => {
   return {
     menuOpen: state.menuOpen,
+    headerImageLoaded: state.headerImageLoaded,
   };
 };
 
