@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { Route } from "react-router-dom";
 import "./sass/main.scss";
@@ -12,6 +12,7 @@ import Navigation from "./components/Navigation";
 import RecentWorks from "./pages/RecentWorks";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import Process from "./pages/Process";
 
 function App(props) {
   window.addEventListener("resize", function () {
@@ -37,8 +38,14 @@ function App(props) {
       <Route exact path="/artworks" component={RecentWorks} />
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/gallery" component={Gallery} />
+      <Route exact path="/process" component={Process} />
 
       {/* <ComingSoon /> */}
+      <div className="u-width--100  u-absolute  u-bottom--0  u-text--center  u-padding--4">
+        <p style={{ color: "#777", fontSize: "14px" }}>
+          &copy; 2020, Cynthia Meiring
+        </p>
+      </div>
     </div>
   );
 }

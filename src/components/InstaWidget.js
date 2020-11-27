@@ -6,7 +6,7 @@ export default class InstaWidget extends Component {
 
   render() {
     return (
-      <div className="o-grid  o-grid--fixed  u-width--100  u-bg--white">
+      <div className="o-grid  o-grid--fixed  u-width--100">
         <div className="o-grid__row  u-flex">
           <div className="o-grid__col  o-grid__col--12@xs">
             <div className="u-flex  u-flex--column  u-flex--items--center">

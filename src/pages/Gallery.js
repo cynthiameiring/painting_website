@@ -54,6 +54,46 @@ export default class Gallery extends Component {
                 alt="Posing with shoe painting"
                 className="u-relative  u-block  u-width--50  u-width--33@md  u-width--25@lg  u-padding--1"
               />
+              <img
+                src={require("../media/Guitar-finished.jpeg")}
+                alt="Posing with shoe painting"
+                className="u-relative  u-block  u-width--50  u-width--33@md  u-width--25@lg  u-padding--1"
+              />
+              <img
+                src={require("../media/Guitar-finished.jpeg")}
+                alt="Posing with shoe painting"
+                className="u-relative  u-block  u-width--50  u-width--33@md  u-width--25@lg  u-padding--1"
+              />
+              <img
+                src={require("../media/Guitar-finished.jpeg")}
+                alt="Posing with shoe painting"
+                className="u-relative  u-block  u-width--50  u-width--33@md  u-width--25@lg  u-padding--1"
+              />
+              <img
+                src={require("../media/Guitar-finished.jpeg")}
+                alt="Posing with shoe painting"
+                className="u-relative  u-block  u-width--50  u-width--33@md  u-width--25@lg  u-padding--1"
+              />
+              <img
+                src={require("../media/Guitar-finished.jpeg")}
+                alt="Posing with shoe painting"
+                className="u-relative  u-block  u-width--50  u-width--33@md  u-width--25@lg  u-padding--1"
+              />
+              <img
+                src={require("../media/Guitar-finished.jpeg")}
+                alt="Posing with shoe painting"
+                className="u-relative  u-block  u-width--50  u-width--33@md  u-width--25@lg  u-padding--1"
+              />
+              <img
+                src={require("../media/Guitar-finished.jpeg")}
+                alt="Posing with shoe painting"
+                className="u-relative  u-block  u-width--50  u-width--33@md  u-width--25@lg  u-padding--1"
+              />
+              <img
+                src={require("../media/Guitar-finished.jpeg")}
+                alt="Posing with shoe painting"
+                className="u-relative  u-block  u-width--50  u-width--33@md  u-width--25@lg  u-padding--1"
+              />
             </div>
           </div>
         </div>

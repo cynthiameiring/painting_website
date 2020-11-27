@@ -39,16 +39,16 @@ class Navigation extends Component {
             data-component="navigation--main"
           >
             <ol className="o-list-reset  u-flex  u-flex--row">
-              {this.state.menuItems.map((item) => (
+              {this.state.menuItems.map((item, index) => (
                 <li
                   className="o-list-reset__item"
                   data-component="navigation--main-item"
+                  key={index}
                 >
                   <NavLink
                     activeClassName="v-border--nav--active"
                     className="u-margin--l7  u-inline-block  u-no-decoration  u-size--6  u-black  u-weight--600  has-hover-propagation  v-border--nav"
                     to={"/" + item.toLowerCase()}
-                    // onClick={() => this.navigateTo(item.toLowerCase())}
                     onClick={() =>
                       this.setState({ activePage: item.toLowerCase() })
                     }
@@ -97,10 +97,11 @@ class Navigation extends Component {
             }
           >
             <ol className="o-list-reset">
-              {this.state.menuItems.map((item) => (
+              {this.state.menuItems.map((item, index) => (
                 <li
                   className="o-list-reset__item"
                   data-component="navigation--main-item"
+                  key={index}
                 >
                   <Link
                     to={"/" + item.toLocaleLowerCase()}

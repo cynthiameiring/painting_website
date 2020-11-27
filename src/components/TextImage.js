@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import ButtonText from "./ButtonText";
 import TextTruncate from "react-text-truncate";
 
@@ -58,7 +58,11 @@ function TextImage(props) {
                 text={props.text}
                 containerClassName="u-weight--200  u-size--9  u-size--8@md  u-margin--b6"
               />
-              <ButtonText text={props.buttonText} src={props.src} />
+              <ButtonText
+                text={props.buttonText}
+                src={props.src}
+                hoverpropagation={true}
+              />
             </div>
           </div>
         </div>

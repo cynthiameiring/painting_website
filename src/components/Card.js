@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import blob1 from "../media/svg/blob1.svg";
 import ButtonText from "./ButtonText";
-import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
 export default class Card2 extends Component {
@@ -9,16 +7,12 @@ export default class Card2 extends Component {
 
   render() {
     return (
-      <article className="u-bg--white  u-height--100  u-hover--box-shadow--1  v-transform--grow  has-hover-propagation">
+      <article className="u-height--100  u-hover--box-shadow--1  v-transform--grow  has-hover-propagation">
         <Link
           className="has-hover-propagation  u-no-decoration  u-black"
           to={this.props.url}
         >
-          {/* <article className="u-bg--white  u-height--100"> */}
-          <div
-            className="u-padding--4@sm  u-flex  u-flex--column  u-box-shadow-hover--4@xl  u-flex--items--center  has-hover-propagation"
-            // style={{ height: "60%" }}
-          >
+          <div className="u-padding--4@sm  u-flex  u-flex--column  u-box-shadow-hover--4@xl  u-flex--items--center  has-hover-propagation">
             {this.props.videoUrl ? (
               <video
                 autoPlay
@@ -44,7 +38,7 @@ export default class Card2 extends Component {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
               ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <ButtonText text="Go to gallery" />
+            <ButtonText text="Go to gallery" hoverpropagation={true} />
           </div>
         </Link>
       </article>

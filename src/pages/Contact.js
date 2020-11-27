@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import instagram from "../media/instagram.png";
 import youtube from "../media/youtube.png";
-import email from "../media/email.png";
 import website from "../media/website.png";
-
-import TextImage from "../components/TextImage";
 
 export default class Contact extends Component {
   render() {
@@ -16,7 +13,7 @@ export default class Contact extends Component {
               Get in touch
             </h2>
             <hr className="v-rectangle--middle" />
-            <p class="u-margin--b6  u-weight--200  u-size--9  u-size--8@md  u-text--center">
+            <p className="u-margin--b6  u-weight--200  u-size--9  u-size--8@md  u-text--center">
               For enquiries or questions, please send an email to:{" "}
               <a
                 className="u-black  u-no-decoration  u-weight--500"

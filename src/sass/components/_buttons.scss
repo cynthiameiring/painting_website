@@ -3,7 +3,7 @@
   height: 40px;
   width: 150px;
   text-decoration: none;
-  color: black;
+  color: #4a4a4a;
   font-size: 0.8em;
   letter-spacing: 1.5px;
   align-items: center;
@@ -11,17 +11,21 @@
   overflow: hidden;
   // background-color: get-color(yellow--tulip-tree);
   // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  font-weight: 400;
+
   border-style: solid;
-  border-color: black;
+  border-color: #777;
   border-width: 2px;
   cursor: pointer;
   transition: all 0.45s ease-Out;
 
   @include hover {
-    background-color: black;
+    background-color: #777;
+
     span,
     a {
       color: white;
+      font-weight: 700;
     }
   }
 }
