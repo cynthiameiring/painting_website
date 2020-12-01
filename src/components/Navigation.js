@@ -108,7 +108,7 @@ class Navigation extends Component {
                 >
                   <Link
                     to={"/" + item.toLocaleLowerCase()}
-                    className="u-padding--y2 u-inline-block u-no-decoration  u-size--5 u-black u-weight--700 has-hover-propagation"
+                    className="u-padding--y2  u-inline-block  u-no-decoration  u-size--7  u-size--6@sm  u-size--5@md  u-black u-weight--700 has-hover-propagation"
                     onClick={() => this.handleClick()}
                   >
                     {item}

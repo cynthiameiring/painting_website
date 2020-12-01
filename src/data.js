@@ -2,6 +2,11 @@ import guitarFinished from "./media/Guitar-finished.jpeg";
 import indianRingFinished from "./media/flower.jpg";
 import shoe from "./media/shoe.jpg";
 import video from "./media/video.jpg";
+import guitar1 from "./media/guitar-detail1.jpg";
+import guitar2 from "./media/guitar-detail2.jpg";
+import guitar3 from "./media/guitar-detail3.jpeg";
+import guitar4 from "./media/guitar-detail4.jpg";
+import guitar5 from "./media/guitar-detail5.jpeg";
 
 export default {
   pages: [
@@ -9,7 +14,7 @@ export default {
       id: 1,
       title: "About",
       teaserText:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus libero ut magna placerat, ut auctor dui malesuada. Duis lobortis odio metus, nec placerat metus congue id. Ut id magna orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus libero ut magna placerat, ut auctor dui malesuada. Duis lobortis odio metus, nec placerat metus congue id. Ut id magna orci.",
+        "The journey in the world of art started in 2018. With a great passion for photorealism, Cynthia started creating works in acrylic and oil paint. It was only in 2020 when she completey switched to colour pencils. Based in the Netherlands, she loves to work on projects where every detail matters. To make a painting as realistic as possible is always the main goal.",
       teaserImage: {
         url: "../media/shoe-cropped.jpg",
         alt: "Posing with shoe painting",
@@ -27,9 +32,7 @@ export default {
     {
       id: 3,
       title: "Recent artworks",
-      teaserText:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus libero ut magna placerat, ut auctor dui malesuada. Duis lobortis odio metus, nec placerat metus congue id. Ut id magna orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus libero ut magna placerat, ut auctor dui malesuada. Duis lobortis odio metus, nec placerat metus congue id. Ut id magna orci.",
-
+      teaserText: "",
       teaserImage: {
         url: guitarFinished,
         alt: "Posing with shoe painting",
@@ -45,15 +48,23 @@ export default {
           },
           productImages: [
             {
-              url: indianRingFinished,
+              url: guitar3,
               alt: "Posing with shoe painting",
             },
             {
-              url: shoe,
+              url: guitar4,
               alt: "Posing with shoe painting",
             },
             {
-              url: video,
+              url: guitar1,
+              alt: "Posing with shoe painting",
+            },
+            {
+              url: guitar2,
+              alt: "Posing with shoe painting",
+            },
+            {
+              url: guitar5,
               alt: "Posing with shoe painting",
             },
           ],
@@ -107,7 +118,10 @@ export default {
     {
       id: 5,
       title: "Gallery",
-      teaserText: "blabla",
+      // teaserText:
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus libero ut magna placerat, ut auctor dui malesuada. Duis lobortis odio metus, nec placerat metus congue id. Ut id magna orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus libero ut magna placerat, ut auctor dui malesuada. Duis lobortis odio metus, nec placerat metus congue id. Ut id magna orci.",
+      //
+      teaserText: "Get a glimp of the process behind the projects",
       teaserImage: {
         url: "../media/Guitar-finished.jpeg",
         alt: "Posing with shoe painting",

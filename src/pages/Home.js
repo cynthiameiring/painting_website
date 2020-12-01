@@ -6,7 +6,6 @@ import { connect } from "react-redux";
 import Fade from "react-reveal/Fade";
 import Card from "../components/Card";
 import processVideo from "../media/videos/Countdown.mp4";
-
 import shoes from "../media/shoe.jpg";
 import video from "../media/video.jpg";
 import data from "../data.js";
@@ -14,6 +13,7 @@ import data from "../data.js";
 class Home extends Component {
   state = {
     recentWorks: data.pages.find((p) => p.title === "Recent artworks"),
+    about: data.pages.find((p) => p.title === "About"),
   };
   componentDidMount() {}
   render() {
@@ -57,13 +57,25 @@ class Home extends Component {
                     title="Process"
                     url="/process"
                     videoUrl={processVideo}
+                    buttonText="See the process"
                   />
                 </div>
                 <div className="o-grid__col  o-grid__col--6@xs  o-grid__col--4@lg">
-                  <Card image={video} title="Contact" url="/contact" />
+                  <Card
+                    image={video}
+                    title="Contact"
+                    url="/contact"
+                    buttonText="Get in touch"
+                  />
                 </div>
                 <div className="o-grid__col  o-grid__col--6@xs  o-grid__col--4@lg">
-                  <Card image={shoes} title="About" url="/about" />
+                  <Card
+                    image={shoes}
+                    title={this.state.about.title}
+                    url="/about"
+                    buttonText="Read more"
+                    teaserText={this.state.about.teaserText}
+                  />
                 </div>
               </div>
             </div>

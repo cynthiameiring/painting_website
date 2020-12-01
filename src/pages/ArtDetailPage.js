@@ -87,8 +87,10 @@ export default class ArtDetailPage extends Component {
               </a>
             </h3>
             <ul className="u-weight--200">
-              {artwork.productDetails.map((item) => (
-                <li className="u-lh--5  u-size--9  u-size--8@lg">{item}</li>
+              {artwork.productDetails.map((item, index) => (
+                <li key={index} className="u-lh--5  u-size--9  u-size--8@lg">
+                  {item}
+                </li>
               ))}
             </ul>
           </div>

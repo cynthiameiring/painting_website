@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import ButtonText from "./ButtonText";
+import TextTruncate from "react-text-truncate";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
-export default class Card2 extends Component {
+class Card extends Component {
   componentDidMount() {}
 
   render() {
@@ -34,11 +36,15 @@ export default class Card2 extends Component {
             <h2 className="u-margin--y4  u-size--6  u-size--5@md  u-lh--2">
               {this.props.title}
             </h2>
-            <p className="u-weight--300  u-size--9  u-size--8@md  u-margin--b5  u-margin-y6@sm  u-text--center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <ButtonText text="Go to gallery" hoverpropagation={true} />
+
+            <TextTruncate
+              line={this.props.breakpoint === "xs" ? 3 : 6}
+              truncateText="…"
+              text={this.props.teaserText}
+              containerClassName="u-weight--200  u-size--9  u-size--8@md  u-margin--b5  u-margin-y6@sm  u-text--center"
+            />
+
+            <ButtonText text={this.props.buttonText} hoverpropagation={true} />
           </div>
         </Link>
       </article>
@@ -46,10 +52,10 @@ export default class Card2 extends Component {
   }
 }
 
-// const mapStateToProps = (state) => {
-//   return {
-//     menuOpen: state.menuOpen,
-//   };
-// };
+const mapStateToProps = (state) => {
+  return {
+    breakpoint: state.breakpoint,
+  };
+};
 
-// export default connect(mapStateToProps, {})(Home);
+export default connect(mapStateToProps, {})(Card);

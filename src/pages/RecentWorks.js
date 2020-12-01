@@ -12,7 +12,10 @@ export default class RecentWorks extends Component {
     // console.log(work.src.toString().toLowerCase().replace(/\s+/g, "-"));
     return (
       <div className="o-grid  o-grid--fixed  u-width--100  u-padding--y5  u-padding--y7@sm  u-padding--y8@lg">
-        <IntroContentPage title={this.state.recentWorks.title} intro="" />
+        <IntroContentPage
+          title={this.state.recentWorks.title}
+          intro={this.state.recentWorks.teaserText}
+        />
         <div className="o-grid__row  u-flex--justify--center">
           {this.state.recentWorks.artworks.map((work) => (
             <Link
@@ -20,7 +23,7 @@ export default class RecentWorks extends Component {
               key={work.title}
               to={`artworks/` + work.id}
             >
-              <div className="u-relative">
+              <div className="u-relative  u-padding--x2">
                 <img
                   src={work.teaserImage.url}
                   alt={work.teaserImage.alt}
