@@ -1,0 +1,10 @@
+.u-position--50 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include media-from(sm) {
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+  }
+}

@@ -3,7 +3,6 @@ import InstaWidget from "../components/InstaWidget";
 import Header from "../components/Header";
 import TextImage from "../components/TextImage";
 import { connect } from "react-redux";
-import Fade from "react-reveal/Fade";
 import Card from "../components/Card";
 import processVideo from "../media/videos/Countdown.mp4";
 import shoes from "../media/shoe.jpg";
@@ -12,8 +11,11 @@ import data from "../data.js";
 
 class Home extends Component {
   state = {
-    recentWorks: data.pages.find((p) => p.title === "Recent artworks"),
+    recentWorks: data.pages.find((p) => p.title === "Selected artworks"),
     about: data.pages.find((p) => p.title === "About"),
+    process: data.pages.find((p) => p.title === "Process"),
+    contact: data.pages.find((p) => p.title === "Contact"),
+    gallery: data.pages.find((p) => p.title === "Gallery"),
   };
   componentDidMount() {}
   render() {
@@ -34,7 +36,7 @@ class Home extends Component {
           />
           <div className="u-block  u-hidden@lg">
             <TextImage
-              text={this.state.recentWorks.teaserText}
+              text={this.state.process.teaserText}
               src="/process"
               title={"Process"}
               videoUrl={processVideo}
@@ -48,24 +50,26 @@ class Home extends Component {
                 <div className="o-grid__col  o-grid__col--12@xs u-size--6  u-size--5@md  u-size--4@lg  u-weight--600">
                   Get in touch
                 </div>
-                <hr className="v-rectangle--middle" />
+                <hr className="v-rectangle--middle  u-margin--b4  u-margin--b6@md" />
               </div>
               <div className="o-grid__row  u-flex">
                 <div className="o-grid__col  u-hidden  o-grid__col--4@lg  u-block@lg">
                   <Card
                     image={shoes}
-                    title="Process"
+                    title={this.state.process.title}
                     url="/process"
                     videoUrl={processVideo}
-                    buttonText="See the process"
+                    buttonText="Watch the process"
+                    teaserText={this.state.process.teaserText}
                   />
                 </div>
                 <div className="o-grid__col  o-grid__col--6@xs  o-grid__col--4@lg">
                   <Card
                     image={video}
-                    title="Contact"
+                    title={this.state.contact.title}
                     url="/contact"
                     buttonText="Get in touch"
+                    teaserText={this.state.contact.teaserText}
                   />
                 </div>
                 <div className="o-grid__col  o-grid__col--6@xs  o-grid__col--4@lg">
@@ -83,7 +87,7 @@ class Home extends Component {
           <TextImage
             image={this.state.recentWorks.teaserImage.url}
             alt={this.state.recentWorks.teaserImage.alt}
-            text={this.state.recentWorks.teaserText}
+            text={this.state.gallery.teaserText}
             title="Gallery"
             imagePosition="left"
             src="/gallery"

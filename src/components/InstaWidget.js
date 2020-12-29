@@ -13,7 +13,7 @@ export default class InstaWidget extends Component {
               <div className="u-size--6  u-size--5@md  u-size--4@lg  u-weight--600">
                 Instagram
               </div>
-              <hr className="v-rectangle--middle" />
+              <hr className="v-rectangle--middle  u-margin--b4  u-margin--b6@md" />
               {/* <iframe
                 onClick={(event) => event.preventDefault()}
                 src="https://snapwidget.com/embed/879762"

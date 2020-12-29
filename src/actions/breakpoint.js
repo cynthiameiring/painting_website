@@ -11,18 +11,8 @@ export const breakpoint = (width) => {
   } else if (width >= 1240) {
     breakpoint = "xl";
   }
-  console.log("breakpoint is: ", breakpoint);
   return {
     type: "BREAKPOINT",
     breakpoint: breakpoint,
   };
 };
-
-// $zss--breakpoints: (
-//     xs: 0,
-//     sm: 550px,
-//     md: 760px,
-//     lg: 990px,
-//     xl: 1240px,
-//     xxl: 1590px,
-//   );

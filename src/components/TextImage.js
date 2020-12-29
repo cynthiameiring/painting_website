@@ -9,14 +9,14 @@ function TextImage(props) {
   let textPos = "";
   if (props.imagePosition === "right") {
     imagePos = "u-order--2";
-    textPos = "u-order--1  u-padding--r7@md";
+    textPos = "u-order--1  u-padding--r5@md";
   } else {
     imagePos = "u-order--2  u-order--1@sm";
-    textPos = "u-order--2@sm u-padding--l7@md";
+    textPos = "u-order--2@sm u-padding--l5@md";
   }
 
   return (
-    <div className="u-padding--y5  u-padding--y7@sm  u-padding--y8@lg">
+    <div className="u-padding--y5  u-padding--y7@sm  u-padding--y8@xl">
       <div className="o-grid  o-grid--fixed  u-width--100">
         <div className="o-grid__row  u-flex">
           <div

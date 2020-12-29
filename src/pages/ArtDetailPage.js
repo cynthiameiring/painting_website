@@ -11,7 +11,7 @@ export default class ArtDetailPage extends Component {
 
   componentDidMount() {
     const artwork = data.pages
-      .find((p) => p.title === "Recent artworks")
+      .find((p) => p.title === "Selected artworks")
       .artworks.find((art) => art.id === parseInt(this.props.match.params.id));
     this.setState({
       artwork: artwork,
@@ -26,7 +26,7 @@ export default class ArtDetailPage extends Component {
 
   render() {
     const artwork = data.pages
-      .find((p) => p.title === "Recent artworks")
+      .find((p) => p.title === "Selected artworks")
       .artworks.find((art) => art.id === parseInt(this.props.match.params.id));
 
     return (

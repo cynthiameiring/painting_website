@@ -1,7 +1,7 @@
 .button {
   display: flex;
   height: 40px;
-  width: 150px;
+  width: 160px;
   text-decoration: none;
   color: #4a4a4a;
   font-size: 0.8em;
@@ -17,12 +17,14 @@
   border-color: #777;
   border-width: 2px;
   cursor: pointer;
-  transition: all 0.45s ease-Out;
+  transition: all 0.2s ease-Out;
 
   @include hover {
+    border-color: #e1e1e1;
+
     span,
     a {
-      font-weight: 700;
+      // font-weight: 700;
     }
   }
 }

@@ -21,17 +21,13 @@ class Navigation extends Component {
     });
   }
 
-  navigateTo(page) {
-    console.log(page);
-  }
-
   render() {
     return (
       <header className="u-width--100">
         {/* Desktop view */}
         <div className="u-hidden  u-flex@lg  u-padding--l5  u-padding--y3  u-padding--r8">
           <Link to="/">
-            <img src={logo} style={{ height: "120px" }} alt="logo" />
+            <img src={logo} style={{ height: "100px" }} alt="logo" />
           </Link>
 
           <nav
@@ -63,9 +59,9 @@ class Navigation extends Component {
 
         {/* Mobile view */}
         <div className="u-hidden@lg  u-width--100  u-height--100">
-          <Link to="/">
+          <Link to="/" className="u-no-decoration">
             <img
-              className="u-padding--2  z-index--hamburger  u-relative"
+              className="u-hidden  u-block@lg  u-padding--3  z-index--hamburger  u-relative"
               src={logo}
               style={{ height: "100px" }}
               alt="logo"
@@ -73,9 +69,21 @@ class Navigation extends Component {
                 this.state.menuOpen ? () => this.handleClick() : undefined
               }
             />
+            <div className="u-flex  u-hidden@lg  u-padding--4">
+              <img
+                src={logo}
+                className="u-margin--r4  _height--logo"
+                alt="logo"
+              />
+              <span className="u-size--8  u-size--7@md  u-flex--inline  u-flex--items--center  u-weight--400  u-black">
+                CYNTHIA <br />
+                MEIRING
+              </span>
+            </div>
           </Link>
+
           <div
-            className="u-flex  u-absolute  u-right--0  u-top--0  z-index--hamburger  u-flex--items--center  u-flex--justify--end  u-padding--6  u-pointer"
+            className="u-flex  u-absolute  u-right--0  u-top--0  z-index--hamburger  u-flex--items--center  u-flex--justify--end  u-padding--5  u-pointer"
             onClick={() => this.handleClick()}
           >
             <HamburgerMenu

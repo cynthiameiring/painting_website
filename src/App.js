@@ -3,8 +3,7 @@ import { connect } from "react-redux";
 import { Route } from "react-router-dom";
 import "./sass/main.scss";
 import { breakpoint } from "./actions/breakpoint";
-
-import ComingSoon from "./pages/ComingSoon";
+// import ComingSoon from "./pages/ComingSoon";
 
 import About from "./pages/About";
 import Home from "./pages/Home";
@@ -43,7 +42,7 @@ function App(props) {
 
       {/* <ComingSoon /> */}
 
-      <div className="u-width--100  u-absolute  u-bottom--0  u-text--center  u-padding--b8">
+      <div className="u-width--100  u-absolute  u-bottom--0  u-text--center  u-padding--b5  u-padding--b7@sm  u-padding--b8@lg">
         <p style={{ color: "#777", fontSize: "14px" }}>
           &copy; 2020, Cynthia Meiring
         </p>

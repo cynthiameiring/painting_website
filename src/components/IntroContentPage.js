@@ -5,9 +5,9 @@ export default class IntroContentPage extends Component {
 
   render() {
     return (
-      <div className="o-grid__row  u-margin--b4  u-margin--b6@sm  u-margin--b7@lg  u-margin--b8@xl">
+      <div className="o-grid__row  u-margin--b4  u-margin--b6@sm  u-margin--b7@lg">
         <div className="o-grid__col  o-grid__col--12@xs  u-flex  u-flex--column  u-flex--items--center">
-          <h2 className="u-size--6  u-size--5@md  u-size--4@lg  u-weight--600  u-lh--2  u-margin--b3">
+          <h2 className="u-size--6  u-size--5@md  u-size--4@lg  u-weight--600  u-lh--2  u-margin--b4">
             {this.props.title}
           </h2>
           <p className="u-weight--200  u-size--9  u-size--8@md  u-text--center">

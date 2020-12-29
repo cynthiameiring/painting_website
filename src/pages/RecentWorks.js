@@ -5,11 +5,10 @@ import data from "../data.js";
 
 export default class RecentWorks extends Component {
   state = {
-    recentWorks: data.pages.find((p) => p.title === "Recent artworks"),
+    recentWorks: data.pages.find((p) => p.title === "Selected artworks"),
   };
 
   render() {
-    // console.log(work.src.toString().toLowerCase().replace(/\s+/g, "-"));
     return (
       <div className="o-grid  o-grid--fixed  u-width--100  u-padding--y5  u-padding--y7@sm  u-padding--y8@lg">
         <IntroContentPage

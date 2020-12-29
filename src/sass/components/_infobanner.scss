@@ -11,3 +11,24 @@
   background-color: #e1e1e1;
   font-weight: 400;
 }
+
+.v-video-container {
+  // overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+
+  // ::after {
+  //   display: block;
+  //   padding-top: 56.25;
+  //   content: "";
+  // }
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
