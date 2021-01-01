@@ -91,7 +91,7 @@ export default class Contact extends Component {
                 />
                 <a
                   className="u-block  u-weight--200  u-size--9  u-size--8@md  u-black  u-no-decoration"
-                  href="/"
+                  href="https://www.cynthiameiring.com/"
                 >
                   www.cynthiameiring.com
                 </a>

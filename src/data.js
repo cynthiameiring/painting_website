@@ -1,18 +1,18 @@
-import posingWithShoe from "./media/shoe-cropped.jpg";
+import posingWithShoe from "./media/shoe.jpg";
 import guitarFinished from "./media/Guitar-finished.jpeg";
 import guitar1 from "./media/guitar-detail1.jpg";
 import guitar2 from "./media/guitar-detail2.jpg";
 import guitar3 from "./media/guitar-detail3.jpeg";
 import guitar4 from "./media/guitar-detail4.jpg";
 import guitar5 from "./media/guitar-detail5.jpeg";
-import indianRingFinished from "./media/indian_ring/indianring_finished.JPG";
-import indianRing1 from "./media/indian_ring/indianring_detail1.JPG";
-import indianRing2 from "./media/indian_ring/indianring_detail2.JPG";
+import indianRingFinished from "./media/indian_ring/indianring_finished.jpg";
+import indianRing1 from "./media/indian_ring/indianring_detail1.jpg";
+import indianRing2 from "./media/indian_ring/indianring_detail2.jpg";
 import indianRing3 from "./media/indian_ring/indianring_detail3.JPG";
 import indianRing4 from "./media/indian_ring/indianring_detail4.JPG";
 import indianRing5 from "./media/indian_ring/indianring_detail5.JPG";
-import indianRing6 from "./media/indian_ring/indianring_detail6.JPG";
-import indianRing7 from "./media/indian_ring/indianring_detail7.JPG";
+import indianRing6 from "./media/indian_ring/indianring_detail6.jpg";
+import indianRing7 from "./media/indian_ring/indianring_detail7.jpg";
 
 export default {
   pages: [
@@ -125,9 +125,9 @@ export default {
           ],
           productDetails: [
             "Certificate of Authentication is included",
-            "Size without frame: 595 x 840 mm (A1)",
-            "Acid free, 300 gr/m2 paper",
-            "White wooden frame, size: 700 x 975 x 30 mm",
+            "Size without frame: 500 x 700 mm",
+            "Option to include a white wooden frame",
+            "Acid free, 400 gr/m2 paper",
             "A layer of fixative spray is applied to protect the artwork",
             "Material used: Caran d'Ache Luminance colour pencils",
           ],

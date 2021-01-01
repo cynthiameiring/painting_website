@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import IntroContentPage from "../components/IntroContentPage";
+// import IntroContentPage from "../components/IntroContentPage";
 import clock1 from "../media/clock-detail1.jpg";
 import clock2 from "../media/clock-detail2.jpg";
 import alufoil from "../media/alufoil-gold-detail1.jpg";
