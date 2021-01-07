@@ -1,7 +1,6 @@
 import React from "react";
 import ButtonText from "./ButtonText";
 import TextTruncate from "react-text-truncate";
-
 import { connect } from "react-redux";
 
 function TextImage(props) {
