@@ -1,18 +1,17 @@
 import React from "react";
 import { connect } from "react-redux";
-import { Route } from "react-router-dom";
 import "./sass/main.scss";
 import { breakpoint } from "./actions/breakpoint";
 import ComingSoon from "./pages/ComingSoon";
 
-import About from "./pages/About";
-import Home from "./pages/Home";
-import Navigation from "./components/Navigation";
-import RecentWorks from "./pages/RecentWorks";
-import Gallery from "./pages/Gallery";
-import Contact from "./pages/Contact";
-import Process from "./pages/Process";
-import ArtDetailPage from "./pages/ArtDetailPage";
+// import About from "./pages/About";
+// import Home from "./pages/Home";
+// import Navigation from "./components/Navigation";
+// import RecentWorks from "./pages/RecentWorks";
+// import Gallery from "./pages/Gallery";
+// import Contact from "./pages/Contact";
+// import Process from "./pages/Process";
+// import ArtDetailPage from "./pages/ArtDetailPage";
 
 function App(props) {
   window.addEventListener("resize", function () {

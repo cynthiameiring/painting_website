@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import ButtonText from "../components/ButtonText";
-import TextImage from "../components/TextImage";
 import Guitar from "../media/Guitar-finished-resized.jpeg";
-import TextTruncate from "react-text-truncate";
+// import TextImage from "../components/TextImage";
+// import TextTruncate from "react-text-truncate";
 import { connect } from "react-redux";
 
 function ComingSoon(props) {

@@ -3,7 +3,6 @@ import instagram from "../media/instagram.png";
 import youtube from "../media/youtube.png";
 import website from "../media/website.png";
 import data from "../data.js";
-import IntroContentPage from "../components/IntroContentPage";
 
 export default class Contact extends Component {
   state = {
