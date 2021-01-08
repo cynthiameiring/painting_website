@@ -1,12 +1,12 @@
 ._height--gallery {
-  height: 33vh;
+  height: 44vh;
 
   @include media-from(sm) {
-    height: 27vh;
+    height: 35vh;
   }
 
   @include media-from(md) {
-    height: 25vh;
+    height: 22vh;
   }
 
   @include media-from(lg) {
@@ -14,7 +14,7 @@
   }
 
   @include media-from(xl) {
-    height: 35vh;
+    height: 38vh;
   }
 }
 

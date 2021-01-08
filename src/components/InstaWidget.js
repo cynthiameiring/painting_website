@@ -10,10 +10,14 @@ export default class InstaWidget extends Component {
         <div className="o-grid__row  u-flex">
           <div className="o-grid__col  o-grid__col--12@xs">
             <div className="u-flex  u-flex--column  u-flex--items--center">
-              <div className="u-size--6  u-size--5@md  u-size--4@lg  u-weight--600">
+              {/* <div className="u-size--6  u-size--5@md  u-size--4@lg  u-weight--600  v-rectangle--middle">
                 Instagram
-              </div>
-              <hr className="v-rectangle--middle  u-margin--b4  u-margin--b6@md" />
+              </div> */}
+              <h2 className="u-margin--b5  u-margin--b6@xl  u-size--6  u-size--5@md  u-size--4@lg  u-weight--600  u-lh--2  v-rectangle--middle">
+                Instagram
+              </h2>
+
+              {/* <hr className="v-rectangle--middle  u-margin--b4  u-margin--b6@md" /> */}
               {/* <iframe
                 onClick={(event) => event.preventDefault()}
                 src="https://snapwidget.com/embed/879762"

@@ -54,11 +54,10 @@ class Header extends Component {
           <source media="(min-width: 990px)" srcSet={headerImageMedium} />
           <source media="(min-width: 550px)" srcSet={headerImageSmall} />
           <source media="(min-width: 0px)" srcSet={headerImageMobile} />
-
           <img
             srcSet={headerImageSmall}
             alt="header"
-            className="u-width--100  u-block  v-clip--header@sm  u-z--0"
+            className="u-width--100  u-block  u-z--0"
             onLoad={() => {
               setTimeout(() => {
                 this.setState({ loaded: true });

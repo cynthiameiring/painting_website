@@ -22,7 +22,6 @@ export default class Process extends Component {
                 width="560px"
                 height="349px"
                 title="youtubeVideo1"
-                v-video-container
                 src="https://www.youtube.com/embed/o2KtDZLDRsc"
                 frameBorder="0"
                 allowFullScreen

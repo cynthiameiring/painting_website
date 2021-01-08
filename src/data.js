@@ -13,6 +13,10 @@ import indianRing4 from "./media/indian_ring/indianring_detail4.JPG";
 import indianRing5 from "./media/indian_ring/indianring_detail5.JPG";
 import indianRing6 from "./media/indian_ring/indianring_detail6.jpg";
 import indianRing7 from "./media/indian_ring/indianring_detail7.jpg";
+import greenPlantFinished from "./media/green_plant/green_plant_finished.jpg";
+import greenPlant1 from "./media/green_plant/green_plant_detail1.jpg";
+import greenPlant2 from "./media/green_plant/green_plant_detail2.jpg";
+import greenPlant3 from "./media/green_plant/green_plant_detail3.jpg";
 
 export default {
   pages: [
@@ -48,7 +52,7 @@ export default {
       artworks: [
         {
           id: 1,
-          title: "Fado guitar",
+          title: `"Play me a song"`,
           status: "Sold",
           teaserImage: {
             url: guitarFinished,
@@ -86,8 +90,8 @@ export default {
           ],
         },
         {
-          id: 2,
-          title: "Indian ring",
+          id: 3,
+          title: `"The one and only"`,
           status: "Available",
           teaserImage: {
             url: indianRingFinished,
@@ -128,6 +132,37 @@ export default {
             "Size without frame: 500 x 700 mm",
             "Option to include a white wooden frame",
             "Acid free, 400 gr/m2 paper",
+            "A layer of fixative spray is applied to protect the artwork",
+            "Material used: Caran d'Ache Luminance colour pencils",
+          ],
+        },
+        {
+          id: 2,
+          title: `"Botanical"`,
+          status: "Available",
+          teaserImage: {
+            url: greenPlantFinished,
+            alt: "Posing with shoe painting",
+          },
+          productImages: [
+            {
+              url: greenPlant1,
+              alt: "Posing with shoe painting",
+            },
+            {
+              url: greenPlant2,
+              alt: "Posing with shoe painting",
+            },
+            {
+              url: greenPlant3,
+              alt: "Posing with shoe painting",
+            },
+          ],
+          productDetails: [
+            "Certificate of Authentication is included",
+            "Size without frame: 300 x 300 mm",
+            "Acid free, 400 gr/m2 paper",
+            "Option to include a white wooden frame",
             "A layer of fixative spray is applied to protect the artwork",
             "Material used: Caran d'Ache Luminance colour pencils",
           ],

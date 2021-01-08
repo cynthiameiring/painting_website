@@ -10,7 +10,7 @@ class Card extends Component {
   render() {
     console.log(this.props.breakpoint);
     return (
-      <article className="u-height--100  u-hover--box-shadow--1@sm  v-transform--grow@sm  has-hover-propagation">
+      <article className="u-height--100  u-hover--box-shadow--1@sm  v-transform--grow  has-hover-propagation">
         <Link
           className="has-hover-propagation  u-no-decoration  u-black"
           to={this.props.url}
