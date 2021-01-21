@@ -41,7 +41,7 @@ function App(props) {
 
       {/* <ComingSoon /> */}
 
-      <div className="u-width--100  u-absolute  u-bottom--0  u-text--center  u-padding--b5  u-padding--b7@sm  u-padding--b8@lg">
+      <div className="u-width--100  u-absolute  u-bottom--0  u-text--center  u-padding--b6  u-padding--b7@sm  u-padding--b8@lg">
         <p style={{ color: "#777", fontSize: "14px" }}>
           &copy; 2020, Cynthia Meiring
         </p>

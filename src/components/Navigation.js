@@ -23,7 +23,7 @@ class Navigation extends Component {
 
   render() {
     return (
-      <header className="u-width--100">
+      <header className="u-width--100  u-sticky  u-relative@md  u-top--0  u-bg--white--white-smoke  z-index--hamburger">
         {/* Desktop view */}
         <div className="u-hidden  u-flex@lg  u-padding--l5  u-padding--y3  u-padding--r8">
           <Link to="/">
@@ -58,29 +58,23 @@ class Navigation extends Component {
         </div>
 
         {/* Mobile view */}
-        <div className="u-hidden@lg  u-width--100  u-height--100">
-          <Link to="/" className="u-no-decoration">
-            <img
-              className="u-hidden  u-block@lg  u-padding--3  z-index--hamburger  u-relative"
-              src={logo}
-              style={{ height: "100px" }}
-              alt="logo"
-              onClick={
-                this.state.menuOpen ? () => this.handleClick() : undefined
-              }
-            />
-            <div className="u-flex  u-hidden@lg  u-padding--4">
+        <div className="u-hidden@lg  u-width--100  u-height--100  ">
+          <div className="u-flex  u-hidden@lg  u-padding--4">
+            <Link to="/" className="u-no-decoration  u-flex">
               <img
                 src={logo}
                 className="u-margin--r4  _height--logo"
                 alt="logo"
               />
-              <span className="u-size--8  u-size--7@md  u-flex--inline  u-flex--items--center  u-weight--400  u-black">
+              <span
+                className="u-size--8  u-size--7@md  u-flex--inline  u-flex--items--center  u-weight--400  u-black"
+                style={{ letterSpacing: "5px" }}
+              >
                 CYNTHIA <br />
                 MEIRING
               </span>
-            </div>
-          </Link>
+            </Link>
+          </div>
 
           <div
             className="u-flex  u-absolute  u-right--0  u-top--0  z-index--hamburger  u-flex--items--center  u-flex--justify--end  u-padding--5  u-pointer"

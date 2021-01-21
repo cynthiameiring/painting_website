@@ -7,19 +7,19 @@ function TextImage(props) {
   let imagePos = "";
   let textPos = "";
   if (props.imagePosition === "right") {
-    imagePos = "u-order--2";
+    imagePos = "u-order--2  u-padding--l7@lg";
     textPos = "u-order--1  u-padding--r5@md";
   } else {
-    imagePos = "u-order--2  u-order--1@sm";
+    imagePos = "u-order--2  u-order--1@sm  u-padding--r7@lg";
     textPos = "u-order--2@sm u-padding--l5@md";
   }
 
   return (
-    <div className="u-padding--y5  u-padding--y7@sm  u-padding--y8@xl">
+    <div className="u-padding--y6  u-padding--y7@sm">
       <div className="o-grid  o-grid--fixed  u-width--100">
         <div className="o-grid__row  u-flex">
           <div
-            className={`o-grid__col  o-grid__col--12@xs  o-grid__col--6@sm  ${imagePos}`}
+            className={`o-grid__col  o-grid__col--12@xs  o-grid__col--6@sm  u-padding--y6@lg ${imagePos}`}
           >
             <div className="u-relative  u-width--100">
               {props.videoUrl ? (
@@ -49,9 +49,7 @@ function TextImage(props) {
               </h2>
               <TextTruncate
                 line={
-                  props.breakpoint === "sm" || props.breakpoint === "md"
-                    ? 5
-                    : 10
+                  props.breakpoint === "sm" || props.breakpoint === "md" ? 5 : 6
                 }
                 truncateText="…"
                 text={props.text}

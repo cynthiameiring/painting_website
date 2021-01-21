@@ -10,13 +10,13 @@ export default class Process extends Component {
 
   render() {
     return (
-      <div className="o-grid  o-grid--fixed  u-width--100  u-padding--y5  u-padding--y7@sm  u-padding--y8@lg">
+      <div className="o-grid  o-grid--fixed  u-width--100  u-padding--y6  u-padding--y7@sm  u-padding--y8@lg">
         <IntroContentPage
           title="Process videos"
           intro={this.state.process.teaserText}
         />
         <div className="o-grid__row">
-          <div className="o-grid__col  o-grid__col--12@xs o-grid__col--6@sm">
+          <div className="o-grid__col  o-grid__col--12@xs  o-grid__col--6@md">
             <div className="v-video-container  u-margin--b4">
               <iframe
                 width="560px"
@@ -28,13 +28,13 @@ export default class Process extends Component {
               ></iframe>
             </div>
           </div>
-          <div className="o-grid__col  o-grid__col--12@xs o-grid__col--6@sm">
+          <div className="o-grid__col  o-grid__col--12@xs  o-grid__col--6@md">
             <div className="v-video-container  u-margin--b4">
               <iframe
                 width="560px"
                 height="349px"
                 title="youtubeVideo2"
-                src="https://www.youtube.com/embed/R6MVv0lkRaM"
+                src="https://www.youtube.com/embed/Ks7b85c-jnw"
                 frameBorder="0"
                 allowFullScreen
               ></iframe>

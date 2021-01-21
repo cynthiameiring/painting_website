@@ -1,5 +1,5 @@
 import posingWithShoe from "./media/shoe.jpg";
-import guitarFinished from "./media/Guitar-finished.jpeg";
+import guitarFinished from "./media/Guitar-finished-resized.jpeg";
 import guitar1 from "./media/guitar-detail1.jpg";
 import guitar2 from "./media/guitar-detail2.jpg";
 import guitar3 from "./media/guitar-detail3.jpeg";
@@ -8,15 +8,16 @@ import guitar5 from "./media/guitar-detail5.jpeg";
 import indianRingFinished from "./media/indian_ring/indianring_finished.jpg";
 import indianRing1 from "./media/indian_ring/indianring_detail1.jpg";
 import indianRing2 from "./media/indian_ring/indianring_detail2.jpg";
-import indianRing3 from "./media/indian_ring/indianring_detail3.JPG";
-import indianRing4 from "./media/indian_ring/indianring_detail4.JPG";
-import indianRing5 from "./media/indian_ring/indianring_detail5.JPG";
+import indianRing3 from "./media/indian_ring/indianring_detail3.jpg";
+import indianRing4 from "./media/indian_ring/indianring_detail4.jpg";
+import indianRing5 from "./media/indian_ring/indianring_detail5.jpg";
 import indianRing6 from "./media/indian_ring/indianring_detail6.jpg";
 import indianRing7 from "./media/indian_ring/indianring_detail7.jpg";
-import greenPlantFinished from "./media/green_plant/green_plant_finished.jpg";
+import greenPlantFinished from "./media/green_plant/green_plant_finished(copy).jpeg";
 import greenPlant1 from "./media/green_plant/green_plant_detail1.jpg";
 import greenPlant2 from "./media/green_plant/green_plant_detail2.jpg";
 import greenPlant3 from "./media/green_plant/green_plant_detail3.jpg";
+import triangular1 from "./media/Triangular/Triangular1_wip1.jpeg";
 
 export default {
   pages: [
@@ -36,7 +37,7 @@ export default {
       teaserText:
         "Do you have questions or are you interested in purchasing one of the available arworks? Please send an email to get the pricelist, shipping information and other information. Also the possibility of framing the piece can be discussed. Please contact me by sending an email to: ",
       teaserImage: {
-        url: "../media/Guitar-finished.jpeg",
+        url: greenPlantFinished,
         alt: "Posing with shoe painting",
       },
     },
@@ -52,7 +53,7 @@ export default {
       artworks: [
         {
           id: 1,
-          title: `"Play me a song"`,
+          title: `"Fado guitar"`,
           status: "Sold",
           teaserImage: {
             url: guitarFinished,
@@ -185,8 +186,18 @@ export default {
       teaserText:
         "Finished, unfinished and work in progress... This photo gallery gives a glimp of the projects I enjoyed working on the most. It shows a bit of the progress and how every object arises from the paper. Step by step as it is a slow process, but.. a very enjoyable one! Every detail matters, every scribble with the pencil is important to make the final drawing as photorealistic as possible. If you would like to see more about the process I follow, click ",
       teaserImage: {
-        url: "../media/Guitar-finished.jpeg",
+        url: triangular1,
         alt: "Posing with shoe painting",
+      },
+    },
+    {
+      id: 6,
+      title: "Commissions",
+      teaserText:
+        "Are you interested in a piece, but one of the available works does not really suit you? Then there is a possibility to get a private commission done. Together with Cynthia you discuss your wishes and the possibilities. On avarage a piece takes 6-8 weeks to finish. Please send an email to ask for the details.",
+      teaserImage: {
+        url: indianRingFinished,
+        alt: "Triangular art work in progress",
       },
     },
   ],

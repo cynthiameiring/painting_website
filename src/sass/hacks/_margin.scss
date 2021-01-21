@@ -7,3 +7,7 @@
     margin-top: 20vh;
   }
 }
+
+._margin--art-detail:not(:nth-child(4n + 5)) {
+  margin-left: 4px;
+}

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ButtonText2 from "../components/ButtonText2";
 import IntroContentPage from "../components/IntroContentPage";
 import data from "../data.js";
 
@@ -30,25 +31,24 @@ export default class ArtDetailPage extends Component {
       .artworks.find((art) => art.id === parseInt(this.props.match.params.id));
 
     return (
-      <div className="o-grid  o-grid--fixed  u-width--100  u-padding--y5  u-padding--t7@sm  u-padding--t8@lg">
+      <div className="o-grid  o-grid--fixed  u-width--100  u-padding--y6  u-padding--y7@sm  u-padding--y8@lg">
+        <div class="u-hidden@lg">
+          <ButtonText2 text="< Back" src="/artworks" />
+        </div>
         <IntroContentPage title={this.state.artwork.title} intro="" />
         <div className="o-grid__row">
-          <div className="o-grid__col  o-grid__col--12@xs  o-grid__col--6@sm">
+          <div className="o-grid__col  o-grid__col--12@xs  o-grid__col--6@sm  u-margin--b4  u-margin--b0@md">
             <img
               src={this.state.activeImage.url}
               alt="Posing with shoe painting"
               className="u-width--100  u-margin--b4"
             />
-            <div
-              className="u-flex u-flex--wrap"
-              style={{ marginLeft: "-16px" }}
-            >
+            <div className="u-flex u-flex--wrap">
               <img
                 src={artwork.teaserImage.url}
                 alt={artwork.teaserImage.alt}
-                style={{ width: "calc(25% - 16px)" }}
                 className={
-                  "u-margin--l4  u-margin--b4  u-bs--solid  u-bw--3  u-pointer  " +
+                  "u-margin--b2  u-bs--solid  u-bw--3  u-pointer  v-overlay--hover  _width--art-detail  " +
                   (this.state.activeImage.url === artwork.teaserImage.url
                     ? "u-bc--red"
                     : "u-bc--white")
@@ -61,9 +61,8 @@ export default class ArtDetailPage extends Component {
                   key={index}
                   src={image.url}
                   alt={image.alt}
-                  style={{ width: "calc(25% - 16px)" }}
                   className={
-                    "u-margin--l4  u-margin--b4  u-bs--solid  u-bw--3  u-pointer  " +
+                    "u-margin--b2  u-bs--solid  u-bw--3  u-pointer  v-overlay--hover  _width--art-detail  _margin--art-detail  " +
                     (this.state.activeImage.url === image.url
                       ? "u-bc--red"
                       : "u-bc--white")
@@ -73,7 +72,7 @@ export default class ArtDetailPage extends Component {
               ))}
             </div>
           </div>
-          <div className="o-grid__col  o-grid__col--12@xs  o-grid__col--6@sm  u-padding--l6  u-padding--l7@lg  u-padding--l8@xl  u-padding--t6@lg">
+          <div className="o-grid__col  o-grid__col--12@xs  o-grid__col--6@sm  u-padding--l5@sm  u-padding--l7@lg  u-padding--l8@xl  u-padding--t6@lg">
             <div className="infobanner  u-margin--b5  u-margin--b7@lg">
               <span className="">{artwork.status}</span>
             </div>
@@ -86,7 +85,7 @@ export default class ArtDetailPage extends Component {
                 hello@cynthiameiring.com
               </a>
             </h3>
-            <ul className="u-weight--200">
+            <ul className="u-weight--200  u-padding--l5  u-padding--l0@sm">
               {artwork.productDetails.map((item, index) => (
                 <li key={index} className="u-lh--5  u-size--9  u-size--8@lg">
                   {item}

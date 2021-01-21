@@ -10,19 +10,19 @@ export default class RecentWorks extends Component {
 
   render() {
     return (
-      <div className="o-grid  o-grid--fixed  u-width--100  u-padding--y5  u-padding--y7@sm  u-padding--y8@lg">
+      <div className="o-grid  o-grid--fixed  u-width--100  u-padding--y6  u-padding--y7@sm  u-padding--y8@lg">
         <IntroContentPage
           title={this.state.recentWorks.title}
           intro={this.state.recentWorks.teaserText}
         />
-        <div className="o-grid__row  u-flex--justify--center">
+        <div className="o-grid__row  u-flex--justify--center@lg">
           {this.state.recentWorks.artworks
             .sort(function (a, b) {
               return a.id - b.id;
             })
             .map((work) => (
               <Link
-                className={`o-grid__col  o-grid__col--12@xs  o-grid__col--6@sm  o-grid__col--4@lg  u-padding--4  u-no-decoration  u-black`}
+                className={`o-grid__col  o-grid__col--12@xs  o-grid__col--6@sm  o-grid__col--4@lg  u-padding--4  u-no-decoration  u-black  u-margin--b4`}
                 key={work.title}
                 to={`artworks/` + work.id}
               >
@@ -44,7 +44,7 @@ export default class RecentWorks extends Component {
                     </div>
                   ) : null}
                 </div>
-                <p className="u-text--center  u-size--9  u-padding--t3">
+                <p className="u-text--center  u-size--8  u-padding--t2">
                   {work.title}
                 </p>
               </Link>
