@@ -10,11 +10,8 @@ class Card extends Component {
   render() {
     console.log(this.props.breakpoint);
     return (
-      <article className="u-height--100  u-hover--box-shadow--1@sm  v-transform--grow  has-hover-propagation">
-        <Link
-          className="has-hover-propagation  u-no-decoration  u-black"
-          to={this.props.url}
-        >
+      <div className="u-height--100  u-hover--box-shadow--1@sm  v-transform--grow  has-hover-propagation">
+        <Link className="u-no-decoration  u-black" to={this.props.url}>
           <div className="u-flex  u-flex--column  u-box-shadow-hover--4@xl  u-flex--items--center  has-hover-propagation  u-bg--black  u-bg--white--white-smoke@sm">
             <div className="u-flex">
               {this.props.videoUrl ? (
@@ -62,7 +59,7 @@ class Card extends Component {
             </div>
           </div>
         </Link>
-      </article>
+      </div>
     );
   }
 }

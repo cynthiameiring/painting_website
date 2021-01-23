@@ -23,9 +23,9 @@ class Navigation extends Component {
 
   render() {
     return (
-      <header className="u-width--100  u-sticky  u-relative@md  u-top--0  u-bg--white--white-smoke  z-index--hamburger">
+      <header className="u-width--100  u-sticky  u-sticky--safari  u-relative@md  u-top--0  u-bg--white--white-smoke  z-index--hamburger">
         {/* Desktop view */}
-        <div className="u-hidden  u-flex@lg  u-padding--l5  u-padding--y3  u-padding--r8">
+        <div className="u-hidden  u-flex@lg  u-padding--l5  u-padding--y4  u-padding--r8">
           <Link to="/">
             <img src={logo} style={{ height: "100px" }} alt="logo" />
           </Link>

@@ -1,6 +1,7 @@
 import React from "react";
 import ButtonText from "./ButtonText";
 import TextTruncate from "react-text-truncate";
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 function TextImage(props) {
@@ -43,24 +44,21 @@ function TextImage(props) {
           <div
             className={`o-grid__col  o-grid__col--12@xs  o-grid__col--6@sm  ${textPos}  u-flex  u-flex--items--center  u-flex--justify--center`}
           >
-            <div className="u-padding--b5">
+            <Link
+              className="has-hover-propagation  u-no-decoration  u-black  u-padding--b5"
+              to={props.src}
+            >
               <h2 className="u-margin--b4  u-margin--b5@md  u-margin--b6@xl  u-size--6  u-size--5@md  u-size--4@lg  u-weight--600  u-lh--2  v-rectangle">
                 {props.title}
               </h2>
               <TextTruncate
-                line={
-                  props.breakpoint === "sm" || props.breakpoint === "md" ? 5 : 6
-                }
+                line={5}
                 truncateText="…"
                 text={props.text}
                 containerClassName="u-weight--200  u-size--9  u-size--8@md  u-margin--b6"
               />
-              <ButtonText
-                text={props.buttonText}
-                src={props.src}
-                hoverpropagation={false}
-              />
-            </div>
+              <ButtonText text={props.buttonText} hoverpropagation={true} />
+            </Link>
           </div>
         </div>
       </div>

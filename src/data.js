@@ -5,19 +5,23 @@ import guitar2 from "./media/guitar-detail2.jpg";
 import guitar3 from "./media/guitar-detail3.jpeg";
 import guitar4 from "./media/guitar-detail4.jpg";
 import guitar5 from "./media/guitar-detail5.jpeg";
-import indianRingFinished from "./media/indian_ring/indianring_finished.jpg";
-import indianRing1 from "./media/indian_ring/indianring_detail1.jpg";
-import indianRing2 from "./media/indian_ring/indianring_detail2.jpg";
-import indianRing3 from "./media/indian_ring/indianring_detail3.jpg";
-import indianRing4 from "./media/indian_ring/indianring_detail4.jpg";
-import indianRing5 from "./media/indian_ring/indianring_detail5.jpg";
-import indianRing6 from "./media/indian_ring/indianring_detail6.jpg";
-import indianRing7 from "./media/indian_ring/indianring_detail7.jpg";
-import greenPlantFinished from "./media/green_plant/green_plant_finished(copy).jpeg";
-import greenPlant1 from "./media/green_plant/green_plant_detail1.jpg";
-import greenPlant2 from "./media/green_plant/green_plant_detail2.jpg";
-import greenPlant3 from "./media/green_plant/green_plant_detail3.jpg";
+import indianRingFinished from "./media/Indian_ring/indianring_finished.jpg";
+import indianRing1 from "./media/Indian_ring/indianring_detail1.jpg";
+import indianRing2 from "./media/Indian_ring/indianring_detail2.jpg";
+import indianRing3 from "./media/Indian_ring/indianring_detail3.jpg";
+import indianRing4 from "./media/Indian_ring/indianring_detail4.jpg";
+import indianRing5 from "./media/Indian_ring/indianring_detail5.jpg";
+import indianRing6 from "./media/Indian_ring/indianring_detail6.jpg";
+import indianRing7 from "./media/Indian_ring/indianring_detail7.jpg";
+import greenPlantFinished from "./media/Green_plant/green_plant_finished(copy).jpeg";
+import greenPlant1 from "./media/Green_plant/green_plant_detail1.jpg";
+import greenPlant2 from "./media/Green_plant/green_plant_detail2.jpg";
+import greenPlant3 from "./media/Green_plant/green_plant_detail3.jpg";
 import triangular1 from "./media/Triangular/Triangular1_wip1.jpeg";
+import shellFinished from "./media/Shell/shell-finished.jpg";
+import shell1 from "./media/Shell/shell-detail1-cropped.jpg";
+import shell2 from "./media/Shell/shell-detail2.jpg";
+import shell3 from "./media/Shell/shell-detail3.jpg";
 
 export default {
   pages: [
@@ -91,7 +95,7 @@ export default {
           ],
         },
         {
-          id: 3,
+          id: 2,
           title: `"The one and only"`,
           status: "Available",
           teaserImage: {
@@ -138,7 +142,7 @@ export default {
           ],
         },
         {
-          id: 2,
+          id: 4,
           title: `"Botanical"`,
           status: "Available",
           teaserImage: {
@@ -168,6 +172,36 @@ export default {
             "Material used: Caran d'Ache Luminance colour pencils",
           ],
         },
+        {
+          id: 3,
+          title: `"Sparkle in the sand"`,
+          status: "Available",
+          teaserImage: {
+            url: shellFinished,
+            alt: "Posing with shoe painting",
+          },
+          productImages: [
+            {
+              url: shell2,
+              alt: "Posing with shoe painting",
+            },
+            {
+              url: shell1,
+              alt: "Posing with shoe painting",
+            },
+            {
+              url: shell3,
+              alt: "Posing with shoe painting",
+            },
+          ],
+          productDetails: [
+            "Certificate of Authentication is included",
+            "Oil paint on Professional Cotton canvas",
+            "Size without frame: 300 x 300 mm",
+            "White wooden frame is included",
+            "A varnish layer is applied to protect the artwork",
+          ],
+        },
       ],
     },
     {
@@ -194,7 +228,7 @@ export default {
       id: 6,
       title: "Commissions",
       teaserText:
-        "Are you interested in a piece, but one of the available works does not really suit you? Then there is a possibility to get a private commission done. Together with Cynthia you discuss your wishes and the possibilities. On avarage a piece takes 6-8 weeks to finish. Please send an email to ask for the details.",
+        "Are you interested in a piece, but one of the available works does not really suit you? Then we can talk about a privite commission. Together with Cynthia you discuss your wishes and the possibilities. Based on the size, difficulty and level of detail the price will be determined of which you pay 30% at the start. The remaining part you pay once the artwork is finished but before shipment. Please keep in mind that on avarage a piece takes about 8 weeks to finish. Interested? Please contact me and I will come back to you as soon as possbile.",
       teaserImage: {
         url: indianRingFinished,
         alt: "Triangular art work in progress",

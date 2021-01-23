@@ -18,7 +18,7 @@ export default class Contact extends Component {
           intro={this.state.contact.teaserText}
         /> */}
 
-        <div className="o-grid__row  u-margin--b4  u-margin--b6@sm  u-margin--b7@lg">
+        <div className="o-grid__row  u-margin--b5  u-margin--b6@sm  u-margin--b7@lg">
           <div className="o-grid__col  o-grid__col--12@xs  u-flex  u-flex--column  u-flex--items--center">
             <h2 className="u-size--6  u-size--5@md  u-size--4@lg  u-weight--600  u-lh--2  u-margin--b4">
               {this.state.contact.title}
@@ -35,7 +35,7 @@ export default class Contact extends Component {
           </div>
         </div>
 
-        <div className="o-grid__row  u-margin--b4  u-margin--b6@sm  u-margin--b7@lg">
+        <div className="o-grid__row  u-margin--b5  u-margin--b6@sm  u-margin--b7@lg">
           <div className="o-grid__col  o-grid__col--12@xs  u-flex  u-flex--column  u-flex--items--center">
             <h3 className="u-size--7  u-size--6@md  u-size--5@lg  u-weight--600  u-lh--2  u-margin--b4">
               {this.state.commissions.title}
@@ -48,15 +48,6 @@ export default class Contact extends Component {
 
         <div className="o-grid__row">
           <div className="o-grid__col  o-grid__col--12@xs  u-flex  u-flex--column  u-flex--items--center">
-            {/* <p className="u-margin--b6  u-weight--200  u-size--9  u-size--8@md  u-text--center">
-              {this.state.contact.teaserText}
-              <a
-                className="u-black  u-no-decoration  u-weight--500"
-                href="mailto:hello@cynthiameiring.com"
-              >
-                hello@cynthiameiring.com
-              </a>
-            </p> */}
             <div>
               <span className="u-flex  u-flex--items--center  u-margin--b4">
                 <img

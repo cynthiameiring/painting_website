@@ -10,7 +10,7 @@ import Fade from "react-reveal/Fade";
 // import { Link } from "react-router-dom";
 
 class Header extends Component {
-  state = { loaded: false };
+  state = { loaded: true };
 
   componentDidMount() {}
 
@@ -22,14 +22,16 @@ class Header extends Component {
             <div className="o-grid__row">
               <div className="o-grid__col  o-grid__col--6@xs">
                 {this.state.loaded ? (
-                  <Fade left>
+                  <div>
+                    {/* <Fade left> */}
                     <h1 className="u-size--6  u-size--4@sm  u-size--3@md  u-size--2@lg  u-size--1@xl  u-weight--600  u-padding--l6@sm">
                       Contemporary <br /> realism
                     </h1>
                     <p className="u-hidden  u-block@lg  _font-size--header-home  u-weight--300  u-lh--5  u-padding--l6@sm  u-padding--t3">
                       by Cynthia Meiring
                     </p>
-                  </Fade>
+                    {/* </Fade> */}
+                  </div>
                 ) : null}
               </div>
             </div>
@@ -58,12 +60,12 @@ class Header extends Component {
             srcSet={headerImageSmall}
             alt="header"
             className="u-width--100  u-block  u-z--0"
-            onLoad={() => {
-              setTimeout(() => {
-                this.setState({ loaded: true });
-                this.props.headerImageLoaded(true);
-              }, 500);
-            }}
+            // onLoad={() => {
+            //   setTimeout(() => {
+            //     this.setState({ loaded: true });
+            //     this.props.headerImageLoaded(true);
+            //   }, 500);
+            // }}
           />
         </picture>
       </div>

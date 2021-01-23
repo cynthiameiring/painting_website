@@ -36,10 +36,24 @@ export default class InstaWidget extends Component {
               <iframe
                 title="my-insta"
                 onClick={(event) => event.preventDefault()}
-                src="//lightwidget.com/widgets/fed467d2e72050378620d5f8705d77e4.html"
+                src="//lightwidget.com/widgets/b45affad46bf5762b1ced40b7c14fb64.html"
                 scrolling="no"
                 allowtransparency="true"
-                className="lightwidget-widget"
+                className="lightwidget-widget  u-hidden  u-block@sm"
+                style={{
+                  width: "100%",
+                  border: "0",
+                  overflow: "hidden",
+                  marginBottom: "30px",
+                }}
+              ></iframe>
+              <iframe
+                title="my-insta"
+                onClick={(event) => event.preventDefault()}
+                src="//lightwidget.com/widgets/bf99e4c6af30586987c74686b5d3d4a3.html"
+                scrolling="no"
+                allowtransparency="true"
+                className="lightwidget-widget  u-hidden@sm"
                 style={{
                   width: "100%",
                   border: "0",

@@ -1,11 +1,6 @@
 ._width--art-detail {
-  //   @include media-from(xs) {
-  //     width: calc(50% - 16px);
-  //   }
   @include media-from(xs) {
     width: calc((100% - (3 * 4px)) / 4);
-  }
-  @include media-from(sm) {
-    width: calc((100% - (3 * 4px)) / 4);
+    height: calc((100% - (3 * 4px)) / 4);
   }
 }

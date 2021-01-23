@@ -1,20 +1,23 @@
 ._height--gallery {
-  // height: 25vh;
-
-  // @include media-from(sm) {
-  //   height: 30vh;
-  // }
+  height: 100%;
+  width: 50%;
 
   @include media-from(md) {
-    height: 22vh;
+    flex-grow: 1;
+    width: auto;
+    height: 222px;
   }
 
   @include media-from(lg) {
-    height: 30vh;
+    height: 300px;
   }
 
   @include media-from(xl) {
-    height: 36vh;
+    height: 344px;
+  }
+
+  @include media-from(xxl) {
+    height: 370px;
   }
 }
 
@@ -23,5 +26,13 @@
 
   @include media-from(md) {
     height: 70px;
+  }
+}
+
+.dummy {
+  margin-top: 100%;
+
+  @include media-from(md) {
+    margin-top: 0;
   }
 }

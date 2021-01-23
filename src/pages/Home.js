@@ -4,10 +4,8 @@ import Header from "../components/Header";
 import TextImage from "../components/TextImage";
 import { connect } from "react-redux";
 import Card from "../components/Card";
-// import processVideo from "../media/videos/Countdown.mp4";
-import processVideo from "../media/videos/Alarm_clock_snippet_cropped.mp4";
+import processVideo from "../media/Videos/Alarm_clock_snippet_cropped.mp4";
 import shoes from "../media/shoe.jpg";
-import video from "../media/video.jpg";
 import data from "../data.js";
 
 class Home extends Component {

@@ -32,7 +32,7 @@ export default class ArtDetailPage extends Component {
 
     return (
       <div className="o-grid  o-grid--fixed  u-width--100  u-padding--y6  u-padding--y7@sm  u-padding--y8@lg">
-        <div class="u-hidden@lg">
+        <div class="u-margin--b3  u-margin--b0@md">
           <ButtonText2 text="< Back" src="/artworks" />
         </div>
         <IntroContentPage title={this.state.artwork.title} intro="" />
@@ -62,10 +62,7 @@ export default class ArtDetailPage extends Component {
                   src={image.url}
                   alt={image.alt}
                   className={
-                    "u-margin--b2  u-bs--solid  u-bw--3  u-pointer  v-overlay--hover  _width--art-detail  _margin--art-detail  " +
-                    (this.state.activeImage.url === image.url
-                      ? "u-bc--red"
-                      : "u-bc--white")
+                    "u-margin--b2  u-bs--solid  u-bw--3  u-bc--white  u-pointer  v-overlay--hover  _width--art-detail  _margin--art-detail"
                   }
                   onClick={() => this.imageClick(image)}
                 />

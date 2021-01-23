@@ -2,20 +2,23 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 // import IntroContentPage from "../components/IntroContentPage";
 import clock2 from "../media/clock-detail2.jpg";
-import alufoil from "../media/alufoil-gold-detail1.jpg";
+import clock2Cropped from "../media/clock-detail2-cropped.jpg";
+
 import shoeFinished from "../media/shoe.jpg";
 import guitarFinished from "../media/Guitar-finished-resized.jpeg";
 import guitar4 from "../media/guitar-detail4.jpg";
 import guitar3 from "../media/guitar-detail3.jpeg";
-import shellFinished from "../media/shell-finished.jpg";
-import shell1 from "../media/shell-detail1.jpg";
-import shell2 from "../media/shell-detail2.jpg";
-import indianRing1 from "../media/indian_ring/indianring_finished.jpg";
-import indianRing2 from "../media/indian_ring/indianring_detail6.jpg";
-import greenPlantFinished from "../media/green_plant/green_plant_finished.jpeg";
-import greenPlant1 from "../media/green_plant/green_plant_detail1.jpg";
+import shellFinished from "../media/Shell/shell-finished.jpg";
+import shell1 from "../media/Shell/shell-detail1.jpg";
+import shell1Cropped from "../media/Shell/shell-detail1-cropped.jpg";
+import shell2 from "../media/Shell/shell-detail2.jpg";
+import indianRing1 from "../media/Indian_ring/indianring_finished.jpg";
+import indianRing2 from "../media/Indian_ring/indianring_detail6.jpg";
+import greenPlantFinished from "../media/Green_plant/green_plant_finished.jpeg";
+import greenPlant1 from "../media/Green_plant/green_plant_detail1.jpg";
 import yellowrose1 from "../media/yellowrose1.jpeg";
 import yellowrose2 from "../media/yellowrose2.jpeg";
+import yellowrose2Cropped from "../media/yellowrose2-cropped.jpeg";
 import indianShoe1 from "../media/indianShoe1.jpg";
 import manShoe1 from "../media/man_shoe1.jpeg";
 import pinkRibbon from "../media/pink_ribbon_finished.jpeg";
@@ -27,39 +30,50 @@ import { Link } from "react-router-dom";
 class Gallery extends Component {
   state = {
     gallery: data.pages.find((p) => p.title === "Gallery"),
-    images: [
+    imagesForDesktop: [
       shoeFinished,
       shellFinished,
       guitarFinished,
       clock2,
-
       greenPlant1,
       guitar3,
-
       indianRing1,
-
       triangular1,
-
       guitar4,
       yellowrose2,
-
       greenPlantFinished,
       shell2,
-
       pinkRibbon,
-
       shell1,
       manShoe1,
       indianShoe1,
-
       indianRing2,
-
+      yellowrose1,
+    ],
+    imagesForMobile: [
+      shoeFinished,
+      shellFinished,
+      guitarFinished,
+      clock2Cropped,
+      greenPlant1,
+      guitar3,
+      indianRing1,
+      triangular1,
+      guitar4,
+      yellowrose2Cropped,
+      greenPlantFinished,
+      shell2,
+      pinkRibbon,
+      shell1Cropped,
+      manShoe1,
+      indianShoe1,
+      indianRing2,
       yellowrose1,
     ],
   };
   render() {
     return (
-      <div className="o-grid  o-grid--fixed  u-width--100  u-padding--y6  u-padding--y7@sm  u-padding--y8@lg">
+      <div className="o-grid  o-grid--fixed  u-padding--y6  u-padding--y7@sm  u-padding--y8@lg">
         {/* <IntroContentPage
           title={this.state.gallery.title}
           intro={this.state.gallery.teaserText}
@@ -82,20 +96,25 @@ class Gallery extends Component {
         </div>
         <div className="o-grid__row  u-padding--b2">
           <div className="o-grid__col  o-grid__col--12@xs">
-            <div className="u-flex  u-flex--wrap">
-              {this.state.images.map((image, index) => (
+            <div className="u-flex@md  u-flex--wrap  u-width--100  u-hidden">
+              {this.state.imagesForDesktop.map((image, index) => (
                 <img
                   src={image}
                   alt="Posing with shoe painting"
                   key={index}
-                  className={
-                    "u-padding--1  u-fit--cover  _height--gallery  " +
-                    (this.props.breakpoint === "sm" ||
-                    this.props.breakpoint === "xs"
-                      ? "u-width--50"
-                      : "")
-                  }
-                  style={{ maxWidth: "100%", flexGrow: "1" }}
+                  className={"u-padding--1  u-fit--cover  _height--gallery  "}
+                  style={{}}
+                />
+              ))}
+            </div>
+            <div className="u-flex  u-flex--wrap  u-width--100  u-hidden@md">
+              {this.state.imagesForMobile.map((image, index) => (
+                <img
+                  src={image}
+                  alt="Posing with shoe painting"
+                  key={index}
+                  className={"u-padding--1  u-fit--cover  _height--gallery  "}
+                  style={{}}
                 />
               ))}
             </div>

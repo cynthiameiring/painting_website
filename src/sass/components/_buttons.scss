@@ -27,7 +27,7 @@
   width: 80px;
   text-decoration: none;
   color: #4a4a4a;
-  font-size: 0.8em;
+  font-size: 14px;
   letter-spacing: 1.5px;
   align-items: center;
   justify-content: center;
@@ -41,6 +41,11 @@
 
   @include hover {
     border-color: #e1e1e1;
+  }
+
+  @include media-from(md) {
+    height: 40px;
+    width: 100px;
   }
 }
 
