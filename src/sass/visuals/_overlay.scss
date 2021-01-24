@@ -8,7 +8,9 @@
 
 .v-overlay--hover {
   @include hover {
-    opacity: 0.65;
-    mix-blend-mode: initial;
+    @include media-from(xl) {
+      opacity: 0.65;
+      mix-blend-mode: initial;
+    }
   }
 }

@@ -68,7 +68,7 @@ class Navigation extends Component {
               />
               <span
                 className="u-size--8  u-size--7@md  u-flex--inline  u-flex--items--center  u-weight--400  u-black"
-                style={{ letterSpacing: "5px" }}
+                style={{ letterSpacing: "4px" }}
               >
                 CYNTHIA <br />
                 MEIRING

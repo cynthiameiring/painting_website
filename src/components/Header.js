@@ -24,10 +24,16 @@ class Header extends Component {
                 {this.state.loaded ? (
                   <div>
                     {/* <Fade left> */}
-                    <h1 className="u-size--6  u-size--4@sm  u-size--3@md  u-size--2@lg  u-size--1@xl  u-weight--600  u-padding--l6@sm">
-                      Contemporary <br /> realism
+                    <h1
+                      style={{ letterSpacing: "4px", color: "#212121" }}
+                      className="u-size--6  u-size--4@sm  u-size--3@md  u-size--2@lg  u-size--1@xl  u-weight--600  u-padding--l6@sm"
+                    >
+                      Photorealistic <br /> artworks
                     </h1>
-                    <p className="u-hidden  u-block@lg  _font-size--header-home  u-weight--300  u-lh--5  u-padding--l6@sm  u-padding--t3">
+                    <p
+                      style={{ fontFamily: "'Nothing You Could Do', cursive" }}
+                      className="u-hidden  u-block@lg  _font-size--header-home  u-weight--300  u-lh--5  u-padding--l6@sm  u-padding--t3"
+                    >
                       by Cynthia Meiring
                     </p>
                     {/* </Fade> */}

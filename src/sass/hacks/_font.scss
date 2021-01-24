@@ -1,12 +1,8 @@
 ._font-size--header-home {
-  font-size: 12px;
-  @include media-from(sm) {
-    font-size: 14px;
-  }
   @include media-from(md) {
-    font-size: 16px;
-  }
-  @include media-from(lg) {
     font-size: 18px;
+  }
+  @include media-from(xl) {
+    font-size: 20px;
   }
 }

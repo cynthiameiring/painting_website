@@ -50,7 +50,7 @@ export default class ArtDetailPage extends Component {
                 className={
                   "u-margin--b2  u-bs--solid  u-bw--3  u-pointer  v-overlay--hover  _width--art-detail  " +
                   (this.state.activeImage.url === artwork.teaserImage.url
-                    ? "u-bc--red"
+                    ? "u-bc--black"
                     : "u-bc--white")
                 }
                 onClick={() => this.imageClick(artwork.teaserImage)}
@@ -62,7 +62,10 @@ export default class ArtDetailPage extends Component {
                   src={image.url}
                   alt={image.alt}
                   className={
-                    "u-margin--b2  u-bs--solid  u-bw--3  u-bc--white  u-pointer  v-overlay--hover  _width--art-detail  _margin--art-detail"
+                    "u-margin--b2  u-bs--solid  u-bw--3  u-pointer  v-overlay--hover  _width--art-detail  _margin--art-detail  " +
+                    (this.state.activeImage.url === image.url
+                      ? "u-bc--black"
+                      : "u-bc--white")
                   }
                   onClick={() => this.imageClick(image)}
                 />
