@@ -26,7 +26,7 @@ class Header extends Component {
                     {/* <Fade left> */}
                     <h1
                       style={{ color: "#212121" }}
-                      className="u-size--5  u-size--4@sm  u-size--3@md  u-size--2@lg  u-size--1@xl  u-weight--600  u-padding--l6@sm  _letter-spacing--title"
+                      className="u-size--6  u-size--4@sm  u-size--3@md  u-size--2@lg  u-size--1@xl  u-weight--600  u-padding--l6@sm  _letter-spacing--title"
                     >
                       Photorealistic <br /> artworks
                     </h1>
