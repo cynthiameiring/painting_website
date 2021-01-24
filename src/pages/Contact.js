@@ -10,6 +10,11 @@ export default class Contact extends Component {
     contact: data.pages.find((p) => p.title === "Contact"),
     commissions: data.pages.find((p) => p.title === "Commissions"),
   };
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div className="o-grid  o-grid--fixed  u-width--100  u-padding--y6  u-padding--y7@sm  u-padding--y8@lg">

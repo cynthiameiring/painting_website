@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ButtonText2 from "../components/ButtonText2";
-import IntroContentPage from "../components/IntroContentPage";
+// import IntroContentPage from "../components/IntroContentPage";
 import data from "../data.js";
 
 export default class ArtDetailPage extends Component {
@@ -11,6 +11,8 @@ export default class ArtDetailPage extends Component {
   };
 
   componentDidMount() {
+    window.scrollTo(0, 0);
+
     const artwork = data.pages
       .find((p) => p.title === "Selected artworks")
       .artworks.find((art) => art.id === parseInt(this.props.match.params.id));
@@ -32,7 +34,7 @@ export default class ArtDetailPage extends Component {
 
     return (
       <div className="o-grid  o-grid--fixed  u-width--100  u-padding--y6  u-padding--y7@sm  u-padding--y8@lg">
-        <div class="u-margin--b5  u-margin--b3@sm  u-margin--b0@md">
+        <div className="u-margin--b5  u-margin--b3@sm  u-margin--b0@md">
           <ButtonText2 text="< Back" src="/artworks" />
         </div>
         <div className="o-grid__row  u-margin--b5  u-margin--b6@sm  u-margin--b7@lg">

@@ -17,7 +17,9 @@ class Home extends Component {
     gallery: data.pages.find((p) => p.title === "Gallery"),
     commissions: data.pages.find((p) => p.title === "Commissions"),
   };
-  componentDidMount() {}
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="">

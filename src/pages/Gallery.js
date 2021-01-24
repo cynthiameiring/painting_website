@@ -69,6 +69,11 @@ class Gallery extends Component {
       yellowrose1,
     ],
   };
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div className="o-grid  o-grid--fixed  u-padding--y6  u-padding--y7@sm  u-padding--y8@lg">

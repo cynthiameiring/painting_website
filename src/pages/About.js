@@ -6,6 +6,11 @@ export default class About extends Component {
   state = {
     about: data.pages.find((p) => p.title === "About"),
   };
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div className="o-grid  o-grid--fixed  u-width--100  u-padding--y6  u-padding--y7@sm  u-padding--y8@lg">
