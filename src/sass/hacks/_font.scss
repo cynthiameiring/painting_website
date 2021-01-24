@@ -6,3 +6,10 @@
     font-size: 20px;
   }
 }
+
+._letter-spacing--title {
+  letter-spacing: 2px;
+  @include media-from(sm) {
+    letter-spacing: 4px;
+  }
+}

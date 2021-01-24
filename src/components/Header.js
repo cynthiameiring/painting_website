@@ -17,7 +17,7 @@ class Header extends Component {
   render() {
     return (
       <div className="u-relative  u-padding--b5@md">
-        <div className="u-hidden  u-block@sm  u-absolute  _top--15  u-width--100  u-z--1  u-padding--l3  u-padding--l0@lg">
+        <div className="u-absolute  _top--15  u-width--100  u-z--1  u-padding--l3  u-padding--l0@lg">
           <div className="o-grid  o-grid--fixed  u-width--100">
             <div className="o-grid__row">
               <div className="o-grid__col  o-grid__col--6@xs">
@@ -25,8 +25,8 @@ class Header extends Component {
                   <div>
                     {/* <Fade left> */}
                     <h1
-                      style={{ letterSpacing: "4px", color: "#212121" }}
-                      className="u-size--6  u-size--4@sm  u-size--3@md  u-size--2@lg  u-size--1@xl  u-weight--600  u-padding--l6@sm"
+                      style={{ color: "#212121" }}
+                      className="u-size--5  u-size--4@sm  u-size--3@md  u-size--2@lg  u-size--1@xl  u-weight--600  u-padding--l6@sm  _letter-spacing--title"
                     >
                       Photorealistic <br /> artworks
                     </h1>

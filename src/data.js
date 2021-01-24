@@ -32,7 +32,7 @@ export default {
         "The journey in the world of art started in 2018. In a small studio and with a painting starter kit, the first brush strokes became a fact. With a great passion for photorealism and being inspired by other contemporary artists, Cynthia started creating works in acrylic and oil paint. It was only in 2020 when a complete switch to colour pencils was made. Things got more serious and more time was invested to create the photorealistic pieces. Based in the Netherlands, she loves to work on projects where every detail matters. To make a drawing as realistic as possible is always the main goal. Spending hours and hours and putting layer on layer to get the vibrance, values and details just right.",
       teaserImage: {
         url: posingWithShoe,
-        alt: "Posing with shoe painting",
+        alt: "Posing with Indian Shoe painting",
       },
     },
     {
@@ -42,7 +42,7 @@ export default {
         "Do you have questions or are you interested in purchasing one of the available arworks? Get in touch with me to get the pricelist, shipping information and other information. Also the possibility of framing the piece can be discussed. Please contact me by sending an email to: ",
       teaserImage: {
         url: greenPlantFinished,
-        alt: "Posing with shoe painting",
+        alt: "Finished plant drawing",
       },
     },
     {
@@ -52,7 +52,7 @@ export default {
         "A selection of artworks I worked on recently. Some small pieces, some big pieces, some are available and some are not. They are all made with colour pencils on thick acid-free paper and each one took between 50 and 100 hours to make. Please check them out below and if you are interested in purchasing one, feel free to contact me by sending an email to: hello@cynthiameiring.com.",
       teaserImage: {
         url: guitarFinished,
-        alt: "Posing with shoe painting",
+        alt: "Finished drawing of Fado guitar",
       },
       artworks: [
         {
@@ -61,28 +61,28 @@ export default {
           status: "Sold",
           teaserImage: {
             url: guitarFinished,
-            alt: "Posing with shoe painting",
+            alt: "Finished drawing of Fado guitar",
           },
           productImages: [
             {
               url: guitar3,
-              alt: "Posing with shoe painting",
+              alt: "Detail picture 1 of Fado guitar",
             },
             {
               url: guitar4,
-              alt: "Posing with shoe painting",
+              alt: "Detail picture 2 of Fado guitar",
             },
             {
               url: guitar1,
-              alt: "Posing with shoe painting",
+              alt: "Detail picture 3 of Fado guitar",
             },
             {
               url: guitar2,
-              alt: "Posing with shoe painting",
+              alt: "Detail picture 5 of Fado guitar",
             },
             {
               url: guitar5,
-              alt: "Posing with shoe painting",
+              alt: "Detail picture 6 of Fado guitar",
             },
           ],
           productDetails: [
@@ -100,7 +100,7 @@ export default {
           status: "Available",
           teaserImage: {
             url: indianRingFinished,
-            alt: "Indian ring main picture",
+            alt: "Indian ring drawing finished",
           },
           productImages: [
             {
@@ -113,23 +113,23 @@ export default {
             },
             {
               url: indianRing3,
-              alt: "Indian ring detail picture1",
+              alt: "Indian ring detail picture3",
             },
             {
               url: indianRing4,
-              alt: "Indian ring detail picture2",
+              alt: "Indian ring detail picture4",
             },
             {
               url: indianRing5,
-              alt: "Indian ring detail picture1",
+              alt: "Indian ring detail picture5",
             },
             {
               url: indianRing6,
-              alt: "Indian ring detail picture2",
+              alt: "Indian ring detail picture6",
             },
             {
               url: indianRing7,
-              alt: "Indian ring detail picture1",
+              alt: "Indian ring detail picture7",
             },
           ],
           productDetails: [
@@ -147,20 +147,20 @@ export default {
           status: "Available",
           teaserImage: {
             url: greenPlantFinished,
-            alt: "Posing with shoe painting",
+            alt: "Finished plant drawing",
           },
           productImages: [
             {
               url: greenPlant1,
-              alt: "Posing with shoe painting",
+              alt: "Plant detail picture1",
             },
             {
               url: greenPlant2,
-              alt: "Posing with shoe painting",
+              alt: "Plant detail picture2",
             },
             {
               url: greenPlant3,
-              alt: "Posing with shoe painting",
+              alt: "Plant detail picture3",
             },
           ],
           productDetails: [
@@ -178,20 +178,20 @@ export default {
           status: "Available",
           teaserImage: {
             url: shellFinished,
-            alt: "Posing with shoe painting",
+            alt: "Shell painting finished",
           },
           productImages: [
             {
               url: shell2,
-              alt: "Posing with shoe painting",
+              alt: "Shell detail picture1",
             },
             {
               url: shell1,
-              alt: "Posing with shoe painting",
+              alt: "Shell detail picture2",
             },
             {
               url: shell3,
-              alt: "Posing with shoe painting",
+              alt: "Shell detail picture3",
             },
           ],
           productDetails: [
@@ -211,8 +211,8 @@ export default {
       teaserText:
         "Creating a photorealistic drawing doesn't only involve a lot of patience and hours and hours of drawing. It's a whole process to come from a blank piece of paper to a realistic drawing which almost comes to life: from finding an interesting object to draw, creating a usefull reference picture to drawing the outlines, colouring and framing the final drawing.",
       teaserImage: {
-        url: "../media/Guitar-finished.jpeg",
-        alt: "Posing with shoe painting",
+        url: "",
+        alt: "",
       },
     },
     {
@@ -222,7 +222,7 @@ export default {
         "Finished, unfinished and work in progress... This photo gallery gives a glimp of the projects I enjoyed working on the most. It shows a bit of the progress and how every object arises from the paper. Step by step as it is a slow process, but.. a very enjoyable one! Every detail matters, every scribble with the pencil is important to make the final drawing as photorealistic as possible. If you would like to see more about the process, click ",
       teaserImage: {
         url: triangular1,
-        alt: "Posing with shoe painting",
+        alt: "Triangular art work in progress",
       },
     },
     {
@@ -232,7 +232,7 @@ export default {
         "Are you interested in a piece, but one of the available works does not really suit you? Then we can talk about a private commission. Together with Cynthia you discuss your wishes and the possibilities. Based on the size, difficulty and level of detail the price will be determined of which you pay 30% at the start. The remaining part you pay once the artwork is finished but before shipment. Please keep in mind that on avarage a piece takes about 8 weeks to finish. Interested? Please contact me and I will come back to you as soon as possbile.",
       teaserImage: {
         url: indianRingFinished,
-        alt: "Triangular art work in progress",
+        alt: "Indian ring drawing finished",
       },
     },
   ],
