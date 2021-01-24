@@ -32,10 +32,16 @@ export default class ArtDetailPage extends Component {
 
     return (
       <div className="o-grid  o-grid--fixed  u-width--100  u-padding--y6  u-padding--y7@sm  u-padding--y8@lg">
-        <div class="u-margin--b3  u-margin--b0@md">
+        <div class="u-margin--b5  u-margin--b3@sm  u-margin--b0@md">
           <ButtonText2 text="< Back" src="/artworks" />
         </div>
-        <IntroContentPage title={this.state.artwork.title} intro="" />
+        <div className="o-grid__row  u-margin--b5  u-margin--b6@sm  u-margin--b7@lg">
+          <div className="o-grid__col  o-grid__col--12@xs  u-flex  u-flex--column  u-flex--items--center">
+            <h2 className="u-size--6  u-size--5@md  u-size--4@lg  u-weight--600  u-lh--2">
+              {this.state.artwork.title}
+            </h2>
+          </div>
+        </div>
         <div className="o-grid__row">
           <div className="o-grid__col  o-grid__col--12@xs  o-grid__col--6@sm  u-margin--b4  u-margin--b0@md">
             <img
