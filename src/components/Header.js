@@ -5,7 +5,7 @@ import headerImageSmall from "../media/HeaderImageSmall.jpg";
 import headerImageMobile from "../media/HeaderImageMobile.jpg";
 import { headerImageLoaded } from "../actions/menu";
 import { connect } from "react-redux";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 // import logo from "../media/LogoBlack.png";
 // import { Link } from "react-router-dom";
 

@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 // import IntroContentPage from "../components/IntroContentPage";
 import clock2 from "../media/clock-detail2.jpg";
 import clock2Cropped from "../media/clock-detail2-cropped.jpg";
-
 import shoeFinished from "../media/shoe.jpg";
 import guitarFinished from "../media/Guitar-finished-resized.jpeg";
 import guitar4 from "../media/guitar-detail4.jpg";
@@ -23,7 +22,6 @@ import indianShoe1 from "../media/indianShoe1.jpg";
 import manShoe1 from "../media/man_shoe1.jpeg";
 import pinkRibbon from "../media/pink_ribbon_finished.jpeg";
 import triangular1 from "../media/Triangular/Triangular1_wip1.jpeg";
-
 import data from "../data.js";
 import { Link } from "react-router-dom";
 

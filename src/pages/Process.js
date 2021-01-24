@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import IntroContentPage from "../components/IntroContentPage";
-
 import data from "../data.js";
 
 export default class Process extends Component {

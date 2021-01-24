@@ -4,7 +4,6 @@ import logo from "../media/LogoBlack.png";
 import HamburgerMenu from "react-hamburger-menu";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-
 import { toggleMenu } from "../actions/menu";
 
 class Navigation extends Component {
