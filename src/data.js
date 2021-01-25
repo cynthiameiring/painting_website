@@ -39,7 +39,7 @@ export default {
       id: 2,
       title: "Contact",
       teaserText:
-        "Do you have questions or are you interested in purchasing one of the available arworks? Get in touch with me to get the pricelist, shipping information and other information. Also the possibility of framing the piece can be discussed. Please contact me by sending an email to: ",
+        "Do you have questions or are you interested in purchasing one of the available artworks? Get in touch with me to get the pricelist, shipping information and other information. Also the possibility of framing the piece can be discussed. Please contact me by sending an email to: ",
       teaserImage: {
         url: greenPlantFinished,
         alt: "Finished plant drawing",
@@ -209,7 +209,7 @@ export default {
       id: 4,
       title: "Process",
       teaserText:
-        "Creating a photorealistic drawing doesn't only involve a lot of patience and hours and hours of drawing. It's a whole process to come from a blank piece of paper to a realistic drawing which almost comes to life: from finding an interesting object to draw, creating a usefull reference picture to drawing the outlines, colouring and framing the final drawing.",
+        "Creating a photorealistic drawing doesn't only involve a lot of patience and hours and hours of drawing. It's a whole process to come from a blank piece of paper to a realistic drawing: from finding an interesting object, creating a usefull reference picture to drawing the outlines, colouring and framing the final drawing.",
       teaserImage: {
         url: "",
         alt: "",
@@ -219,7 +219,7 @@ export default {
       id: 5,
       title: "Gallery",
       teaserText:
-        "Finished, unfinished and work in progress... This photo gallery gives a glimp of the projects I enjoyed working on the most. It shows a bit of the progress and how every object arises from the paper. Step by step as it is a slow process, but.. a very enjoyable one! Every detail matters, every scribble with the pencil is important to make the final drawing as photorealistic as possible. If you would like to see more about the process, click ",
+        "Finished, unfinished and work in progress... This photo gallery gives a glimp of the projects I enjoyed working on the most. It shows a bit of the progress and how every object arises from the paper. Step by step as it is a slow process, but.. a very enjoyable one! Every detail matters, every scribble with the pencil is important to make the final drawing as photorealistic as possible. If you would like to see more of the process, click ",
       teaserImage: {
         url: triangular1,
         alt: "Triangular art work in progress",
@@ -229,7 +229,7 @@ export default {
       id: 6,
       title: "Commissions",
       teaserText:
-        "Are you interested in a piece, but one of the available works does not really suit you? Then we can talk about a private commission. Together with Cynthia you discuss your wishes and the possibilities. Based on the size, difficulty and level of detail the price will be determined of which you pay 30% at the start. The remaining part you pay once the artwork is finished but before shipment. Please keep in mind that on avarage a piece takes about 8 weeks to finish. Interested? Please contact me and I will come back to you as soon as possbile.",
+        "Are you interested in a piece, but one of the available works does not really suit you? Then we can talk about a private commission. Together we discuss your wishes and the possibilities. Based on the size, difficulty and level of detail the price will be determined of which you pay 30% at the start. The remaining part you pay once the artwork is finished (before shipment). Please keep in mind that on average a piece takes about 8 weeks to finish. Interested? Please contact me and I will come back to you as soon as possbile.",
       teaserImage: {
         url: indianRingFinished,
         alt: "Indian ring drawing finished",
