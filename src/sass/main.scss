@@ -145,3 +145,28 @@
 // Development tools
 //
 // @import "../../node_modules/zss/src/dev/strict";
+
+p {
+  font-weight: 200;
+  font-size: 14px;
+  margin-bottom: 8px;
+
+  @include media-from(md) {
+    font-size: 16px;
+  }
+}
+
+ul {
+  font-weight: 200;
+  margin-bottom: 24px;
+  margin-left: 24px;
+}
+
+li {
+  line-height: 2;
+  font-size: 14px;
+
+  @include media-from(md) {
+    font-size: 16px;
+  }
+}

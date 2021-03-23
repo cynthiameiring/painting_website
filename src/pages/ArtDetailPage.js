@@ -39,9 +39,7 @@ export default class ArtDetailPage extends Component {
         </div>
         <div className="o-grid__row  u-margin--b5  u-margin--b6@sm  u-margin--b7@lg">
           <div className="o-grid__col  o-grid__col--12@xs  u-flex  u-flex--column  u-flex--items--center">
-            <h2 className="u-size--6  u-size--5@md  u-size--4@lg  u-weight--600  u-lh--2">
-              {this.state.artwork.title}
-            </h2>
+            <h2 className="h2-font">{this.state.artwork.title}</h2>
           </div>
         </div>
         <div className="o-grid__row">

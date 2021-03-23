@@ -49,7 +49,7 @@ class Home extends Component {
           <div className="u-padding--y5  u-padding--y7@sm">
             <div className="o-grid  o-grid--fixed  u-width--100  u-z--1">
               <div className="o-grid__row  u-flex  u-flex  u-flex--column  u-flex--items--center">
-                <h2 className="u-margin--b6  u-size--6  u-size--5@md  u-size--4@lg  u-weight--600  u-lh--2  v-rectangle--middle">
+                <h2 className="u-margin--b6  h2-font  v-rectangle--middle">
                   Get in touch and more!
                 </h2>
               </div>

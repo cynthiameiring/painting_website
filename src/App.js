@@ -10,8 +10,10 @@ import Navigation from "./components/Navigation";
 import RecentWorks from "./pages/RecentWorks";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import Privacy from "./pages/Privacy";
 import Process from "./pages/Process";
 import ArtDetailPage from "./pages/ArtDetailPage";
+import { Link } from "react-router-dom";
 
 function App(props) {
   window.addEventListener("resize", function () {
@@ -38,13 +40,23 @@ function App(props) {
       <Route exact path="/gallery" component={Gallery} />
       <Route exact path="/process" component={Process} />
       <Route path="/artworks/:id" component={ArtDetailPage} />
+      <Route exact path="/privacy-policy" component={Privacy} />
 
       {/* <ComingSoon /> */}
 
       <div className="u-width--100  u-absolute  u-bottom--0  u-text--center  u-padding--b6  u-padding--b7@sm  u-padding--b8@lg">
-        <p style={{ color: "#777", fontSize: "14px" }}>
-          &copy; 2020, Cynthia Meiring
-        </p>
+        <div className="u-flex  u-flex--justify--center">
+          <p style={{ color: "#777", fontSize: "14px" }}>
+            &copy; 2020, Cynthia Meiring &nbsp; - &nbsp;
+          </p>
+          <Link
+            style={{ color: "#777", fontSize: "14px" }}
+            className="u-no-decoration"
+            to="/privacy-policy"
+          >
+            <span className="">Privacy policy</span>
+          </Link>
+        </div>
       </div>
     </div>
   );
