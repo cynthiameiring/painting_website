@@ -1,12 +1,3 @@
-._font-size--header-home {
-  @include media-from(md) {
-    font-size: 18px;
-  }
-  @include media-from(xl) {
-    font-size: 20px;
-  }
-}
-
 ._letter-spacing--title {
   letter-spacing: 2px;
   @include media-from(sm) {

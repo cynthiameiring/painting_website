@@ -32,7 +32,7 @@ class Header extends Component {
                     </h1>
                     <p
                       style={{ fontFamily: "'Nothing You Could Do', cursive" }}
-                      className="u-hidden  u-block@lg  _font-size--header-home  u-weight--300  u-lh--5  u-padding--l6@sm  u-padding--t3"
+                      className="u-hidden  u-block@lg  u-size--6  u-size--5@xl  u-weight--300  u-lh--5  u-padding--l6@sm  u-padding--t3"
                     >
                       by Cynthia Meiring
                     </p>

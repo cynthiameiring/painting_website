@@ -85,8 +85,8 @@ export default class Privacy extends Component {
               Additionally when you make a purchase or attempt to make a
               purchase, we collect certain information from you, including your
               name, email address, billing address, shipping address, payment
-              information, email address, and phone number. We refer to this
-              information as “Order Information”.
+              information and phone number. We refer to this information as
+              “Order Information”.
             </p>
             <h3 id="how_will_we_use_your_data" className="h3-font">
               How will we use your data?
@@ -103,9 +103,8 @@ export default class Privacy extends Component {
             <ul>
               <li>Communicate with you; and</li>
               <li>
-                When in line with the preferences you have shared with us,
-                provide you with information or advertising relating to our
-                products or services.
+                When in line with the preferences, provide you with information
+                or advertising relating to our products or services.
               </li>
             </ul>
             <p>
@@ -118,9 +117,8 @@ export default class Privacy extends Component {
             <ul>
               <li>Communicate with you; and</li>
               <li>
-                When in line with the preferences you have shared with us,
-                provide you with information or advertising relating to our
-                products or services.
+                When in line with the preferences, provide you with information
+                or advertising relating to our products or services.
               </li>
             </ul>
             <h3 id="how_do_we_store_your_data" className="h3-font">
@@ -144,7 +142,8 @@ export default class Privacy extends Component {
                 traffic)
               </li>
               <li>Mailchimp (email marketing)</li>
-              <li>TransIp (website hosting)</li>
+              <li>TransIp (email hosting)</li>
+              <li>Netlify (website hosting)</li>
             </ul>
             <h3 id="marketing" className="h3-font">
               Marketing
@@ -159,13 +158,13 @@ export default class Privacy extends Component {
               What are your data protection rights?
             </h3>
             <p>
-              Our Company would like to make sure you are fully aware of all of
+              Our company would like to make sure you are fully aware of all of
               your data protection rights. Every user is entitled to the
               following:
             </p>
             <p>
               <strong>The right to access</strong> - You have the right to
-              request Our Company for copies of your personal data.
+              request our company for copies of your personal data.
             </p>
             <p>
               <strong>The right to rectification</strong> - You have the right
@@ -175,26 +174,31 @@ export default class Privacy extends Component {
             </p>
             <p>
               <strong>The right to erasure</strong> - You have the right to
-              request that Our Company erase your personal data.
+              request that our company erase your personal data.
             </p>
             <p>
               <strong>The right to restrict processing</strong> - You have the
-              right to request that Our Company restrict the processing of your
+              right to request that our company restrict the processing of your
               personal data.
             </p>
             <p>
               <strong>The right to object to processing</strong> - You have the
-              right to object to Our Company’s processing of your personal data,
-              under certain conditions
+              right to object to our company’s processing of your personal data.
             </p>
             <p>
               <strong>The right to data portability</strong> - You have the
-              right to request that Our Company transfer the data that we have
+              right to request that our company transfers the data that we have
               collected to another organization, or directly to you.
             </p>
             <p className="u-margin--b5">
               If you would like to exercise any of these rights, please contact
-              us at our email: hello@cynthiameiring.com
+              us at our email:{" "}
+              <a
+                href="mailto:hello@cynthiameiring.com"
+                className="u-black  u-no-decoration  u-weight--500"
+              >
+                hello@cynthiameiring.com
+              </a>
             </p>
 
             <h3 id="cookies" className="h3-font">
@@ -207,16 +211,16 @@ export default class Privacy extends Component {
               Privacy policies of other websites
             </h3>
             <p className="u-margin--b5">
-              The Our Company website contains links to other websites. Our
-              privacy policy applies only to our website, so if you click on a
-              link to another website, their privacy policy applies, so we
+              Our compony's website contains links to other websites. Our
+              privacy policy applies only to our own website, so if you click on
+              a link to another website, their privacy policy applies, so we
               advice you to read their privacy policy.
             </p>
             <h3 id="changes_privacy_policy" className="h3-font">
               Changes to our privacy policy
             </h3>
             <p className="u-margin--b5">
-              Our Company keeps its privacy policy under regular review and
+              Our company keeps its privacy policy under regular review and
               places any updates on this web page. This privacy policy was last
               updated on 21 March 2021.
             </p>
@@ -227,7 +231,13 @@ export default class Privacy extends Component {
               If you have any questions about our privacy policy, the data we
               hold on you, or you would like to exercise one of your data
               protection rights, please do not hesitate to contact us. <br />
-              Email us at: hello@cynthiameiring.com
+              Email us at:{" "}
+              <a
+                href="mailto:hello@cynthiameiring.com"
+                className="u-black  u-no-decoration  u-weight--500"
+              >
+                hello@cynthiameiring.com
+              </a>
             </p>
           </div>
         </div>
