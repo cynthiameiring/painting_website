@@ -138,7 +138,7 @@ export default class Privacy extends Component {
             <ul>
               <li>Github (code hosting platform for version control)</li>
               <li>
-                Google Analytics with Google Tag Manager (analyze website
+                Google Analytics with Google Tag Manager (analysing website
                 traffic)
               </li>
               <li>Mailchimp (email marketing)</li>
