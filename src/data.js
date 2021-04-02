@@ -39,7 +39,7 @@ export default {
       id: 2,
       title: "Contact",
       teaserText:
-        "Do you have questions or are you interested in purchasing one of the available artworks? Get in touch with me to get the pricelist, shipping information and other information. Also the possibility of framing the piece can be discussed. Please contact me by sending an email to: ",
+        "Do you have questions or are you interested in purchasing one of the available artworks? Get in touch with me to get the pricelist, shipping information and other information. Also the possibility of framing the piece can be discussed. Please contact me by filling out the form below or by sending an email to: ",
       teaserImage: {
         url: greenPlantFinished,
         alt: "Finished plant drawing",

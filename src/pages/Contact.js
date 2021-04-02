@@ -42,8 +42,8 @@ export default class Contact extends Component {
           </div>
         </div>
 
-        <div className="o-grid__row  u-margin--b5  u-margin--b6@sm  u-margin--b7@lg">
-          <div className="o-grid__col  o-grid__col--12@xs  o-grid__col--10@sm  o-grid--offset--1@sm  o-grid__col--8@md  o-grid--offset--2@md  o-grid__col--6@lg  o-grid--offset--3@lg  o-grid__col--4@xl  o-grid--offset--4@xl  u-flex  u-flex--column  u-flex--items--center">
+        <div className="o-grid__row  u-margin--b7  u-margin--b8@sm  u-margin--b9@lg">
+          <div className="o-grid__col  o-grid__col--12@xs  o-grid__col--10@md  o-grid--offset--1@md  o-grid__col--8@lg  o-grid--offset--2@lg  o-grid__col--6@xl  o-grid--offset--3@xl  u-flex  u-flex--column  u-flex--items--center">
             <ContactForm />
             {/* <SignupForm /> */}
           </div>

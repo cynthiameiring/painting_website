@@ -1,0 +1,8 @@
+.c-internal-link {
+  text-decoration: none;
+  color: get-color(blue--hiipie-blue);
+  font-weight: 700;
+  @include hover {
+    text-decoration: underline;
+  }
+}
