@@ -229,7 +229,7 @@ export default {
       id: 6,
       title: "Commissions",
       teaserText:
-        "Are you interested in a piece, but one of the available works does not really suit you? Then we can talk about a private commission. Together we discuss your wishes and the possibilities. Based on the size, difficulty and level of detail the price will be determined of which you pay 30% at the start. The remaining part you pay once the artwork is finished (before shipment). Please keep in mind that on average a piece takes about 8 weeks to finish. Interested? Please contact me and I will come back to you as soon as possbile.",
+        "Are you interested in a piece, but the available works don't really suit you? Then we can talk about a private commission. Together we'll discuss your wishes and the possibilities. Based on the size, difficulty and level of detail, the price will be determined of which you pay 30% at the start. The remaining part you pay once the artwork is finished (before shipment). Please keep in mind that on average it takes about 8 weeks to finish the piece. Interested? Please contact me and I will come back to you as soon as possbile.",
       teaserImage: {
         url: indianRingFinished,
         alt: "Indian ring drawing finished",

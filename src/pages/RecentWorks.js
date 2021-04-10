@@ -31,17 +31,17 @@ export default class RecentWorks extends Component {
                   key={work.title}
                   to={`artworks/` + work.id}
                 >
-                  <div className="u-relative  u-padding--x2  u-width--100">
+                  <div className="u-relative  u-width--100  u-of--hidden">
                     <img
                       src={work.teaserImage.url}
                       alt={work.teaserImage.alt}
-                      className="u-relative  u-width--100 "
-                      onMouseOver={(e) =>
-                        (e.currentTarget.src = work.productImages[0].url)
-                      }
-                      onMouseOut={(e) =>
-                        (e.currentTarget.src = work.teaserImage.url)
-                      }
+                      className="u-relative  u-width--100  v-hover--zoom-in"
+                      // onMouseOver={(e) =>
+                      //   (e.currentTarget.src = work.productImages[0].url)
+                      // }
+                      // onMouseOut={(e) =>
+                      //   (e.currentTarget.src = work.teaserImage.url)
+                      // }
                     />
                     {work.status === "Sold" ? (
                       <div className="u-absolute  c-sold-sticker  u-flex  u-flex--items--center  u-flex--justify--center">

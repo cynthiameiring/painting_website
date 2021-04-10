@@ -53,8 +53,8 @@ export default class ContactForm extends Component {
         encType="multipart/form-data"
         className="u-width--100  u-flex  u-flex--column  u-flex--items--center"
       >
-        <div className="u-flex">
-          <div className="u-margin--b3  u-margin--r2">
+        <div className="u-flex  u-width--100">
+          <div className="u-margin--b3  u-margin--r2  u-width--50">
             <label
               htmlFor="firstName"
               className="u-weight--200  u-size--9  u-size--8@md"
@@ -69,9 +69,10 @@ export default class ContactForm extends Component {
               onChange={this.handleChange.bind(this)}
               required
               className="u-width--100  u-padding--2  u-bw--2  u-bc--grey--silver  u-bs--solid  u-br--1"
+              style={{ WebkitAppearance: "none" }}
             />
           </div>
-          <div className="u-margin--b3  u-margin--l2">
+          <div className="u-margin--b3  u-margin--l2  u-width--50">
             <label
               htmlFor="lastName"
               className="u-weight--200  u-size--9  u-size--8@md"
@@ -86,6 +87,7 @@ export default class ContactForm extends Component {
               onChange={this.handleChange.bind(this)}
               required
               className="u-width--100  u-padding--2  u-bw--2  u-bc--grey--silver  u-bs--solid  u-br--1"
+              style={{ WebkitAppearance: "none" }}
             />
           </div>
         </div>
@@ -104,6 +106,7 @@ export default class ContactForm extends Component {
             onChange={this.handleChange.bind(this)}
             required
             className="u-width--100  u-padding--2  u-margin--b3  u-bw--2  u-bc--grey--silver  u-bs--solid  u-br--1"
+            style={{ WebkitAppearance: "none" }}
           />
         </div>
         <div className="u-width--100">
@@ -120,6 +123,7 @@ export default class ContactForm extends Component {
             onChange={this.handleChange.bind(this)}
             required
             className="u-width--100  u-padding--2  u-margin--b2  u-bw--2  u-bc--grey--silver  u-bs--solid  u-br--1"
+            style={{ WebkitAppearance: "none" }}
           />
         </div>
         <div className="u-width--100">

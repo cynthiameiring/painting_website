@@ -1,0 +1,11 @@
+.v-hover--zoom-in {
+  transform-origin: 50% 50%;
+  transition: transform 300ms ease-in-out;
+  transform: scale(1);
+
+  @include hover {
+    @include media-from(lg) {
+      transform: scale(1.06);
+    }
+  }
+}
