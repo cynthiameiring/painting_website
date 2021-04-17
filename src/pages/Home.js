@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import InstaWidget from "../components/InstaWidget";
 import Header from "../components/Header";
+import ButtonText from "../components/ButtonText";
 import TextImage from "../components/TextImage";
 import { connect } from "react-redux";
 import Card from "../components/Card";
@@ -24,7 +25,7 @@ class Home extends Component {
     return (
       <div className="">
         <Header />
-        {/* {this.props.headerImageLoaded ? ( */}
+
         <div>
           {/* <Fade bottom> */}
           <TextImage
@@ -101,10 +102,31 @@ class Home extends Component {
             src="/gallery"
             buttonText="Go to gallery"
           />
-          <div className="u-padding--y5  u-padding--y7@sm  u-padding--b8@lg">
+
+          <div className="u-padding--y5  u-padding--b7  u-padding--y7@sm  u-padding--b8@lg">
             <InstaWidget />
           </div>
+
           {/* </Fade> */}
+          <div className="" style={{ backgroundColor: "#becccf" }}>
+            <div className="o-grid  o-grid--fixed  u-width--100  u-padding--y5@md  u-margin--b5@md">
+              <div className="o-grid__row">
+                <div className="u-padding--3  o-grid__col  o-grid__col--12@xs  o-grid--offset--1@md  o-grid__col--10@md  o-grid--offset--2@xxl  o-grid__col--8@xxl  u-flex">
+                  <ButtonText text="Signup!" src="/signup" />
+                  <div className="u-margin--y-auto  u-margin--l5">
+                    <p className="u-hidden@sm  u-black    u-margin--y-auto">
+                      Join the collectors list to get notified about new
+                      releases.
+                    </p>
+                    <p className="u-hidden  u-black  u-block@sm  u-margin--y-auto">
+                      Join the collectors list to get notified about new
+                      releases and to get early access.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         {/* ) : null} */}
       </div>
