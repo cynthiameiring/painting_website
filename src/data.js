@@ -17,11 +17,15 @@ import greenPlantFinished from "./media/Green_plant/green_plant_finished(copy).j
 import greenPlant1 from "./media/Green_plant/green_plant_detail1.jpg";
 import greenPlant2 from "./media/Green_plant/green_plant_detail2.jpg";
 import greenPlant3 from "./media/Green_plant/green_plant_detail3.jpg";
-import triangular1 from "./media/Triangular/Triangular1_wip1.jpeg";
+import triangular_wip from "./media/Triangular/Triangular1_wip1.jpeg";
 import shellFinished from "./media/Shell/shell-finished.jpg";
 import shell1 from "./media/Shell/shell-detail1-cropped.jpg";
 import shell2 from "./media/Shell/shell-detail2.jpg";
 import shell3 from "./media/Shell/shell-detail3.jpg";
+import triangulart1 from "./media/Triangular/triangulart1.jpg";
+import triangulart2 from "./media/Triangular/triangulart2.jpg";
+import triangulart3 from "./media/Triangular/triangulart3.jpg";
+import triangulart4 from "./media/Triangular/triangulart4.jpg";
 
 export default {
   pages: [
@@ -142,7 +146,7 @@ export default {
           ],
         },
         {
-          id: 4,
+          id: 5,
           title: `"Botanical"`,
           status: "Available",
           teaserImage: {
@@ -203,6 +207,37 @@ export default {
             "A varnish layer is applied to protect the artwork",
           ],
         },
+        {
+          id: 4,
+          title: `"Triangulart"`,
+          status: "Available",
+          teaserImage: {
+            url: triangulart1,
+            alt: "Finished triangulart drawing",
+          },
+          productImages: [
+            {
+              url: triangulart2,
+              alt: "Triangulart detail picture1",
+            },
+            {
+              url: triangulart3,
+              alt: "Triangulart detail picture2",
+            },
+            {
+              url: triangulart4,
+              alt: "Triangulart detail picture3",
+            },
+          ],
+          productDetails: [
+            "Certificate of Authentication is included",
+            "Size without frame: 500 x 600 mm",
+            "Acid free, 640 gr/m2 paper from Fabriano Artistico",
+            "Option to include a white wooden frame",
+            "A layer of fixative spray is applied to protect the artwork",
+            "Material used: Caran d'Ache Luminance colour pencils",
+          ],
+        },
       ],
     },
     {
@@ -221,7 +256,7 @@ export default {
       teaserText:
         "Finished, unfinished and work in progress... This photo gallery gives a glimp of the projects I enjoyed working on the most. It shows a bit of the progress and how every object arises from the paper. Step by step as it is a slow process, but.. a very enjoyable one! Every detail matters, every scribble with the pencil is important to make the final drawing as photorealistic as possible. If you would like to see more of the process, click ",
       teaserImage: {
-        url: triangular1,
+        url: triangular_wip,
         alt: "Triangular art work in progress",
       },
     },
