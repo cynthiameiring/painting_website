@@ -55,8 +55,8 @@ export default {
       teaserText:
         "A selection of artworks I worked on recently. Some small pieces, some big pieces, some are available and some are not. They are all made with colour pencils on thick acid-free paper and each one took between 50 and 100 hours to make. Please check them out below and if you are interested in purchasing one, feel free to contact me by sending an email to: hello@cynthiameiring.com.",
       teaserImage: {
-        url: guitarFinished,
-        alt: "Finished drawing of Fado guitar",
+        url: triangulart1,
+        alt: "Finished drawing of Triangulart",
       },
       artworks: [
         {
@@ -228,6 +228,10 @@ export default {
               url: triangulart4,
               alt: "Triangulart detail picture3",
             },
+            {
+              url: triangular_wip,
+              alt: "Work in progress of Triangulart",
+            },
           ],
           productDetails: [
             "Certificate of Authentication is included",
@@ -256,7 +260,7 @@ export default {
       teaserText:
         "Finished, unfinished and work in progress... This photo gallery gives a glimp of the projects I enjoyed working on the most. It shows a bit of the progress and how every object arises from the paper. Step by step as it is a slow process, but.. a very enjoyable one! Every detail matters, every scribble with the pencil is important to make the final drawing as photorealistic as possible. If you would like to see more of the process, click ",
       teaserImage: {
-        url: triangular_wip,
+        url: guitarFinished,
         alt: "Triangular art work in progress",
       },
     },
