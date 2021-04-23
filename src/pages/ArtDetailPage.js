@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import ButtonText2 from "../components/ButtonText2";
 // import IntroContentPage from "../components/IntroContentPage";
 import data from "../data.js";
@@ -84,11 +83,7 @@ export default class ArtDetailPage extends Component {
               <span className="">{artwork.status}</span>
             </div>
             <h3 className="u-margin--b5  u-margin--b7@lg  u-size--7">
-              For prices or other questions, please use{" "}
-              <Link className="c-internal-link" to="/contact">
-                this contact form
-              </Link>{" "}
-              or send an email to:{" "}
+              For prices or other questions, please send an email to:{" "}
               <a
                 className="u-black  u-no-decoration"
                 href="mailto:hello@cynthiameiring.com"

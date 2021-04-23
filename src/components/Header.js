@@ -16,7 +16,7 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="u-relative  u-padding--b5@md">
+      <div className="u-relative">
         <div className="u-absolute  _top--15  u-width--100  u-z--1  u-padding--l3  u-padding--l0@lg">
           <div className="o-grid  o-grid--fixed  u-width--100">
             <div className="o-grid__row">

@@ -4,8 +4,6 @@ import instagram from "../media/instagram.png";
 import youtube from "../media/youtube.png";
 import website from "../media/website.png";
 import data from "../data.js";
-import ContactForm from "../components/ContactForm";
-// import SignupForm from "../components/SignupForm";
 
 export default class Contact extends Component {
   state = {
@@ -20,11 +18,6 @@ export default class Contact extends Component {
   render() {
     return (
       <div className="o-grid  o-grid--fixed  u-width--100  u-padding--y6  u-padding--y7@sm  u-padding--y8@lg">
-        {/* <IntroContentPage
-          title={this.state.contact.title}
-          intro={this.state.contact.teaserText}
-        /> */}
-
         <div className="o-grid__row  u-margin--b5  u-margin--b6@sm  u-margin--b7@lg">
           <div className="o-grid__col  o-grid__col--12@xs  u-flex  u-flex--column  u-flex--items--center">
             <h2 className="h2-font  u-margin--b4">
@@ -42,12 +35,11 @@ export default class Contact extends Component {
           </div>
         </div>
 
-        <div className="o-grid__row  u-margin--b7  u-margin--b8@sm  u-margin--b9@lg">
+        {/* <div className="o-grid__row  u-margin--b7  u-margin--b8@sm  u-margin--b9@lg">
           <div className="o-grid__col  o-grid__col--12@xs  o-grid__col--10@md  o-grid--offset--1@md  o-grid__col--8@lg  o-grid--offset--2@lg  o-grid__col--6@xl  o-grid--offset--3@xl  u-flex  u-flex--column  u-flex--items--center">
             <ContactForm />
-            {/* <SignupForm /> */}
           </div>
-        </div>
+        </div> */}
 
         <div className="o-grid__row  u-margin--b5  u-margin--b6@sm  u-margin--b7@lg">
           <div className="o-grid__col  o-grid__col--12@xs  u-flex  u-flex--column  u-flex--items--center">

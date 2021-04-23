@@ -1,76 +1,72 @@
 import React, { Component } from "react";
-// import { render } from "react-dom";
-
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 
 // a basic form
 const CustomForm = ({ status, message, onValidated }) => {
-  let email, firstName, lastName, country;
+  let email, firstName, lastName;
   const submit = () =>
     email &&
     firstName &&
     lastName &&
-    country &&
     email.value.indexOf("@") > -1 &&
     onValidated({
       EMAIL: email.value,
       FNAME: firstName.value,
       LNAME: lastName.value,
-      COUNTRY: country.value,
     });
 
   return (
-    <div
-      style={{
-        background: "#efefef",
-        borderRadius: 2,
-        padding: 10,
-        display: "inline-block",
-      }}
-    >
+    <div>
       {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
-      {status === "error" && (
+      {/* {status === "error" && (
         <div
           style={{ color: "red" }}
           dangerouslySetInnerHTML={{ __html: message }}
         />
-      )}
+      )} */}
       {status === "success" && (
         <div
           style={{ color: "green" }}
           dangerouslySetInnerHTML={{ __html: message }}
         />
       )}
+      <label
+        htmlFor="firstName"
+        className="u-weight--200  u-size--9  u-size--8@md"
+      >
+        First name
+      </label>
       <input
-        style={{ fontSize: "2em", padding: 5 }}
+        className="c-form--input"
         ref={(node) => (firstName = node)}
         type="text"
-        placeholder="First name"
+        id="firstName"
       />
       <br />
+      <label
+        htmlFor="lastName"
+        className="u-weight--200  u-size--9  u-size--8@md"
+      >
+        Last name
+      </label>
       <input
-        style={{ fontSize: "2em", padding: 5 }}
+        className="c-form--input"
         ref={(node) => (lastName = node)}
         type="text"
-        placeholder="Last name"
+        id="lastName"
       />
       <br />
+      <label htmlFor="email" className="u-weight--200  u-size--9  u-size--8@md">
+        Email
+      </label>
       <input
-        style={{ fontSize: "2em", padding: 5 }}
+        className="c-form--input"
         ref={(node) => (email = node)}
         type="email"
-        placeholder="Your email"
+        id="email"
       />
       <br />
-      <input
-        style={{ fontSize: "2em", padding: 5 }}
-        ref={(node) => (country = node)}
-        type="text"
-        placeholder="Country of residence"
-      />
-      <br />
-      <textarea></textarea>
-      <button style={{ fontSize: "2em", padding: 5 }} onClick={submit}>
+      <button className="c-form--submit" onClick={submit}>
         Submit
       </button>
     </div>
@@ -80,13 +76,10 @@ const CustomForm = ({ status, message, onValidated }) => {
 export default class SignupForm extends Component {
   render() {
     const url =
-      // signup form:
-      //   "https://cynthiameiring.us1.list-manage.com/subscribe/post?u=a5916f3256a028da820616aab&amp;id=8ab614aad8";
-      "https://cynthiameiring.us1.list-manage.com/contact-form?u=a5916f3256a028da820616aab&form_id=685fe63297ea9c20878e5fb2e1195b9c";
+      "https://cynthiameiring.us1.list-manage.com/subscribe/post?u=a5916f3256a028da820616aab&amp;id=8ab614aad8";
 
     return (
       <div>
-        <h2>Get in touch</h2>
         <MailchimpSubscribe
           url={url}
           render={({ subscribe, status, message }) => (

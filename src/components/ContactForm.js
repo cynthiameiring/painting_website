@@ -28,6 +28,7 @@ export default class ContactForm extends Component {
   }
 
   handleSubmit(event) {
+    console.log(serverUrl);
     event.preventDefault();
     this.setState({ status: "Sending" });
     axios({
@@ -35,6 +36,7 @@ export default class ContactForm extends Component {
       url: `${serverUrl}/contact`,
       data: this.state,
     }).then((response) => {
+      console.log(response.data);
       if (response.data.status === "sent") {
         this.setState({ name: "", email: "", message: "", status: "Succes" });
       } else if (response.data.status === "failed") {
@@ -68,7 +70,7 @@ export default class ContactForm extends Component {
               value={this.state.firstName}
               onChange={this.handleChange.bind(this)}
               required
-              className="u-width--100  u-padding--2  u-bw--2  u-bc--grey--silver  u-bs--solid  u-br--1"
+              className="c-form--input"
               style={{ WebkitAppearance: "none" }}
             />
           </div>
@@ -86,7 +88,7 @@ export default class ContactForm extends Component {
               value={this.state.lastName}
               onChange={this.handleChange.bind(this)}
               required
-              className="u-width--100  u-padding--2  u-bw--2  u-bc--grey--silver  u-bs--solid  u-br--1"
+              className="c-form--input"
               style={{ WebkitAppearance: "none" }}
             />
           </div>
@@ -105,7 +107,7 @@ export default class ContactForm extends Component {
             value={this.state.email}
             onChange={this.handleChange.bind(this)}
             required
-            className="u-width--100  u-padding--2  u-margin--b3  u-bw--2  u-bc--grey--silver  u-bs--solid  u-br--1"
+            className="c-form--input"
             style={{ WebkitAppearance: "none" }}
           />
         </div>
@@ -122,7 +124,7 @@ export default class ContactForm extends Component {
             value={this.state.message}
             onChange={this.handleChange.bind(this)}
             required
-            className="u-width--100  u-padding--2  u-margin--b2  u-bw--2  u-bc--grey--silver  u-bs--solid  u-br--1"
+            className="c-form--input"
             style={{ WebkitAppearance: "none" }}
           />
         </div>
@@ -158,7 +160,7 @@ export default class ContactForm extends Component {
         ) : (
           <button
             type="submit"
-            className="u-bg--blue--hiipie-blue  u-bg-hover--yellow--tulip-tree  u-pointer  u-trans--bg  u-white  u-bw--0  u-padding--x3  u-padding--y2  u-br--1"
+            className="c-form--submit"
             style={{ width: "80px" }}
           >
             Submit
