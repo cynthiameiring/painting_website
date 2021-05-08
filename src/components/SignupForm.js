@@ -18,7 +18,6 @@ export default class SignupForm extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
 
-    console.log("handlesubmit");
     this.setState({
       status: "sending",
     });
@@ -48,15 +47,9 @@ export default class SignupForm extends React.Component {
         data: this.state.data,
       })
         .then(() => {
-          const data = { ...this.state.data };
-          data["name"] = "";
-          data["email"] = "";
-          data["privacyCheck"] = false;
-
           this.setState({
             status: "success",
             message: "Thank you for subscribing",
-            data: data,
           });
         })
         .catch((error) => {
@@ -78,56 +71,62 @@ export default class SignupForm extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit.bind(this)} className="u-text--center">
-        <div className="u-flex  u-flex--wrap  u-margin--b4  u-flex--justify--center">
-          <input
-            type="text"
-            placeholder="Name"
-            name="name"
-            value={this.state.data.name}
-            onChange={this.handleChange.bind(this)}
-            className="c-form--input  u-margin--r2@md  u-width--100  u-width--50@sm  u-width--33@md"
-            style={{ WebkitAppearance: "none" }}
-          />
-          <input
-            type="text"
-            placeholder="Your email"
-            name="email"
-            value={this.state.data.email}
-            onChange={this.handleChange.bind(this)}
-            className="c-form--input  u-margin--x2@md  u-width--100  u-width--50@sm  u-width--33@md"
-            style={{ WebkitAppearance: "none" }}
-          />
-          <button
-            className="u-hidden  u-block@md  c-form--submit  u-margin--l2"
-            type="submit"
-          >
-            Submit
-          </button>
-        </div>
-        <div className="u-width--100  u-margin--b2">
-          <input
-            name="privacyCheck"
-            type="checkbox"
-            className="u-margin--r2"
-            value={this.state.data.privacyCheck}
-            onChange={this.handleChange.bind(this)}
-          />
-          <label
-            htmlFor="privacyCheck"
-            className="u-weight--200  u-size--9  u-size--8@md"
-          >
-            I agree to the{" "}
-            <Link className="c-internal-link" to="/privacy-policy">
-              Privacy Policy
-            </Link>
-          </label>
-        </div>
-        <button
-          className="u-hidden@md  c-form--submit  u-margin--l2"
-          type="submit"
-        >
-          Submit
-        </button>
+        {this.state.status === "success" ? (
+          ""
+        ) : (
+          <div>
+            <div className="u-flex  u-flex--wrap  u-margin--b4  u-flex--justify--center">
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                value={this.state.data.name}
+                onChange={this.handleChange.bind(this)}
+                className="c-form--input  u-margin--r2@md  u-width--100  u-width--50@sm  u-width--33@md"
+                style={{ WebkitAppearance: "none" }}
+              />
+              <input
+                type="text"
+                placeholder="Your email"
+                name="email"
+                value={this.state.data.email}
+                onChange={this.handleChange.bind(this)}
+                className="c-form--input  u-margin--x2@md  u-width--100  u-width--50@sm  u-width--33@md"
+                style={{ WebkitAppearance: "none" }}
+              />
+              <button
+                className="u-hidden  u-block@md  c-form--submit  u-margin--l2"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+            <div className="u-width--100  u-margin--b2">
+              <input
+                name="privacyCheck"
+                type="checkbox"
+                className="u-margin--r2"
+                value={this.state.data.privacyCheck}
+                onChange={this.handleChange.bind(this)}
+              />
+              <label
+                htmlFor="privacyCheck"
+                className="u-weight--200  u-size--9  u-size--8@md"
+              >
+                I agree to the{" "}
+                <Link className="c-internal-link" to="/privacy-policy">
+                  Privacy Policy
+                </Link>
+              </label>
+            </div>
+            <button
+              className="u-hidden@md  c-form--submit  u-margin--l2"
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
+        )}
 
         {this.props.status === "sending" && (
           <div style={{ color: "blue" }}>sending...</div>
