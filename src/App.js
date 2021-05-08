@@ -11,7 +11,7 @@ import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
 import Process from "./pages/Process";
-import Signup from "./pages/Signup";
+// import Signup from "./pages/Signup";
 import ArtDetailPage from "./pages/ArtDetailPage";
 import { Link } from "react-router-dom";
 
@@ -39,7 +39,7 @@ function App(props) {
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/gallery" component={Gallery} />
       <Route exact path="/process" component={Process} />
-      <Route exact path="/signup" component={Signup} />
+      {/* <Route exact path="/signup" component={Signup} /> */}
       <Route path="/artworks/:id" component={ArtDetailPage} />
       <Route exact path="/privacy-policy" component={Privacy} />
 

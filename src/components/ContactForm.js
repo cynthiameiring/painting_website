@@ -4,6 +4,8 @@ import { serverUrl } from "../constants";
 import { Link } from "react-router-dom";
 import Loader from "react-loader-spinner";
 
+// Dit formulier is niet in gebruik omdat de server-url van heroku helaas op de blacklist staat en dus komen mail, verzonden door dit formulier, niet aan in TransIp.
+
 export default class ContactForm extends Component {
   constructor() {
     super();

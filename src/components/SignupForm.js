@@ -1,96 +1,164 @@
-import React, { Component } from "react";
-import MailchimpSubscribe from "react-mailchimp-subscribe";
+import React from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
+import { serverUrl } from "../constants";
 
 // a basic form
-const CustomForm = ({ status, message, onValidated }) => {
-  let email, firstName, lastName;
-  const submit = () =>
-    email &&
-    firstName &&
-    lastName &&
-    email.value.indexOf("@") > -1 &&
-    onValidated({
-      EMAIL: email.value,
-      FNAME: firstName.value,
-      LNAME: lastName.value,
+export default class SignupForm extends React.Component {
+  state = {
+    status: null,
+    message: null,
+    data: {
+      email: "",
+      name: "",
+      privacyCheck: false,
+    },
+  };
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+
+    console.log("handlesubmit");
+    this.setState({
+      status: "sending",
     });
+    console.log(this.state);
+    console.log(this.state.data.email.indexOf("@"));
+    if (!this.state.data.name) {
+      console.log("name fout");
+      this.setState({
+        status: "error",
+        message: "Please enter your name",
+      });
+    } else if (
+      !this.state.data.email ||
+      this.state.data.email.indexOf("@") === -1
+    ) {
+      console.log("email fout");
+      this.setState({
+        status: "error",
+        message: "This is not a valid email address",
+      });
+    } else if (!this.state.data.privacyCheck) {
+      console.log("privacy fout");
+      this.setState({
+        status: "error",
+        message: "Please agree with the privacy policy",
+      });
+    } else {
+      axios({
+        method: "PUT",
+        url: `${serverUrl}/subscribe`,
+        data: this.state.data,
+      })
+        .then(() => {
+          const data = { ...this.state.data };
+          data["name"] = "";
+          data["email"] = "";
+          data["privacyCheck"] = false;
 
-  return (
-    <div>
-      {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
-      {/* {status === "error" && (
-        <div
-          style={{ color: "red" }}
-          dangerouslySetInnerHTML={{ __html: message }}
-        />
-      )} */}
-      {status === "success" && (
-        <div
-          style={{ color: "green" }}
-          dangerouslySetInnerHTML={{ __html: message }}
-        />
-      )}
-      <label
-        htmlFor="firstName"
-        className="u-weight--200  u-size--9  u-size--8@md"
-      >
-        First name
-      </label>
-      <input
-        className="c-form--input"
-        ref={(node) => (firstName = node)}
-        type="text"
-        id="firstName"
-      />
-      <br />
-      <label
-        htmlFor="lastName"
-        className="u-weight--200  u-size--9  u-size--8@md"
-      >
-        Last name
-      </label>
-      <input
-        className="c-form--input"
-        ref={(node) => (lastName = node)}
-        type="text"
-        id="lastName"
-      />
-      <br />
-      <label htmlFor="email" className="u-weight--200  u-size--9  u-size--8@md">
-        Email
-      </label>
-      <input
-        className="c-form--input"
-        ref={(node) => (email = node)}
-        type="email"
-        id="email"
-      />
-      <br />
-      <button className="c-form--submit" onClick={submit}>
-        Submit
-      </button>
-    </div>
-  );
-};
+          console.log("succes van de FE");
+          this.setState({
+            status: "success",
+            message: "Thank you for subscribing",
+            data: data,
+          });
+        })
+        .catch((error) => {
+          this.setState({ status: "error", message: "Something went wrong" });
+        });
+    }
+  };
 
-export default class SignupForm extends Component {
+  handleChange(event) {
+    const target = event.target;
+    const value = target.type === "checkbox" ? target.checked : target.value;
+    const name = target.name;
+    const data = { ...this.state.data };
+    data[name] = value;
+
+    this.setState({ data: data });
+  }
+
   render() {
-    const url =
-      "https://cynthiameiring.us1.list-manage.com/subscribe/post?u=a5916f3256a028da820616aab&amp;id=8ab614aad8";
-
     return (
-      <div>
-        <MailchimpSubscribe
-          url={url}
-          render={({ subscribe, status, message }) => (
-            <CustomForm
-              status={status}
-              message={message}
-              onValidated={(formData) => subscribe(formData)}
-            />
-          )}
-        />
-      </div>
+      <form onSubmit={this.handleSubmit.bind(this)} className="u-text--center">
+        <div className="u-flex  u-flex--wrap  u-margin--b4  u-flex--justify--center">
+          <input
+            type="text"
+            placeholder="Name"
+            name="name"
+            value={this.state.data.name}
+            onChange={this.handleChange.bind(this)}
+            className="c-form--input  u-margin--r2@md  u-width--100  u-width--50@sm  u-width--33@md"
+            style={{ WebkitAppearance: "none" }}
+          />
+          <input
+            type="text"
+            placeholder="Your email"
+            name="email"
+            value={this.state.data.email}
+            onChange={this.handleChange.bind(this)}
+            className="c-form--input  u-margin--x2@md  u-width--100  u-width--50@sm  u-width--33@md"
+            style={{ WebkitAppearance: "none" }}
+          />
+          <button
+            className="u-hidden  u-block@md  c-form--submit  u-margin--l2"
+            type="submit"
+          >
+            Submit
+          </button>
+        </div>
+        <div className="u-width--100  u-margin--b2">
+          <input
+            name="privacyCheck"
+            type="checkbox"
+            className="u-margin--r2"
+            value={this.state.data.privacyCheck}
+            onChange={this.handleChange.bind(this)}
+          />
+          <label
+            htmlFor="privacyCheck"
+            className="u-weight--200  u-size--9  u-size--8@md"
+          >
+            I agree to the{" "}
+            <Link className="c-internal-link" to="/privacy-policy">
+              Privacy Policy
+            </Link>
+          </label>
+        </div>
+        <button
+          className="u-hidden@md  c-form--submit  u-margin--l2"
+          type="submit"
+        >
+          Submit
+        </button>
+
+        {this.props.status === "sending" && (
+          <div style={{ color: "blue" }}>sending...</div>
+        )}
+        {this.props.status === "error" && (
+          <div
+            style={{ color: "red" }}
+            className="u-margin--t2"
+            dangerouslySetInnerHTML={{ __html: this.props.message }}
+          />
+        )}
+        {this.state.status === "error" && (
+          <div
+            style={{ color: "red" }}
+            className="u-margin--t2"
+            dangerouslySetInnerHTML={{ __html: this.state.message }}
+          />
+        )}
+        {this.state.status === "success" && (
+          <div
+            style={{ color: "green" }}
+            className="u-margin--t2"
+            dangerouslySetInnerHTML={{ __html: this.state.message }}
+          />
+        )}
+      </form>
     );
   }
 }
