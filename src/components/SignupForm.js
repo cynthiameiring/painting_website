@@ -22,10 +22,8 @@ export default class SignupForm extends React.Component {
     this.setState({
       status: "sending",
     });
-    console.log(this.state);
-    console.log(this.state.data.email.indexOf("@"));
+
     if (!this.state.data.name) {
-      console.log("name fout");
       this.setState({
         status: "error",
         message: "Please enter your name",
@@ -34,13 +32,11 @@ export default class SignupForm extends React.Component {
       !this.state.data.email ||
       this.state.data.email.indexOf("@") === -1
     ) {
-      console.log("email fout");
       this.setState({
         status: "error",
         message: "This is not a valid email address",
       });
     } else if (!this.state.data.privacyCheck) {
-      console.log("privacy fout");
       this.setState({
         status: "error",
         message: "Please agree with the privacy policy",
@@ -57,7 +53,6 @@ export default class SignupForm extends React.Component {
           data["email"] = "";
           data["privacyCheck"] = false;
 
-          console.log("succes van de FE");
           this.setState({
             status: "success",
             message: "Thank you for subscribing",
