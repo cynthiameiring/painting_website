@@ -82,7 +82,7 @@ export default class SignupForm extends React.Component {
                 name="name"
                 value={this.state.data.name}
                 onChange={this.handleChange.bind(this)}
-                className="c-form--input  u-margin--r2@md  u-width--100  u-width--50@sm  u-width--33@md"
+                className="c-form--input  u-margin--b2  u-margin--b0@sm  u-margin--r2@md  u-width--100  u-width--50@sm  u-width--33@md"
                 style={{ WebkitAppearance: "none" }}
               />
               <input
