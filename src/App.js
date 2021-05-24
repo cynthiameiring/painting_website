@@ -37,7 +37,7 @@ function App(props) {
       <Route exact path="/about" component={About} />
       <Route exact path="/artworks" component={RecentWorks} />
       <Route exact path="/contact" component={Contact} />
-      <Route exact path="/gallery" component={Gallery} />
+      {/* <Route exact path="/gallery" component={Gallery} /> */}
       <Route exact path="/process" component={Process} />
       {/* <Route exact path="/signup" component={Signup} /> */}
       <Route path="/artworks/:id" component={ArtDetailPage} />

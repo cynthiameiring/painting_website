@@ -8,7 +8,7 @@ import { toggleMenu } from "../actions/menu";
 
 class Navigation extends Component {
   state = {
-    menuItems: ["Artworks", "Gallery", "About", "Process", "Contact"],
+    menuItems: ["Artworks", "About", "Process", "Contact"],
     menuOpen: false,
     activePage: "",
   };
