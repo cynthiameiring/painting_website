@@ -96,7 +96,7 @@ class Home extends Component {
             imagePosition="right"
             buttonText="Watch the process"
           />
-          <TextImage
+          {/* <TextImage
             image={this.state.gallery.teaserImage.url}
             alt={this.state.gallery.teaserImage.alt}
             text={this.state.gallery.teaserText}
@@ -104,7 +104,7 @@ class Home extends Component {
             imagePosition="left"
             src="/gallery"
             buttonText="Go to gallery"
-          />
+          /> */}
 
           <div className="u-padding--y5  u-padding--b7  u-padding--y7@sm  u-padding--b8@lg">
             <InstaWidget />
