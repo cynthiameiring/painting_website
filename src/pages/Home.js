@@ -15,7 +15,6 @@ class Home extends Component {
     about: data.pages.find((p) => p.title === "About"),
     process: data.pages.find((p) => p.title === "Process"),
     contact: data.pages.find((p) => p.title === "Contact"),
-    gallery: data.pages.find((p) => p.title === "Gallery"),
     commissions: data.pages.find((p) => p.title === "Commissions"),
   };
   componentDidMount() {

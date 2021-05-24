@@ -7,7 +7,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Navigation from "./components/Navigation";
 import RecentWorks from "./pages/RecentWorks";
-import Gallery from "./pages/Gallery";
+// import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
 import Process from "./pages/Process";
