@@ -26,6 +26,9 @@ import triangulart1 from "./media/Triangular/triangulart1.jpg";
 import triangulart2 from "./media/Triangular/triangulart2.jpg";
 import triangulart3 from "./media/Triangular/triangulart3.jpg";
 import triangulart4 from "./media/Triangular/triangulart4.jpg";
+import diamondFinished from "./media/Diamond/diamondFinished.jpg";
+import diamond1 from "./media/Diamond/diamond1.jpg";
+import diamond2 from "./media/Diamond/diamond2.jpg";
 
 export default {
   pages: [
@@ -236,6 +239,33 @@ export default {
           productDetails: [
             "Certificate of Authentication is included",
             "Size without frame: 500 x 600 mm",
+            "Acid free, 640 gr/m2 paper from Fabriano Artistico",
+            "Option to include a white wooden frame",
+            "A layer of fixative spray is applied to protect the artwork",
+            "Material used: Caran d'Ache Luminance colour pencils",
+          ],
+        },
+        {
+          id: 6,
+          title: `"Disparity"`,
+          status: "Available",
+          teaserImage: {
+            url: diamondFinished,
+            alt: "Finished diamond drawing",
+          },
+          productImages: [
+            {
+              url: diamond1,
+              alt: "Diamond detail picture1",
+            },
+            {
+              url: diamond2,
+              alt: "Diamond detail picture2",
+            },
+          ],
+          productDetails: [
+            "Certificate of Authentication is included",
+            "Size without frame: 400 x 400 mm",
             "Acid free, 640 gr/m2 paper from Fabriano Artistico",
             "Option to include a white wooden frame",
             "A layer of fixative spray is applied to protect the artwork",
