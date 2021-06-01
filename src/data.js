@@ -238,7 +238,7 @@ export default {
           ],
           productDetails: [
             "Certificate of Authentication is included",
-            "Size without frame: 500 x 600 mm",
+            "Size without frame: 500 x 700 mm",
             "Acid free, 640 gr/m2 paper from Fabriano Artistico",
             "Option to include a white wooden frame",
             "A layer of fixative spray is applied to protect the artwork",
