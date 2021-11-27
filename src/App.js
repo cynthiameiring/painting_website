@@ -47,7 +47,7 @@ function App(props) {
       <div className="u-width--100  u-absolute  u-bottom--0  u-text--center  u-padding--y5">
         <div className="u-flex  u-flex--justify--center">
           <span className="u-weight--200  u-black" style={{ fontSize: "14px" }}>
-            &copy; 2020, Cynthia Meiring &nbsp; - &nbsp;
+            &copy; 2021, Cynthia Meiring &nbsp; - &nbsp;
           </span>
           <Link
             style={{ fontSize: "14px" }}
