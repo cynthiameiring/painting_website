@@ -26,7 +26,7 @@ class Navigation extends Component {
         {/* Desktop view */}
         <div className="u-hidden  u-flex@lg  u-padding--l5  u-padding--y4  u-padding--r8">
           <Link to="/">
-            <img src={logo} style={{ height: "100px" }} alt="logo" />
+            <img src={logo} style={{ height: "60px" }} alt="logo" />
           </Link>
 
           <nav
@@ -65,13 +65,13 @@ class Navigation extends Component {
                 className="u-margin--r4  _height--logo"
                 alt="logo"
               />
-              <span
-                className="u-size--8  u-size--7@md  u-flex--inline  u-flex--items--center  u-weight--400  u-black"
-                style={{ letterSpacing: "4px" }}
-              >
-                CYNTHIA <br />
-                MEIRING
-              </span>
+              {/*<span*/}
+              {/*  className="u-size--8  u-size--7@md  u-flex--inline  u-flex--items--center  u-weight--400  u-black"*/}
+              {/*  style={{ letterSpacing: "4px" }}*/}
+              {/*>*/}
+              {/*  CYNTHIA <br />*/}
+              {/*  MEIRING*/}
+              {/*</span>*/}
             </Link>
           </div>
 

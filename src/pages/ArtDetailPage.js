@@ -14,7 +14,7 @@ export default class ArtDetailPage extends Component {
     window.scrollTo(0, 0);
 
     const artwork = data.pages
-      .find((p) => p.title === "Selected artworks")
+      .find((p) => p.title === "Available artworks")
       .artworks.find((art) => art.id === parseInt(this.props.match.params.id));
     this.setState({
       artwork: artwork,
@@ -29,7 +29,7 @@ export default class ArtDetailPage extends Component {
 
   render() {
     const artwork = data.pages
-      .find((p) => p.title === "Selected artworks")
+      .find((p) => p.title === "Available artworks")
       .artworks.find((art) => art.id === parseInt(this.props.match.params.id));
 
     return (

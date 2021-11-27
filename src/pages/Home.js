@@ -11,7 +11,7 @@ import data from "../data.js";
 
 class Home extends Component {
   state = {
-    recentWorks: data.pages.find((p) => p.title === "Selected artworks"),
+    recentWorks: data.pages.find((p) => p.title === "Available artworks"),
     about: data.pages.find((p) => p.title === "About"),
     process: data.pages.find((p) => p.title === "Process"),
     contact: data.pages.find((p) => p.title === "Contact"),
