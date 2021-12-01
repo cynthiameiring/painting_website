@@ -25,7 +25,7 @@ class Home extends Component {
       <div className="">
         <Header />
 
-        <div>
+        <div className="u-padding--t6  u-padding--t7@sm">
           {/* <Fade bottom> */}
           <TextImage
             image={this.state.recentWorks.teaserImage.url}
@@ -84,8 +84,12 @@ class Home extends Component {
               </div>
             </div>
           </div>
-
-          <NewsletterBanner />
+          <div className="u-padding--y6  u-padding--y7@sm" id="newsletter-banner">
+              <NewsletterBanner
+                  title="Stay up to date!"
+                  text="Be among the first to hear about all the new artworks, get early access and receive other updates."
+              />
+          </div>
 
           <TextImage
             text={this.state.process.teaserText}
