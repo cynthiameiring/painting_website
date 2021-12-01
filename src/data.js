@@ -13,7 +13,7 @@ import indianRing4 from "./media/Indian_ring/indianring_detail4.jpg";
 import indianRing5 from "./media/Indian_ring/indianring_detail5.jpg";
 import indianRing6 from "./media/Indian_ring/indianring_detail6.jpg";
 import indianRing7 from "./media/Indian_ring/indianring_detail7.jpg";
-import greenPlantFinished from "./media/Green_plant/green_plant_finished(copy).jpeg";
+import greenPlantFinished from "./media/Green_plant/green_plant_finished.jpeg";
 import greenPlant1 from "./media/Green_plant/green_plant_detail1.jpg";
 import greenPlant2 from "./media/Green_plant/green_plant_detail2.jpg";
 import greenPlant3 from "./media/Green_plant/green_plant_detail3.jpg";
@@ -48,18 +48,18 @@ export default {
       teaserText:
         "Do you have questions or are you interested in purchasing one of the available artworks? Get in touch with me to get the pricelist, shipping information and other information. Also the possibility of framing the piece can be discussed. Please contact me by sending an email to: ",
       teaserImage: {
-        url: greenPlantFinished,
-        alt: "Finished plant drawing",
+        url: guitarFinished,
+        alt: "Finished guitar drawing",
       },
     },
     {
       id: 3,
-      title: "Selected artworks",
+      title: "Available artworks",
       teaserText:
         "A selection of artworks I worked on recently. Some small pieces, some big pieces, some are available and some are not. They are all made with colour pencils on thick acid-free paper and each one took between 50 and 100 hours to make. Please check them out below and if you are interested in purchasing one, feel free to contact me by sending an email to: hello@cynthiameiring.com.",
       teaserImage: {
-        url: triangulart1,
-        alt: "Finished drawing of Triangulart",
+        url: indianRingFinished,
+        alt: "Finished drawing of a Indian ring",
       },
       artworks: [
         {
@@ -300,8 +300,8 @@ export default {
       teaserText:
         "Are you interested in a piece, but the available works don't really suit you? Then we can talk about a private commission. Together we'll discuss your wishes and the possibilities. Based on the size, difficulty and level of detail, the price will be determined of which you pay 30% at the start. The remaining part you pay once the artwork is finished (before shipment). Please keep in mind that on average it takes about 8 weeks to finish the piece. Interested? Please contact me and I will come back to you as soon as possbile.",
       teaserImage: {
-        url: indianRingFinished,
-        alt: "Indian ring drawing finished",
+        url: shellFinished,
+        alt: "Finished shell drawing",
       },
     },
     {
