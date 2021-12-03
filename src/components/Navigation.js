@@ -42,12 +42,13 @@ class Navigation extends Component {
 
     render() {
         return (
-            <header className="u-relative  u-width--100  u-sticky  u-sticky--safari  u-top--0  u-bg--white--white-smoke  u-box-shadow--1  z-index--hamburger">
-                {/*<div style={{ letterSpacing: "1px", backgroundColor: "#dfdfdf" }} className="u-width--100  u-weight--300  u-size--9  u-padding--y4  u-text--center">*/}
-                {/*    <a className="u-black" href="/#newsletter-banner">*/}
-                {/*        Subscribe to the newsletter (no spam, I promise)*/}
-                {/*    </a>*/}
-                {/*</div>*/}
+            <header className="u-width--100  u-sticky  u-sticky--safari  u-top--0  u-bg--white--white-smoke  u-box-shadow--1  z-index--hamburger">
+                <div style={{ letterSpacing: "1px", backgroundColor: "#dfdfdf" }} className="u-width--100  u-weight--300  u-size--9  u-padding--y4  u-text--center">
+                    <a className="u-black" href="/#newsletter-banner">
+                        Subscribe to the newsletter (no spam, I promise)
+                    </a>
+                </div>
+
                 {/* Desktop view */}
                 <div className="u-hidden  u-block@lg">
                     <div className="u-flex@lg  u-flex--justify--between  u-padding--y4  u-padding--x6">

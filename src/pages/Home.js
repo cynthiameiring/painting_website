@@ -84,11 +84,15 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          <div className="u-padding--y6  u-padding--y7@sm" id="newsletter-banner">
-              <NewsletterBanner
-                  title="Stay up to date!"
-                  text="Be among the first to hear about all the new artworks, get early access and receive other updates."
-              />
+
+          {/* Trick with padding and margin to give offset when linking to the newsletter */}
+          <div style={{paddingTop: "120px", marginTop: "-120px"}} id="newsletter-banner" >
+            <div className="u-padding--y6  u-padding--y7@sm" >
+                <NewsletterBanner
+                    title="Stay up to date!"
+                    text="Be among the first to hear about all the new artworks, get early access and receive other updates."
+                />
+            </div>
           </div>
 
           <TextImage

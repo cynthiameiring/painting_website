@@ -25,18 +25,8 @@ function App(props) {
 
   return (
     <div
-      className={
-        "u-padding--b8  " +
-        (props.menuOpen
-          ? "u-fixed  u-of--hidden  u-width--100  u-height--100"
-          : "u-width--100  u-height--100")
-      }
+      className="u-padding--b8"
     >
-      <div style={{ letterSpacing: "1px", backgroundColor: "#dfdfdf" }} className="u-width--100  u-weight--300  u-size--9  u-padding--y4  u-text--center">
-        <a className="u-black" href="/#newsletter-banner">
-          Subscribe to the newsletter (no spam, I promise)
-        </a>
-      </div>
       <Navigation />
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
