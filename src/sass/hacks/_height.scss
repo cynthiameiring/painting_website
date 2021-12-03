@@ -23,10 +23,6 @@
 
 ._height--logo {
   height: 50px;
-
-  @include media-from(md) {
-    height: 70px;
-  }
 }
 
 .dummy {
