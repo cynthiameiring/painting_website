@@ -42,14 +42,14 @@ class Navigation extends Component {
 
     render() {
         return (
-            <header className="u-relative  u-width--100  u-sticky  u-sticky--safari  u-relative@lg  u-top--0  u-bg--white--white-smoke  z-index--hamburger">
-                <div style={{ letterSpacing: "1px", backgroundColor: "#dfdfdf" }} className="u-width--100  u-weight--300  u-size--9  u-padding--y4  u-text--center">
-                    <a className="u-black" href="/#newsletter-banner">
-                        Subscribe to the newsletter (no spam, I promise)
-                    </a>
-                </div>
+            <header className="u-relative  u-width--100  u-sticky  u-sticky--safari  u-top--0  u-bg--white--white-smoke  u-box-shadow--1  z-index--hamburger">
+                {/*<div style={{ letterSpacing: "1px", backgroundColor: "#dfdfdf" }} className="u-width--100  u-weight--300  u-size--9  u-padding--y4  u-text--center">*/}
+                {/*    <a className="u-black" href="/#newsletter-banner">*/}
+                {/*        Subscribe to the newsletter (no spam, I promise)*/}
+                {/*    </a>*/}
+                {/*</div>*/}
                 {/* Desktop view */}
-                <div className="u-hidden  u-block@lg  u-box-shadow--3">
+                <div className="u-hidden  u-block@lg">
                     <div className="u-flex@lg  u-flex--justify--between  u-padding--y4  u-padding--x6">
                         <nav
                             className="u-width--33  u-flex  u-flex--items--center"
@@ -106,7 +106,7 @@ class Navigation extends Component {
                 </div>
 
                 {/* Mobile view */}
-                <div className="u-hidden@lg  u-width--100  u-height--100  u-flex  u-padding--4 ">
+                <div className="u-hidden@lg  u-width--100  u-height--100  u-flex  u-padding--4">
                     <div
                         className="u-flex  u-width--33  u-flex--shrink--0  z-index--hamburger  u-flex--items--center  u-pointer  u-padding--x4@sm"
                         onClick={() => this.handleClick()}

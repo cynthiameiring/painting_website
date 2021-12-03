@@ -32,6 +32,11 @@ function App(props) {
           : "u-width--100  u-height--100")
       }
     >
+      <div style={{ letterSpacing: "1px", backgroundColor: "#dfdfdf" }} className="u-width--100  u-weight--300  u-size--9  u-padding--y4  u-text--center">
+        <a className="u-black" href="/#newsletter-banner">
+          Subscribe to the newsletter (no spam, I promise)
+        </a>
+      </div>
       <Navigation />
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
@@ -43,7 +48,6 @@ function App(props) {
       <Route path="/artworks/:id" component={ArtDetailPage} />
       <Route exact path="/privacy-policy" component={Privacy} />
 
-      {/* <ComingSoon /> */}
       <div className="u-width--100  u-absolute  u-bottom--0  u-text--center  u-padding--y5">
         <div className="u-flex  u-flex--justify--center">
           <span className="u-weight--200  u-black" style={{ fontSize: "14px" }}>
