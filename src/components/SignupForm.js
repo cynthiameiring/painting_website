@@ -87,7 +87,7 @@ export default class SignupForm extends React.Component {
               />
               <input
                 type="text"
-                placeholder="Your email"
+                placeholder="Email"
                 name="email"
                 value={this.state.data.email}
                 onChange={this.handleChange.bind(this)}
