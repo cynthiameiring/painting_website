@@ -314,5 +314,15 @@ export default {
         alt: "",
       },
     },
+    {
+      id: 8,
+      title: "Downloads",
+      teaserText:
+          "Download the outlines of my drawings and start coloring yourself! Don't forget to post a picture of your beautiful creations on Instagram and tag me (@cynthia_meiring_art). Have fun!",
+      teaserImage: {
+        url: "",
+        alt: "",
+      },
+    },
   ],
 };

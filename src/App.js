@@ -9,6 +9,7 @@ import Navigation from "./components/Navigation";
 import RecentWorks from "./pages/RecentWorks";
 // import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import Downloads from "./pages/Downloads";
 import Privacy from "./pages/Privacy";
 import Process from "./pages/Process";
 // import Signup from "./pages/Signup";
@@ -32,6 +33,7 @@ function App(props) {
       <Route exact path="/about" component={About} />
       <Route exact path="/artworks" component={RecentWorks} />
       <Route exact path="/contact" component={Contact} />
+      <Route exact path="/downloads" component={Downloads} />
       {/* <Route exact path="/gallery" component={Gallery} /> */}
       <Route exact path="/process" component={Process} />
       {/* <Route exact path="/signup" component={Signup} /> */}

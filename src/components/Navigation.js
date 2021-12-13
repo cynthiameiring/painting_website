@@ -11,7 +11,7 @@ import facebook from "../media/facebook.png";
 
 class Navigation extends Component {
     state = {
-        menuItems: ["Artworks", "Process", "Contact", "About"],
+        menuItems: ["Artworks", "Process", "Downloads", "Contact", "About"],
         menuOpen: false,
         activePage: "",
         socials: [
