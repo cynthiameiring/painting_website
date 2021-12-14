@@ -9,13 +9,14 @@ import lineArtBotanicalDownload from "../media/LineArt/Line_art_botanical.pdf";
 import lineArtTriangulartPreview from "../media/LineArt/line_art_triangulart_preview.jpg";
 import lineArtTriangulartDownload from "../media/LineArt/Line_art_triangulart.pdf";
 import {connect} from "react-redux";
+import Cookies from 'js-cookie';
+import {setSubmittedNewsletterForm} from "../actions/newsletterForm";
 
 class Downloads extends Component {
     state = {
         downloads: data.pages.find((p) => p.title === "Downloads"),
         overlayIsOpen: false,
         fileToDownload: '',
-        hasAlreadySubscribed: false,
         files: [
             [lineArtDiamondPreview, lineArtDiamondDownload],
             [lineArtTriangulartPreview, lineArtTriangulartDownload],
@@ -31,14 +32,11 @@ class Downloads extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0);
-        this.setState({
-            hasAlreadySubscribed: this.getNewsletterCookie('subscribedForNewsletter'),
-        });
+        this.props.setSubmittedNewsletterForm(Cookies.get('subscribedForNewsletter') ?? false);
     }
 
     componentDidUpdate(prevProps) {
         const fileToDownload = this.state.fileToDownload
-        console.log(fileToDownload);
         // Always have a check to see if the state has changed
         if (this.props.hasSubmittedNewsletterForm !== prevProps.hasSubmittedNewsletterForm && fileToDownload) {
             this.download(fileToDownload);
@@ -63,8 +61,8 @@ class Downloads extends Component {
     }
 
     handleClick = (file) => {
-        // Don't open overlay with subscription form if the user already downloaded an illustration before (check cookie)
-        if (this.props.hasSubmittedNewsletterForm || this.getNewsletterCookie('subscribedForNewsletter')) {
+        // Don't open overlay with subscription form if the user already downloaded an illustration before (check reduxState)
+        if (this.props.hasSubmittedNewsletterForm) {
             this.download(file);
         } else {
             this.setState({
@@ -72,22 +70,6 @@ class Downloads extends Component {
                 fileToDownload: file,
             })
         }
-    }
-
-    getNewsletterCookie(cname) {
-        let name = cname + "=";
-        let decodedCookie = decodeURIComponent(document.cookie);
-        let ca = decodedCookie.split(';');
-        for(let i = 0; i <ca.length; i++) {
-            let c = ca[i];
-            while (c.charAt(0) === ' ') {
-                c = c.substring(1);
-            }
-            if (c.indexOf(name) === 0) {
-                return c.substring(name.length, c.length);
-            }
-        }
-        return "";
     }
 
     render() {
@@ -134,4 +116,4 @@ const mapStateToProps = (reduxState) => {
     };
 };
 
-export default connect(mapStateToProps)(Downloads);
+export default connect(mapStateToProps, {setSubmittedNewsletterForm})(Downloads);

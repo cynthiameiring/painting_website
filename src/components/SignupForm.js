@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { serverUrl } from "../constants";
 import { connect } from "react-redux";
-import { hasSubmittedNewsletterForm } from "../actions/newsletterForm";
+import { setSubmittedNewsletterForm } from "../actions/newsletterForm";
 
 // a basic form
 class SignupForm extends React.Component {
@@ -54,7 +54,7 @@ class SignupForm extends React.Component {
             message: "Thank you for subscribing",
           });
           this.setNewsletterCookie();
-          this.props.hasSubmittedNewsletterForm(true);
+          this.props.setSubmittedNewsletterForm(true);
         })
         .catch((error) => {
           this.setState({ status: "error", message: "Something went wrong" });
@@ -76,7 +76,7 @@ class SignupForm extends React.Component {
     const today = new Date();
     today.setTime(today.getTime() + (7 * 24 * 60 * 60 * 1000));
     let expires = "expires="+today.toUTCString();
-    document.cookie = "subscribedForNewsletter=true;" + expires + ";path=/downloads";
+    document.cookie = "subscribedForNewsletter=true;" + expires + ";path=/";
   }
 
   render() {
@@ -169,4 +169,4 @@ class SignupForm extends React.Component {
 }
 
 
-export default connect(null, { hasSubmittedNewsletterForm })(SignupForm);
+export default connect(null, { setSubmittedNewsletterForm })(SignupForm);
