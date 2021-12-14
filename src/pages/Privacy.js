@@ -61,12 +61,8 @@ export default class Privacy extends Component {
               What data do we collect and how?
             </h3>
             <p>
-              When you visit our website, we automatically collect certain
-              information about your device, including information about your
-              web browser, IP address and time zone. Additionally, as you browse
-              our website, we collect information about the individual web pages
-              or products that you view, what websites or search terms referred
-              you to us and information about how you interact with the website.
+              When you visit our website, we automatically collect basic
+              information about your device, time-zone and the pages you visited. This information is collected by Google Analytic.
               We refer to this automatically-collected information as “Device
               Information”.
             </p>
@@ -77,8 +73,8 @@ export default class Privacy extends Component {
             <ul>
               <li>First and last name</li>
               <li>Email address</li>
-              <li>Country of residence</li>
-              <li>Phone number in case you shared it with us</li>
+              <li>Country of residence in case you shared this with us</li>
+              <li>Phone number in case you shared this with us</li>
             </ul>
             <p className="u-margin--b5">
               We refer to this information as “Contact Information”.
@@ -96,31 +92,17 @@ export default class Privacy extends Component {
               for potential risk and fraud (in particular, your IP address), and
               more generally to improve and optimize our website (for example,
               by generating analytics about how our customers browse and
-              interact with the website, and to assess the success of our
-              marketing and advertising campaigns). We use this Contact
-              Information to:
+              interact with the website).
             </p>
-            <ul>
-              <li>Communicate with you; and</li>
-              <li>
-                When in line with the preferences, provide you with information
-                or advertising relating to our products or services.
-              </li>
-            </ul>
             <p>
-              We use the Order Information that we collect generally to fulfill
+              We use the Contact Information to communicate with you.
+            </p>
+            <p className="u-margin--b5">
+              We use the Order Information that we collect to fulfill
               any orders (including processing your payment information,
               arranging for shipping, and providing you with invoices and/or
-              order confirmations). Additionally, we use this Order Information
-              to:
+              order confirmations).
             </p>
-            <ul>
-              <li>Communicate with you; and</li>
-              <li>
-                When in line with the preferences, provide you with information
-                or advertising relating to our products or services.
-              </li>
-            </ul>
             <h3 id="how_do_we_store_your_data" className="h3-font">
               How do we store your data?
             </h3>
@@ -150,46 +132,17 @@ export default class Privacy extends Component {
             </h3>
 
             <p className="u-margin--b5">
-              If you have agreed to receive marketing emails, you may always opt
-              out at a later date. If you no longer wish to be contacted for
-              marketing purposes, please click here.
+              If you have agreed to receive marketing emails, you may always opt-out at a later date. If you no longer wish to be contacted for
+              marketing purposes, you can opt-out by using the link at the bottom of every marketing email.
             </p>
             <h3 id="protection_rights" className="h3-font">
               What are your data protection rights?
             </h3>
             <p>
               Our company would like to make sure you are fully aware of all of
-              your data protection rights. Every user is entitled to the
-              following:
+              your data protection rights. Every user is entitled to access, rectify and request to erase your personal data.
             </p>
-            <p>
-              <strong>The right to access</strong> - You have the right to
-              request our company for copies of your personal data.
-            </p>
-            <p>
-              <strong>The right to rectification</strong> - You have the right
-              to request that we correct any information that you believe is
-              inaccurate. You also have the right to request to complete the
-              information that you believe is incomplete.
-            </p>
-            <p>
-              <strong>The right to erasure</strong> - You have the right to
-              request that our company erase your personal data.
-            </p>
-            <p>
-              <strong>The right to restrict processing</strong> - You have the
-              right to request that our company restrict the processing of your
-              personal data.
-            </p>
-            <p>
-              <strong>The right to object to processing</strong> - You have the
-              right to object to our company’s processing of your personal data.
-            </p>
-            <p>
-              <strong>The right to data portability</strong> - You have the
-              right to request that our company transfers the data that we have
-              collected to another organization, or directly to you.
-            </p>
+
             <p className="u-margin--b5">
               If you would like to exercise any of these rights, please contact
               us at our email:{" "}
@@ -204,25 +157,31 @@ export default class Privacy extends Component {
             <h3 id="cookies" className="h3-font">
               Cookies
             </h3>
+            <p>
+              This website only uses functional and analytical cookies.
+            </p>
+            <p>
+              The following functional cookie is used to make the website work properly: 'subscribedForNewsletter'.
+            </p>
             <p className="u-margin--b5">
-              This website doesn’t make use of cookies.
+              The following analytical cookies are used by Google Analytics to collect basic information: '_ga' and '_ga_7R1LXX8EMR'
             </p>
             <h3 id="other_websites" className="h3-font">
               Privacy policies of other websites
             </h3>
             <p className="u-margin--b5">
               Our compony's website contains links to other websites. Our
-              privacy policy applies only to our own website, so if you click on
-              a link to another website, their privacy policy applies, so we
-              advice you to read their privacy policy.
+              privacy policy applies only to our own website, meaning that if you click on
+              a link to another website, their privacy policy applies. We
+              advice you to read also their privacy policy.
             </p>
             <h3 id="changes_privacy_policy" className="h3-font">
               Changes to our privacy policy
             </h3>
             <p className="u-margin--b5">
               Our company keeps its privacy policy under regular review and
-              places any updates on this web page. This privacy policy was last
-              updated on 21 March 2021.
+              places any updates on this page. This privacy policy was last
+              updated on December 14th 2021.
             </p>
             <h3 id="contact_us" className="h3-font">
               How to contact us
