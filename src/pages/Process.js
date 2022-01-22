@@ -35,13 +35,13 @@ export default class Process extends Component {
           <div className="o-grid__col  o-grid__col--12@xs  o-grid__col--6@md">
             <div className="v-video-container  u-margin--b6">
               <iframe
-                width="560px"
-                height="349px"
-                title="youtubeVideo3"
-                src="https://www.youtube.com/embed/VfT0k0veezM"
-                frameBorder="0"
-                allowFullScreen
-              ></iframe>
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/th3vKS4YrGg"
+                  title="youtubeVideo3"
+                  frameBorder="0"
+                  allowFullScreen>
+              </iframe>
             </div>
           </div>
           <div className="o-grid__col  o-grid__col--12@xs  o-grid__col--6@md">

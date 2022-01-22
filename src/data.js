@@ -29,6 +29,11 @@ import triangulart4 from "./media/Triangular/triangulart4.jpg";
 import diamondFinished from "./media/Diamond/diamondFinished.jpg";
 import diamond1 from "./media/Diamond/diamond1.jpg";
 import diamond2 from "./media/Diamond/diamond2.jpg";
+import puzzledFinished from "./media/Puzzled/puzzledFinished.jpg";
+import puzzledDetail2 from "./media/Puzzled/puzzledDetail2.jpg";
+import puzzledDetail3 from "./media/Puzzled/puzzledDetail3.jpeg";
+import puzzledDetail4 from "./media/Puzzled/puzzledDetail4.jpeg";
+
 
 export default {
   pages: [
@@ -63,7 +68,7 @@ export default {
       },
       artworks: [
         {
-          id: 1,
+          id: 4,
           title: `"Fado guitar"`,
           status: "Sold",
           teaserImage: {
@@ -102,7 +107,7 @@ export default {
           ],
         },
         {
-          id: 2,
+          id: 6,
           title: `"The one and only"`,
           status: "Available",
           teaserImage: {
@@ -211,7 +216,7 @@ export default {
           ],
         },
         {
-          id: 4,
+          id: 2,
           title: `"Triangulart"`,
           status: "Available",
           teaserImage: {
@@ -246,7 +251,38 @@ export default {
           ],
         },
         {
-          id: 6,
+          id: 1,
+          title: `"Puzzled"`,
+          status: "Available",
+          teaserImage: {
+            url: puzzledFinished,
+            alt: "Finished puzzled drawing",
+          },
+          productImages: [
+            {
+              url: puzzledDetail2,
+              alt: "Puzzled detail picture1",
+            },
+            {
+              url: puzzledDetail3,
+              alt: "Puzzled detail picture2",
+            },
+            {
+              url: puzzledDetail4,
+              alt: "Puzzled detail picture3",
+            },
+          ],
+          productDetails: [
+            "Certificate of Authentication is included",
+            "Size without frame: 350 x 350 mm",
+            "Acid free, 640 gr/m2 paper from Fabriano Artistico",
+            "Option to include a white wooden frame",
+            "A layer of fixative spray is applied to protect the artwork",
+            "Material used: Caran d'Ache Luminance colour pencils",
+          ],
+        },
+        {
+          id: 7,
           title: `"Disparity"`,
           status: "Available",
           teaserImage: {

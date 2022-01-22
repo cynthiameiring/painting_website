@@ -27,7 +27,7 @@ export default class RecentWorks extends Component {
               })
               .map((work) => (
                 <Link
-                  className={`u-padding--4  u-no-decoration  u-black  u-margin--b4  u-width--100  u-width--50@sm`}
+                  className={`u-padding--4  u-no-decoration  u-black  u-margin--b4  u-width--100  u-width--50@sm  u-width--33@lg`}
                   key={work.title}
                   to={`artworks/` + work.id}
                 >

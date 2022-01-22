@@ -8,6 +8,8 @@ import lineArtBotanicalPreview from "../media/LineArt/line_art_botanical_preview
 import lineArtBotanicalDownload from "../media/LineArt/Line_art_botanical.pdf";
 import lineArtTriangulartPreview from "../media/LineArt/line_art_triangulart_preview.jpg";
 import lineArtTriangulartDownload from "../media/LineArt/Line_art_triangulart.pdf";
+import lineArtSquirrelPreview from "../media/LineArt/line_art_squirrel_preview.jpg";
+import lineArtSquirrelDownload from "../media/LineArt/Line_art_squirrel.pdf";
 import {connect} from "react-redux";
 import Cookies from 'js-cookie';
 import {setSubmittedNewsletterForm} from "../actions/newsletterForm";
@@ -21,6 +23,7 @@ class Downloads extends Component {
             [lineArtDiamondPreview, lineArtDiamondDownload],
             [lineArtTriangulartPreview, lineArtTriangulartDownload],
             [lineArtBotanicalPreview, lineArtBotanicalDownload],
+            [lineArtSquirrelPreview, lineArtSquirrelDownload],
         ]
     };
 
@@ -83,10 +86,10 @@ class Downloads extends Component {
                 </div>
                 <div style={{ backgroundColor: "#f3f3f3" }}>
                     <div className="o-grid  o-grid--fixed  u-width--100  u-padding--y6  u-padding--y7@sm  u-padding--y8@lg">
-                        <div className="o-grid__row  u-padding--y">
+                        <div className="o-grid__row  u-flex--justify--center">
                             {this.state.files.map((files, index) =>
                                 <div className="o-grid__col  o-grid__col--6@xs  o-grid__col--4@lg  u-pointer" key={index} onClick={(e) => this.handleClick(files[1])}>
-                                    <img className="u-width--100  v-transform--grow" alt="preview of downloadable line art drawing of triangulart"
+                                    <img className="u-width--100  v-transform--grow" alt="preview of downloadable line art drawing"
                                          src={files[0]}
                                     />
                                 </div>
