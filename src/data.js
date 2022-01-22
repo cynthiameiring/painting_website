@@ -41,7 +41,7 @@ export default {
       id: 1,
       title: "About",
       teaserText:
-        "The journey in the world of art started in 2018. In a small studio and with a painting starter kit, the first brush strokes became a fact. With a great passion for photorealism and being inspired by other contemporary artists, Cynthia started creating works in acrylic and oil paint. It was only in 2020 when a complete switch to colour pencils was made. Things got more serious and more time was invested to create the photorealistic pieces. Based in the Netherlands, she loves to work on projects where every detail matters. To make a drawing as realistic as possible is always the main goal. Spending hours and hours and putting layer on layer to get the vibrance, values and details just right.",
+        "The journey in the world of art started in 2018. In a small studio, with a painting starter kit, the first brush strokes were a fact. With a great passion for photorealism and being inspired by other contemporary artists, Cynthia created works in acrylic and oil paint. It was only in 2020 when she completely switched to colored pencils. Based in the Netherlands, she loves to work on projects where every detail matters. To make a drawing as realistic as possible is always the main goal.",
       teaserImage: {
         url: posingWithShoe,
         alt: "Posing with Indian Shoe painting",
