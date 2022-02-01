@@ -16,7 +16,7 @@ $zss--colors: (
 $zss--border-colors: $zss--colors;
 
 $zss--spacing-scale: 0 4px 8px 12px 16px 24px 32px 48px 72px;
-$zss--type-scale: 64px 48px 40px 32px 24px 20px 18px 16px 14px; // not in the scale: 80px, used on the homepage
+$zss--type-scale: 64px 48px 40px 32px 24px 20px 18px 16px 14px 11px; // not in the scale: 80px, used on the homepage
 $zss--base-font-size: nth($zss--type-scale, 8);
 
 $zss--line-height-scale: 0 1 1.2 1.5 1.75 2;
