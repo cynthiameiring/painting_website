@@ -13,21 +13,21 @@ class Header extends Component {
     render() {
         return (
             <div className="u-relative  u-bg--black">
-                <div className="u-absolute  _top--15  u-width--100  u-z--1  u-padding--l3  u-padding--l0@lg">
+                <div className="u-absolute  _top--40  u-width--100  u-z--1  u-padding--l3  u-padding--l0@lg">
                     <div className="o-grid  o-grid--fixed  u-width--100">
                         <div className="o-grid__row">
-                            <div className="o-grid__col  o-grid__col--6@xs">
+                            <div className="o-grid__col  o-grid__col--12@xs">
                                 {this.state.loaded ? (
-                                    <div>
+                                    <div className="u-text--center">
                                         <h1
-                                            className="u-white  u-bc--white  u-bs--b-solid  u-bw--b2  u-bw--b3@md  u-padding--b2  u-padding--b4@sm  u-size--7  u-size--5@sm  u-size--4@md  u-size--3@lg  u-weight--600  _letter-spacing--title"
+                                            className="u-white  u-padding--b2  u-padding--b4@sm  u-size--7  u-size--5@sm  u-size--4@md  u-size--3@lg  u-weight--600  _letter-spacing--title"
                                         >
                                             CYNTHIA MEIRING
                                         </h1>
                                         <h2
-                                            className="u-white  u-padding--t2  u-padding--t4@sm  u-size--7  u-size--5@sm  u-size--4@md  u-size--3@lg  u-weight--400  _letter-spacing--title"
+                                            className="u-white  u-padding--t4@lg  u-size--7  u-size--5@sm  u-size--4@md  u-size--3@lg  u-weight--400  _letter-spacing--sub-title"
                                         >
-                                            Photorealistic <br /> artworks
+                                            Photorealistic artworks
                                         </h2>
                                     </div>
                                 ) : null}
@@ -41,7 +41,8 @@ class Header extends Component {
                     <img
                         srcSet={headerImageSmall}
                         alt="header"
-                        className="u-width--100  u-block  u-z--0  u-opacity--75"
+                        className="u-width--100  u-block  u-z--0"
+                        style={{opacity:"0.7"}}
                     />
                 </picture>
             </div>

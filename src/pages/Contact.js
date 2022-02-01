@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import email from "../media/email.png";
 import instagram from "../media/instagram.png";
 import youtube from "../media/youtube.png";
-import website from "../media/website.png";
+import facebook from "../media/facebook.png";
 import data from "../data.js";
 
 export default class Contact extends Component {
@@ -110,16 +110,18 @@ export default class Contact extends Component {
               <span className="u-flex  u-flex--items--center  u-margin--b4">
                 <img
                   className="u-margin--r4"
-                  src={website}
+                  src={facebook}
                   alt=""
                   width="30"
                   height="30"
                 />
                 <a
                   className="u-block  u-weight--200  u-size--9  u-size--8@md  u-black  u-no-decoration"
-                  href="https://www.cynthiameiring.com/"
+                  href="https://www.facebook.com/CynthiaMeiringArts"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  www.cynthiameiring.com
+                  CynthiaMeiringArts
                 </a>
               </span>
             </div>

@@ -33,6 +33,19 @@ class Navigation extends Component {
         ]
     };
 
+    componentDidMount() {
+        const newsletterBanner = document.querySelector(".js-newsletterBanner");
+        window.addEventListener('scroll', hideBannerOnScroll);
+
+        function hideBannerOnScroll() {
+            if (window.scrollY > 100) {
+                newsletterBanner.classList.add("u-hidden");
+            } else if (window.scrollY < 40) {
+                newsletterBanner.classList.remove("u-hidden");
+            }
+        }
+    }
+
     handleClick() {
         this.props.toggleMenu(!this.state.menuOpen);
         this.setState({
@@ -43,7 +56,7 @@ class Navigation extends Component {
     render() {
         return (
             <header className="u-width--100  u-sticky  u-sticky--safari  u-top--0  u-bg--white--white-smoke  u-box-shadow--1  z-index--hamburger">
-                <div style={{ letterSpacing: "1px", backgroundColor: "#dfdfdf" }} className="u-width--100  u-weight--300  u-size--9  u-padding--y4  u-text--center">
+                <div style={{ letterSpacing: "1px", backgroundColor: "#dfdfdf" }} className="js-newsletterBanner  u-width--100  u-weight--300  u-size--9  u-padding--y4  u-text--center">
                     <a className="u-black" href="/#newsletter-banner">
                         Subscribe to the newsletter (no spam, I promise)
                     </a>

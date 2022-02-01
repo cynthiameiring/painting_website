@@ -1,4 +1,11 @@
 ._letter-spacing--title {
+  letter-spacing: 5px;
+  @include media-from(sm) {
+    letter-spacing: 9px;
+  }
+}
+
+._letter-spacing--sub-title {
   letter-spacing: 2px;
   @include media-from(sm) {
     letter-spacing: 4px;
