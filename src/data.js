@@ -17,7 +17,7 @@ import greenPlantFinished from "./media/Green_plant/green_plant_finished.jpeg";
 import greenPlant1 from "./media/Green_plant/green_plant_detail1.jpg";
 import greenPlant2 from "./media/Green_plant/green_plant_detail2.jpg";
 import greenPlant3 from "./media/Green_plant/green_plant_detail3.jpg";
-import triangular_wip from "./media/Triangular/Triangular1_wip1.jpeg";
+import triangular_wip from "./media/Triangular/Triangulart_wip.jpeg";
 import shellFinished from "./media/Shell/shell-finished.jpg";
 import shell1 from "./media/Shell/shell-detail1-cropped.jpg";
 import shell2 from "./media/Shell/shell-detail2.jpg";
@@ -26,6 +26,7 @@ import triangulart1 from "./media/Triangular/triangulart1.jpg";
 import triangulart2 from "./media/Triangular/triangulart2.jpg";
 import triangulart3 from "./media/Triangular/triangulart3.jpg";
 import triangulart4 from "./media/Triangular/triangulart4.jpg";
+import triangulart5 from "./media/Triangular/triangulart5.jpg";
 import diamondFinished from "./media/Diamond/diamondFinished.jpg";
 import diamond1 from "./media/Diamond/diamond1.jpg";
 import diamond2 from "./media/Diamond/diamond2.jpg";
@@ -33,6 +34,15 @@ import puzzledFinished from "./media/Puzzled/puzzledFinished.jpg";
 import puzzledDetail2 from "./media/Puzzled/puzzledDetail2.jpg";
 import puzzledDetail3 from "./media/Puzzled/puzzledDetail3.jpeg";
 import puzzledDetail4 from "./media/Puzzled/puzzledDetail4.jpeg";
+import nutanFinishedFrame from "./media/OrangeFlower/nutan_finished_frame.jpg";
+import nutanFinished from "./media/OrangeFlower/Orange_flower_final_square.jpg";
+import nutanFrameDetail from "./media/OrangeFlower/nutan_frame_detail.jpg";
+import nutanWip from "./media/OrangeFlower/nutan_wip.jpg";
+import nutanDetail1 from "./media/OrangeFlower/nutan_detail1.jpg";
+import frameDetail1 from "./media/Frame/Framedetail1.jpg"
+import frameDetail2 from "./media/Frame/FrameDetail2.jpg"
+import frameDetail3 from "./media/Frame/FrameDetail3.jpg"
+
 
 
 export default {
@@ -107,7 +117,7 @@ export default {
           ],
         },
         {
-          id: 6,
+          id:   6,
           title: `"The one and only"`,
           status: "Available",
           teaserImage: {
@@ -185,7 +195,7 @@ export default {
           ],
         },
         {
-          id: 3,
+          id: 2,
           title: `"Sparkle in the sand"`,
           status: "Available",
           teaserImage: {
@@ -216,7 +226,7 @@ export default {
           ],
         },
         {
-          id: 2,
+          id: 3,
           title: `"Triangulart"`,
           status: "Available",
           teaserImage: {
@@ -239,6 +249,10 @@ export default {
             {
               url: triangular_wip,
               alt: "Work in progress of Triangulart",
+            },
+            {
+              url: triangulart5,
+              alt: "Triangulart detail picture5",
             },
           ],
           productDetails: [
@@ -306,6 +320,54 @@ export default {
             "Option to include a white wooden frame",
             "A layer of fixative spray is applied to protect the artwork",
             "Material used: Caran d'Ache Luminance colour pencils",
+          ],
+        },
+        {
+          id: 8,
+          title: `"Nutan"`,
+          status: "Available",
+          teaserImage: {
+            url: nutanFinished,
+            alt: "Finished nutan drawing",
+          },
+          productImages: [
+            {
+              url: nutanFinishedFrame,
+              alt: "Nutan finished in frame",
+            },
+            {
+              url: nutanFrameDetail,
+              alt: "Nutan detail of frame",
+            },
+            {
+              url: nutanDetail1,
+              alt: "Nutan detail picture1",
+            },
+            {
+              url: nutanWip,
+              alt: "Nutan work in progress",
+            },
+            {
+              url: frameDetail1,
+              alt: "Frame detail picture1",
+            },
+            {
+              url: frameDetail3,
+              alt: "Frame detail picture3",
+            },
+            {
+              url: frameDetail2,
+              alt: "Frame detail picture2",
+            },
+          ],
+          productDetails: [
+            "Certificate of Authentication is included",
+            "Wooden frame is included",
+            "Size without frame: 700 x 700 mm",
+            "Size with frame: 800 x 800 mm",
+            "Paper: Acid free, 640 gr/m2 paper from Fabriano Artistico",
+            "Medium: Caran d'Ache Luminance colour pencils",
+            "Artwork is framed behind museum quality acrylic",
           ],
         },
       ],
