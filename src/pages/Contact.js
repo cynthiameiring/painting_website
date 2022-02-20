@@ -82,11 +82,11 @@ export default class Contact extends Component {
                 />
                 <a
                   className="u-block  u-weight--200  u-size--9  u-size--8@md  u-black  u-no-decoration"
-                  href="https://www.instagram.com/cynthia_meiring_art"
+                  href="https://www.instagram.com/cynthia_meiring_studio"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  cynthia_meiring_art
+                  cynthia_meiring_studio
                 </a>
               </span>
 
@@ -117,11 +117,11 @@ export default class Contact extends Component {
                 />
                 <a
                   className="u-block  u-weight--200  u-size--9  u-size--8@md  u-black  u-no-decoration"
-                  href="https://www.facebook.com/CynthiaMeiringArts"
+                  href="https://www.facebook.com/CynthiaMeiringStudio"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  CynthiaMeiringArts
+                  CynthiaMeiringStudio
                 </a>
               </span>
             </div>

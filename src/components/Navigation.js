@@ -18,7 +18,7 @@ class Navigation extends Component {
             {
                 name: "instagram",
                 icon: instagram,
-                url: "https://www.instagram.com/cynthia_meiring_art"
+                url: "https://www.instagram.com/cynthia_meiring_studio"
             },
             {
                 name: "youtube",
@@ -28,7 +28,7 @@ class Navigation extends Component {
             {
                 name: "facebook",
                 icon: facebook,
-                url: "https://www.facebook.com/CynthiaMeiringArts"
+                url: "https://www.facebook.com/CynthiaMeiringStudio"
             },
         ]
     };
