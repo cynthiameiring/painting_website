@@ -22,9 +22,6 @@ export default class RecentWorks extends Component {
         <div className="o-grid__row  u-flex--justify--center@lg">
           <div className="-grid__col  o-grid__col--12@xs  o-grid__col--10@lg  u-flex  u-flex--wrap">
             {this.state.recentWorks.artworks
-              .sort(function (a, b) {
-                return a.id - b.id;
-              })
               .map((work) => (
                 <Link
                   className={`u-padding--4  u-no-decoration  u-black  u-margin--b4  u-width--100  u-width--50@sm  u-width--33@lg`}

@@ -6,6 +6,7 @@ import guitar3 from "./media/guitar-detail3.jpeg";
 import guitar4 from "./media/guitar-detail4.jpg";
 import guitar5 from "./media/guitar-detail5.jpeg";
 import indianRingFinished from "./media/Indian_ring/indianring_finished.jpg";
+import indianRingFramed from "./media/Indian_ring/indianring_framed.jpg";
 import indianRing1 from "./media/Indian_ring/indianring_detail1.jpg";
 import indianRing2 from "./media/Indian_ring/indianring_detail2.jpg";
 import indianRing3 from "./media/Indian_ring/indianring_detail3.jpg";
@@ -22,19 +23,19 @@ import shellFinished from "./media/Shell/shell-finished.jpg";
 import shell1 from "./media/Shell/shell-detail1-cropped.jpg";
 import shell2 from "./media/Shell/shell-detail2.jpg";
 import shell3 from "./media/Shell/shell-detail3.jpg";
-import triangulart1 from "./media/Triangular/triangulart1.jpg";
 import triangulart2 from "./media/Triangular/triangulart2.jpg";
 import triangulart3 from "./media/Triangular/triangulart3.jpg";
 import triangulart4 from "./media/Triangular/triangulart4.jpg";
 import triangulart5 from "./media/Triangular/triangulart5.jpg";
+import triangulartFramed from "./media/Triangular/triangulart_framed.jpg";
 import diamondFinished from "./media/Diamond/diamondFinished.jpg";
 import diamond1 from "./media/Diamond/diamond1.jpg";
 import diamond2 from "./media/Diamond/diamond2.jpg";
-import puzzledFinished from "./media/Puzzled/puzzledFinished.jpg";
+import puzzledFinished from "./media/Puzzled/puzzled_finished.jpg";
 import puzzledDetail2 from "./media/Puzzled/puzzledDetail2.jpg";
 import puzzledDetail3 from "./media/Puzzled/puzzledDetail3.jpeg";
 import puzzledDetail4 from "./media/Puzzled/puzzledDetail4.jpeg";
-import nutanFinishedFrame from "./media/OrangeFlower/nutan_finished_frame.jpg";
+import nutanFinishedFrame from "./media/OrangeFlower/nutan_finished.jpg";
 import nutanFinished from "./media/OrangeFlower/Orange_flower_final_square.jpg";
 import nutanFrameDetail from "./media/OrangeFlower/nutan_frame_detail.jpg";
 import nutanWip from "./media/OrangeFlower/nutan_wip.jpg";
@@ -42,6 +43,7 @@ import nutanDetail1 from "./media/OrangeFlower/nutan_detail1.jpg";
 import frameDetail1 from "./media/Frame/Framedetail1.jpg"
 import frameDetail2 from "./media/Frame/FrameDetail2.jpg"
 import frameDetail3 from "./media/Frame/FrameDetail3.jpg"
+import origamiSquirrelFramed from "./media/Origami_squirrel/origami_squirrel_framed.jpg"
 
 
 
@@ -51,7 +53,7 @@ export default {
       id: 1,
       title: "About",
       teaserText:
-        "The journey in the world of art started in 2018. In a small studio, with a painting starter kit, the first brush strokes were a fact. With a great passion for photorealism and being inspired by other contemporary artists, Cynthia created works in acrylic and oil paint. It was only in 2020 when she completely switched to colored pencils. Based in the Netherlands, she loves to work on projects where every detail matters. To make a drawing as realistic as possible is always the main goal.",
+        "The journey in the world of art started in 2018. In a small studio, with a painting starter kit, the first brush strokes were a fact. With a great passion for photorealism and being inspired by other contemporary artists, Cynthia created works in acrylic and oil paint. It was only in 2020 when she completely switched to coloured pencils. Based in the Netherlands, she loves to work on projects where every detail matters. To make a drawing as realistic as possible is always the main goal.",
       teaserImage: {
         url: posingWithShoe,
         alt: "Posing with Indian Shoe painting",
@@ -71,51 +73,32 @@ export default {
       id: 3,
       title: "Available artworks",
       teaserText:
-        "A selection of artworks I worked on recently. Some small pieces, some big pieces, some are available and some are not. They are all made with colour pencils on thick acid-free paper and each one took between 50 and 100 hours to make. Please check them out below and if you are interested in purchasing one, feel free to contact me by sending an email to: hello@cynthiameiring.com.",
+        "A selection of artworks I worked on recently. Some small pieces, some big pieces, some are available and some are not. They are all made with coloured pencils on thick acid-free paper and each one took between 50 and 100 hours to make. Please check them out below and if you are interested in purchasing one, feel free to contact me by sending an email to: hello@cynthiameiring.com.",
       teaserImage: {
         url: indianRingFinished,
         alt: "Finished drawing of a Indian ring",
       },
       artworks: [
         {
-          id: 4,
-          title: `"Fado guitar"`,
+          id: 9,
+          title: `"Origami squirrel"`,
           status: "Sold",
           teaserImage: {
-            url: guitarFinished,
-            alt: "Finished drawing of Fado guitar",
+            url: origamiSquirrelFramed  ,
+            alt: "Finished nutan drawing",
           },
-          productImages: [
-            {
-              url: guitar3,
-              alt: "Detail picture 1 of Fado guitar",
-            },
-            {
-              url: guitar4,
-              alt: "Detail picture 2 of Fado guitar",
-            },
-            {
-              url: guitar1,
-              alt: "Detail picture 3 of Fado guitar",
-            },
-            {
-              url: guitar2,
-              alt: "Detail picture 5 of Fado guitar",
-            },
-            {
-              url: guitar5,
-              alt: "Detail picture 6 of Fado guitar",
-            },
-          ],
+          productImages: [],
           productDetails: [
             "Certificate of Authentication is included",
-            "Size without frame: 595 x 840 mm (A1)",
-            "Acid free, 300 gr/m2 paper",
-            "White wooden frame, size: 700 x 975 x 30 mm",
-            "A layer of fixative spray is applied to protect the artwork",
-            "Material used: Caran d'Ache Luminance colour pencils",
+            "Wooden frame is included",
+            "Size without frame: 350 x 350 mm",
+            "Size with frame: 450 x 450 mm",
+            "Paper: Acid free, 640 gr/m2 paper from Fabriano Artistico",
+            "Medium: Caran d'Ache Luminance coloured pencils",
+            "Artwork is framed behind museum quality acrylic",
           ],
         },
+
         {
           id:   6,
           title: `"The one and only"`,
@@ -125,6 +108,10 @@ export default {
             alt: "Indian ring drawing finished",
           },
           productImages: [
+            {
+              url: indianRingFramed,
+              alt: "Indian ring framed",
+            },
             {
               url: indianRing1,
               alt: "Indian ring detail picture1",
@@ -160,7 +147,7 @@ export default {
             "Option to include a white wooden frame",
             "Acid free, 400 gr/m2 paper",
             "A layer of fixative spray is applied to protect the artwork",
-            "Material used: Caran d'Ache Luminance colour pencils",
+            "Material used: Caran d'Ache Luminance coloured pencils",
           ],
         },
         {
@@ -191,7 +178,7 @@ export default {
             "Acid free, 400 gr/m2 paper",
             "Option to include a white wooden frame",
             "A layer of fixative spray is applied to protect the artwork",
-            "Material used: Caran d'Ache Luminance colour pencils",
+            "Material used: Caran d'Ache Luminance coloured pencils",
           ],
         },
         {
@@ -226,11 +213,50 @@ export default {
           ],
         },
         {
+          id: 4,
+          title: `"Fado guitar"`,
+          status: "Sold",
+          teaserImage: {
+            url: guitarFinished,
+            alt: "Finished drawing of Fado guitar",
+          },
+          productImages: [
+            {
+              url: guitar3,
+              alt: "Detail picture 1 of Fado guitar",
+            },
+            {
+              url: guitar4,
+              alt: "Detail picture 2 of Fado guitar",
+            },
+            {
+              url: guitar1,
+              alt: "Detail picture 3 of Fado guitar",
+            },
+            {
+              url: guitar2,
+              alt: "Detail picture 5 of Fado guitar",
+            },
+            {
+              url: guitar5,
+              alt: "Detail picture 6 of Fado guitar",
+            },
+          ],
+          productDetails: [
+            "Certificate of Authentication is included",
+            "Size without frame: 595 x 840 mm",
+            "Acid free, 300 gr/m2 paper",
+            "White wooden frame, size: 700 x 975",
+            "A layer of fixative spray is applied to protect the artwork",
+            "Medium: Caran d'Ache Luminance coloured pencils",
+          ],
+        },
+        {
           id: 3,
           title: `"Triangulart"`,
           status: "Available",
           teaserImage: {
-            url: triangulart1,
+            url: triangulartFramed,
             alt: "Finished triangulart drawing",
           },
           productImages: [
@@ -261,7 +287,7 @@ export default {
             "Acid free, 640 gr/m2 paper from Fabriano Artistico",
             "Option to include a white wooden frame",
             "A layer of fixative spray is applied to protect the artwork",
-            "Material used: Caran d'Ache Luminance colour pencils",
+            "Medium: Caran d'Ache Luminance coloured pencils",
           ],
         },
         {
@@ -292,34 +318,7 @@ export default {
             "Acid free, 640 gr/m2 paper from Fabriano Artistico",
             "Option to include a white wooden frame",
             "A layer of fixative spray is applied to protect the artwork",
-            "Material used: Caran d'Ache Luminance colour pencils",
-          ],
-        },
-        {
-          id: 7,
-          title: `"Disparity"`,
-          status: "Available",
-          teaserImage: {
-            url: diamondFinished,
-            alt: "Finished diamond drawing",
-          },
-          productImages: [
-            {
-              url: diamond1,
-              alt: "Diamond detail picture1",
-            },
-            {
-              url: diamond2,
-              alt: "Diamond detail picture2",
-            },
-          ],
-          productDetails: [
-            "Certificate of Authentication is included",
-            "Size without frame: 400 x 400 mm",
-            "Acid free, 640 gr/m2 paper from Fabriano Artistico",
-            "Option to include a white wooden frame",
-            "A layer of fixative spray is applied to protect the artwork",
-            "Material used: Caran d'Ache Luminance colour pencils",
+            "Medium: Caran d'Ache Luminance coloured pencils",
           ],
         },
         {
@@ -366,8 +365,35 @@ export default {
             "Size without frame: 700 x 700 mm",
             "Size with frame: 800 x 800 mm",
             "Paper: Acid free, 640 gr/m2 paper from Fabriano Artistico",
-            "Medium: Caran d'Ache Luminance colour pencils",
+            "Medium: Caran d'Ache Luminance coloured pencils",
             "Artwork is framed behind museum quality acrylic",
+          ],
+        },
+        {
+          id: 7,
+          title: `"Disparity"`,
+          status: "Not for sale",
+          teaserImage: {
+            url: diamondFinished,
+            alt: "Finished diamond drawing",
+          },
+          productImages: [
+            {
+              url: diamond1,
+              alt: "Diamond detail picture1",
+            },
+            {
+              url: diamond2,
+              alt: "Diamond detail picture2",
+            },
+          ],
+          productDetails: [
+            "Certificate of Authentication is included",
+            "Size without frame: 400 x 400 mm",
+            "Acid free, 640 gr/m2 paper from Fabriano Artistico",
+            "Option to include a white wooden frame",
+            "A layer of fixative spray is applied to protect the artwork",
+            "Medium: Caran d'Ache Luminance coloured pencils",
           ],
         },
       ],
@@ -416,7 +442,7 @@ export default {
       id: 8,
       title: "Downloads",
       teaserText:
-          "Download the outlines of my drawings and start coloring yourself! Don't forget to post a picture of your beautiful creations on Instagram and tag me (@cynthia_meiring_art). Have fun!",
+          "Download the outlines of my drawings and start colouring yourself! Don't forget to post a picture of your beautiful creations on Instagram and tag me (@cynthia_meiring_art). Have fun!",
       teaserImage: {
         url: "",
         alt: "",
