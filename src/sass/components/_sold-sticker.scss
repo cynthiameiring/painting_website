@@ -13,8 +13,9 @@
 .c-available-sticker {
   background-color: rgba(189, 189, 189, 0.6);
   border-radius: 10px;
-
-  width: 85px;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 40px;
   bottom: 18px;
   right: 18px;

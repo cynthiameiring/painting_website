@@ -78,7 +78,7 @@ class Navigation extends Component {
                                     >
                                         <NavLink
                                             activeClassName="v-border--nav--active"
-                                            className={(index !== 0 ? "u-margin--l4  u-margin--l6@xl  " : "") + "u-inline-block  u-no-decoration  u-size--8  u-black  u-hover--grey--suva-grey  v-border--nav  u-weight--500"}
+                                            className={(index !== 0 ? "u-margin--l4  u-margin--l6@xl  " : "") + "u-inline-block  u-no-decoration  u-size--8  u-black  v-border--nav  u-weight--500"}
                                             to={"/" + item.toLowerCase()}
                                             onClick={() =>
                                                 this.setState({ activePage: item.toLowerCase() })

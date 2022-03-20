@@ -79,7 +79,7 @@ export default class ArtDetailPage extends Component {
             </div>
           </div>
           <div className="o-grid__col  o-grid__col--12@xs  o-grid__col--6@sm  u-padding--l5@sm  u-padding--l7@lg  u-padding--l8@xl  u-padding--t6@lg">
-            <div className="infobanner  u-margin--b5  u-margin--b7@lg">
+            <div className={"c-availability  u-margin--b5  u-margin--b7@lg" + (artwork.status.toLowerCase() === "sold" ? "  u-white  u-bg--red-permission" : "  u-black  u-bg--white-gainsboro")}>
               <span className="">{artwork.status}</span>
             </div>
             <h3 className="u-margin--b5  u-margin--b7@lg  u-size--7">

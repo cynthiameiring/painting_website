@@ -1,15 +1,13 @@
-.infobanner {
+.c-availability {
   display: flex;
   height: 40px;
   width: 150px;
   text-decoration: none;
-  color: #4a4a4a;
   font-size: 0.8em;
   letter-spacing: 1.5px;
   align-items: center;
   justify-content: center;
-  background-color: #e1e1e1;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 .v-video-container {
@@ -19,11 +17,6 @@
   padding-bottom: 56.25%;
   height: 0;
 
-  // ::after {
-  //   display: block;
-  //   padding-top: 56.25;
-  //   content: "";
-  // }
   iframe {
     position: absolute;
     top: 0;
