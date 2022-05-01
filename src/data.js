@@ -282,7 +282,7 @@ export default {
           ],
           productDetails: [
             "Certificate of Authentication is included",
-            "Paper: Acid free, 640 gr/m2 paper from Fabriano Artistico",
+            "Paper: Acid free, 400 gr/m2 paper from Fabriano Artistico",
             "Medium: Caran d'Ache Luminance coloured pencils",
             "The piece is framed behind Optium UV protective acrylic in a white wooden frame",
             "Size without frame: 500 x 700 mm",
