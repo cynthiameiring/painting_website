@@ -19,7 +19,7 @@ export default class Contact extends Component {
     return (
       <div className="o-grid  o-grid--fixed  u-width--100  u-padding--y6  u-padding--y7@sm  u-padding--y8@lg">
         <div className="o-grid__row  u-margin--b5  u-margin--b6@sm  u-margin--b7@lg">
-          <div className="o-grid__col  o-grid__col--12@xs  u-flex  u-flex--column  u-flex--items--center">
+          <div className="o-grid__col  o-grid__col--12@xs  o-grid__col--10@md  o-grid--offset--1@md  u-flex  u-flex--column  u-flex--items--center">
             <h2 className="h2-font  u-margin--b4">
               {this.state.contact.title}
             </h2>
@@ -42,7 +42,7 @@ export default class Contact extends Component {
         </div> */}
 
         <div className="o-grid__row  u-margin--b5  u-margin--b6@sm  u-margin--b7@lg">
-          <div className="o-grid__col  o-grid__col--12@xs  u-flex  u-flex--column  u-flex--items--center">
+          <div className="o-grid__col  o-grid__col--12@xs  o-grid__col--10@md  o-grid--offset--1@md  u-flex  u-flex--column  u-flex--items--center">
             <h3 className="u-size--7  u-size--6@md  u-size--5@lg  u-weight--600  u-lh--2  u-margin--b4">
               {this.state.commissions.title}
             </h3>
@@ -53,7 +53,7 @@ export default class Contact extends Component {
         </div>
 
         <div className="o-grid__row">
-          <div className="o-grid__col  o-grid__col--12@xs  u-flex  u-flex--column  u-flex--items--center">
+          <div className="o-grid__col  o-grid__col--12@xs  o-grid__col--10@md  o-grid--offset--1@md  u-flex  u-flex--column  u-flex--items--center">
             <div>
               <span className="u-flex  u-flex--items--center  u-margin--b4">
                 <img

@@ -5,7 +5,7 @@ import data from "../data.js";
 
 export default class RecentWorks extends Component {
   state = {
-    recentWorks: data.pages.find((p) => p.title === "Available artworks"),
+    recentWorks: data.pages.find((p) => p.title === "Artworks"),
   };
 
   componentDidMount() {

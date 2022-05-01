@@ -195,23 +195,24 @@ export default class NewsletterBanner extends Component {
   state = {};
   render() {
     return (
-      <div
-        className="o-grid  o-grid--fixed  u-width--100  u-padding--5"
-        style={{ backgroundColor: "#dfdfdf" }}
-      >
-        <div className="o-grid__row">
-          <div className="o-grid__col  o-grid__col--12@xs  u-text--center">
-            <h2 className="u-margin--b5  u-margin--b6@xl  u-size--6  u-size--5@md  u-size--4@lg  u-weight--600  u-lh--2  v-rectangle--middle">
-              {this.props.title}
-            </h2>
-            <p className="u-margin--b4">
-              {this.props.text}
-            </p>
+      <div style={{ backgroundColor: "#dfdfdf" }}>
+        <div
+          className="o-grid  o-grid--fixed  u-width--100  u-padding--5"
+        >
+          <div className="o-grid__row">
+            <div className="o-grid__col  o-grid__col--12@xs  u-text--center">
+              <h2 className="u-margin--b5  u-margin--b6@xl  u-size--6  u-size--5@md  u-size--4@lg  u-weight--600  u-lh--2  v-rectangle--middle">
+                {this.props.title}
+              </h2>
+              <p className="u-margin--b4">
+                {this.props.text}
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="o-grid__row">
-          <div className="o-grid__col  o-grid__col--12@xs">
-            <SignupForm />
+          <div className="o-grid__row">
+            <div className="o-grid__col  o-grid__col--12@xs">
+              <SignupForm />
+            </div>
           </div>
         </div>
       </div>

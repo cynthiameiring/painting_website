@@ -31,16 +31,16 @@ import triangulartFramed from "./media/Triangular/triangulart_framed.jpg";
 import diamondFinished from "./media/Diamond/diamondFinished.jpg";
 import diamond1 from "./media/Diamond/diamond1.jpg";
 import diamond2 from "./media/Diamond/diamond2.jpg";
-import puzzledFinished from "./media/Puzzled/puzzled_finished.jpg";
+import puzzledFinished from "./media/Puzzled/puzzledFinished.jpg";
 import puzzledDetail2 from "./media/Puzzled/puzzledDetail2.jpg";
 import puzzledDetail3 from "./media/Puzzled/puzzledDetail3.jpeg";
 import puzzledDetail4 from "./media/Puzzled/puzzledDetail4.jpeg";
-import nutanFinishedFrame from "./media/OrangeFlower/nutan_finished.jpg";
+import nutanFinishedFrame from "./media/OrangeFlower/nutan_finished_frame.jpg";
 import nutanFinished from "./media/OrangeFlower/Orange_flower_final_square.jpg";
 import nutanFrameDetail from "./media/OrangeFlower/nutan_frame_detail.jpg";
 import nutanWip from "./media/OrangeFlower/nutan_wip.jpg";
 import nutanDetail1 from "./media/OrangeFlower/nutan_detail1.jpg";
-import frameDetail1 from "./media/Frame/Framedetail1.jpg"
+import frameDetail1 from "./media/Frame/FrameDetail1.jpg"
 import frameDetail2 from "./media/Frame/FrameDetail2.jpg"
 import frameDetail3 from "./media/Frame/FrameDetail3.jpg"
 import origamiSquirrelFramed from "./media/Origami_squirrel/origami_squirrel_framed.jpg"
@@ -65,18 +65,18 @@ export default {
       teaserText:
         "Do you have questions or are you interested in purchasing one of the available artworks? Get in touch with me to get the pricelist, shipping information and other information. Also the possibility of framing the piece can be discussed. Please contact me by sending an email to: ",
       teaserImage: {
-        url: guitarFinished,
-        alt: "Finished guitar drawing",
+        url: nutanFinished,
+        alt: "Finished nutan flower drawing",
       },
     },
     {
       id: 3,
-      title: "Available artworks",
+      title: "Artworks",
       teaserText:
         "A selection of artworks I worked on recently. Some small pieces, some big pieces, some are available and some are not. They are all made with coloured pencils on thick acid-free paper and each one took between 50 and 100 hours to make. Please check them out below and if you are interested in purchasing one, feel free to contact me by sending an email to: hello@cynthiameiring.com.",
       teaserImage: {
         url: indianRingFinished,
-        alt: "Finished drawing of a Indian ring",
+        alt: "Finished drawing of an Indian ring",
       },
       artworks: [
         {
@@ -85,17 +85,16 @@ export default {
           status: "Sold",
           teaserImage: {
             url: origamiSquirrelFramed  ,
-            alt: "Finished nutan drawing",
+            alt: "Finished origami squirrel drawing",
           },
           productImages: [],
           productDetails: [
             "Certificate of Authentication is included",
-            "Wooden frame is included",
-            "Size without frame: 350 x 350 mm",
-            "Size with frame: 450 x 450 mm",
             "Paper: Acid free, 640 gr/m2 paper from Fabriano Artistico",
             "Medium: Caran d'Ache Luminance coloured pencils",
-            "Artwork is framed behind museum quality acrylic",
+            "The piece is framed behind Optium UV protective acrylic in a white wooden frame",
+            "Size without frame: 350 x 350 mm",
+            "Size with frame: 450 x 450 mm",
           ],
         },
 
@@ -143,11 +142,11 @@ export default {
           ],
           productDetails: [
             "Certificate of Authentication is included",
+            "Paper: Acid free, 400 gr/m2 paper",
+            "Medium: Caran d'Ache Luminance coloured pencils",
+            "The piece is framed behind Optium UV protective acrylic in a white wooden frame",
             "Size without frame: 500 x 700 mm",
-            "Option to include a white wooden frame",
-            "Acid free, 400 gr/m2 paper",
-            "A layer of fixative spray is applied to protect the artwork",
-            "Material used: Caran d'Ache Luminance coloured pencils",
+            "Size with frame: 600 x 810 mm",
           ],
         },
         {
@@ -184,7 +183,7 @@ export default {
         {
           id: 2,
           title: `"Sparkle in the sand"`,
-          status: "Available",
+          status: "Not for sale",
           teaserImage: {
             url: shellFinished,
             alt: "Shell painting finished",
@@ -244,11 +243,11 @@ export default {
           ],
           productDetails: [
             "Certificate of Authentication is included",
-            "Size without frame: 595 x 840 mm",
-            "Acid free, 300 gr/m2 paper",
-            "White wooden frame, size: 700 x 975",
-            "A layer of fixative spray is applied to protect the artwork",
+            "Paper: Acid free, 300 gr/m2 paper",
             "Medium: Caran d'Ache Luminance coloured pencils",
+            "White wooden is frame included",
+            "Size without frame: 595 x 840 mm",
+            "Size with frame: 700 x 975 mm",
           ],
         },
         {
@@ -283,11 +282,11 @@ export default {
           ],
           productDetails: [
             "Certificate of Authentication is included",
-            "Size without frame: 500 x 700 mm",
-            "Acid free, 640 gr/m2 paper from Fabriano Artistico",
-            "Option to include a white wooden frame",
-            "A layer of fixative spray is applied to protect the artwork",
+            "Paper: Acid free, 640 gr/m2 paper from Fabriano Artistico",
             "Medium: Caran d'Ache Luminance coloured pencils",
+            "The piece is framed behind Optium UV protective acrylic in a white wooden frame",
+            "Size without frame: 500 x 700 mm",
+            "Size with frame: 600 x 810 mm",
           ],
         },
         {
@@ -361,12 +360,11 @@ export default {
           ],
           productDetails: [
             "Certificate of Authentication is included",
-            "Wooden frame is included",
-            "Size without frame: 700 x 700 mm",
-            "Size with frame: 800 x 800 mm",
             "Paper: Acid free, 640 gr/m2 paper from Fabriano Artistico",
             "Medium: Caran d'Ache Luminance coloured pencils",
-            "Artwork is framed behind museum quality acrylic",
+            "The piece is framed behind Optium UV protective acrylic in a white wooden frame",
+            "Size without frame: 700 x 700 mm",
+            "Size with frame: 800 x 800 mm",
           ],
         },
         {
@@ -391,7 +389,6 @@ export default {
             "Certificate of Authentication is included",
             "Size without frame: 400 x 400 mm",
             "Acid free, 640 gr/m2 paper from Fabriano Artistico",
-            "Option to include a white wooden frame",
             "A layer of fixative spray is applied to protect the artwork",
             "Medium: Caran d'Ache Luminance coloured pencils",
           ],
@@ -402,7 +399,7 @@ export default {
       id: 4,
       title: "Process",
       teaserText:
-        "Creating a photorealistic drawing doesn't only involve a lot of patience and hours and hours of drawing. It's a whole process to come from a blank piece of paper to a realistic drawing: from finding an interesting object, creating a usefull reference picture to drawing the outlines, colouring and framing the final drawing.",
+        "Creating a photorealistic drawing doesn't only involve a lot of patience and hours and hours of drawing. It's a whole process to come from a blank piece of paper to a realistic drawing: from finding an interesting object, creating a useful reference picture to drawing the outlines, colouring and framing the final drawing.",
       teaserImage: {
         url: "",
         alt: "",
@@ -415,7 +412,7 @@ export default {
         "Finished, unfinished and work in progress... This photo gallery gives a glimp of the projects I enjoyed working on the most. It shows a bit of the progress and how every object arises from the paper. Step by step as it is a slow process, but.. a very enjoyable one! Every detail matters, every scribble with the pencil is important to make the final drawing as photorealistic as possible. If you would like to see more of the process, click ",
       teaserImage: {
         url: guitarFinished,
-        alt: "Triangular art work in progress",
+        alt: "Finished fado guitar drawing",
       },
     },
     {
@@ -424,8 +421,8 @@ export default {
       teaserText:
         "Are you interested in a piece, but the available works don't really suit you? Then we can talk about a private commission. Together we'll discuss your wishes and the possibilities. Based on the size, difficulty and level of detail, the price will be determined of which you pay 30% at the start. The remaining part you pay once the artwork is finished (before shipment). Please keep in mind that on average it takes about 8 weeks to finish the piece. Interested? Please contact me and I will come back to you as soon as possbile.",
       teaserImage: {
-        url: shellFinished,
-        alt: "Finished shell drawing",
+        url: guitarFinished,
+        alt: "Finished fado guitar drawing",
       },
     },
     {
@@ -442,10 +439,21 @@ export default {
       id: 8,
       title: "Downloads",
       teaserText:
-          "Download the outlines of my drawings and start colouring yourself! Don't forget to post a picture of your beautiful creations on Instagram and tag me (@cynthia_meiring_art). Have fun!",
+          "Download the outlines of my drawings and start colouring yourself! Don't forget to post a picture of your beautiful creations on Instagram and tag me (@cynthia_meiring_studio). Have fun!",
       teaserImage: {
         url: "",
         alt: "",
+      },
+    },
+    {
+      id: 9,
+      title: "Ready to hang",
+      teaserText:
+          "Each artwork will be framed in a white wooden frame, mounted behind UV protective Optium Museum Acrylic. The frame is designed in such a way that the artwork appears to float within the frame on top of the cardboard. Because of this illusion you will gain a sense of three-dimensional depth when viewing the piece. " +
+          "A steel wire is already attached on the backside of the frame, so the piece is ready to hang!",
+      teaserImage: {
+        url: frameDetail3,
+        alt: "Detail of frame",
       },
     },
   ],

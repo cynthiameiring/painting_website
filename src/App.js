@@ -13,6 +13,7 @@ import Downloads from "./pages/Downloads";
 import Privacy from "./pages/Privacy";
 import Process from "./pages/Process";
 // import Signup from "./pages/Signup";
+import Frame from "./pages/Frame";
 import ArtDetailPage from "./pages/ArtDetailPage";
 import { Link } from "react-router-dom";
 
@@ -38,6 +39,7 @@ function App(props) {
       <Route exact path="/process" component={Process} />
       {/* <Route exact path="/signup" component={Signup} /> */}
       <Route path="/artworks/:id" component={ArtDetailPage} />
+      <Route exact path="/frame" component={Frame} />
       <Route exact path="/privacy-policy" component={Privacy} />
 
       <div className="u-width--100  u-absolute  u-bottom--0  u-text--center  u-padding--y5">
