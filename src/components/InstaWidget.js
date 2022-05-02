@@ -29,7 +29,7 @@ export default class InstaWidget extends Component {
               ></iframe>
               <ButtonText
                 text="Go to Instagram"
-                src="https://www.instagram.com/cynthia_meiring_art"
+                src="https://www.instagram.com/cynthia_meiring_studio"
                 externalLink={true}
               />
             </div>
