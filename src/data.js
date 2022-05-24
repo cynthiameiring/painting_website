@@ -102,6 +102,7 @@ export default {
           id:   6,
           title: `"The one and only"`,
           status: "Available",
+          contractedByGallery: true,
           teaserImage: {
             url: indianRingFinished,
             alt: "Indian ring drawing finished",
@@ -152,7 +153,7 @@ export default {
         {
           id: 5,
           title: `"Botanical"`,
-          status: "Available",
+          status: "Sold",
           teaserImage: {
             url: greenPlantFinished,
             alt: "Finished plant drawing",
@@ -254,6 +255,7 @@ export default {
           id: 3,
           title: `"Triangulart"`,
           status: "Available",
+          contractedByGallery: true,
           teaserImage: {
             url: triangulartFramed,
             alt: "Finished triangulart drawing",
@@ -324,6 +326,7 @@ export default {
           id: 8,
           title: `"Nutan"`,
           status: "Available",
+          contractedByGallery: true,
           teaserImage: {
             url: nutanFinished,
             alt: "Finished nutan drawing",

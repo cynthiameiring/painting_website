@@ -3,6 +3,7 @@ import email from "../media/email.png";
 import instagram from "../media/instagram.png";
 import youtube from "../media/youtube.png";
 import facebook from "../media/facebook.png";
+import logoDLD from "../media/Logo_DLD.jpg"
 import data from "../data.js";
 
 export default class Contact extends Component {
@@ -40,6 +41,21 @@ export default class Contact extends Component {
             <ContactForm />
           </div>
         </div> */}
+
+        <div className="o-grid__row  u-margin--b5  u-margin--b6@sm  u-margin--b7@lg">
+          <div className="o-grid__col  o-grid__col--12@xs  o-grid__col--10@md  o-grid--offset--1@md  u-flex  u-flex--column  u-flex--items--center">
+            <h3 className="u-size--7  u-size--6@md  u-size--5@lg  u-weight--600  u-lh--2  u-margin--b4">
+              Gallery
+            </h3>
+            <span className="u-weight--200  u-size--9  u-size--8@md  u-text--center  u-margin--b4">
+              Since March 2022 I teamed up with Dutch Luxury Design. Some of my artworks are available {' '}
+              <a className="u-black" href="https://dutchluxurydesign.com/en/our-artists/cynthia-meiring" target="_blank" rel="noopener noreferrer">through this gallery.</a>
+              {' '}In October 2022 I'll take part in the group exhibition, so my work will be on display. If you would like to receive updates about this exhibition, you can {' '}
+              <a className="u-black" href="/#newsletter-banner">sign up for my newsletter</a>.
+            </span>
+            <a className="u-black" href="https://dutchluxurydesign.com/en/our-artists/cynthia-meiring" target="_blank" rel="noopener noreferrer"><img alt="logo Dutch Luxury Design" style={{width:"300px"}} src={logoDLD}/></a>
+          </div>
+        </div>
 
         <div className="o-grid__row  u-margin--b5  u-margin--b6@sm  u-margin--b7@lg">
           <div className="o-grid__col  o-grid__col--12@xs  o-grid__col--10@md  o-grid--offset--1@md  u-flex  u-flex--column  u-flex--items--center">

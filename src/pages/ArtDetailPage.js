@@ -82,7 +82,7 @@ export default class ArtDetailPage extends Component {
             <div className={"c-availability  u-margin--b5  u-margin--b7@lg" + (artwork.status.toLowerCase() === "sold" ? "  u-white  u-bg--red-permission" : "  u-black  u-bg--white-gainsboro")}>
               <span className="">{artwork.status}</span>
             </div>
-            <h3 className="u-margin--b5  u-margin--b7@lg  u-size--7">
+            {artwork.status === "Available" && artwork.contractedByGallery !== true && <h3 className="u-margin--b5  u-margin--b7@lg  u-size--7">
               For prices or other questions, please send an email to:{" "}
               <a
                 className="u-black  u-no-decoration"
@@ -90,7 +90,16 @@ export default class ArtDetailPage extends Component {
               >
                 hello@cynthiameiring.com
               </a>
-            </h3>
+            </h3>}
+            {artwork.contractedByGallery && <h3 className="u-margin--b5  u-margin--b7@lg  u-size--7">
+              This artwork is contracted by the gallery Dutch Luxury Design and can be purchased using{" "}
+              <a
+                  className="u-black"
+                  href="https://dutchluxurydesign.com/en/our-artists/cynthia-meiring"
+                  target="_blank"
+                  rel="noopener noreferrer"
+              >this link.</a>
+            </h3>}
             <ul className="u-weight--200">
               {artwork.productDetails.map((item, index) => (
                 <li key={index} className="u-lh--5  u-size--9  u-size--8@lg">
