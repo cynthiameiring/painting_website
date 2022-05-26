@@ -6,13 +6,7 @@
 \* ----------------------------------------------------------------------------- */
 /* stylelint-disable color-no-hex */
 /* stylelint-enable color-no-hex */
-.u-ff--aurore {
-  font-family: "La Belle Aurore", cursive;
-}
 
-.u-ff--sarabun {
-  font-family: "Sarabun", sans-serif;
-}
 
 /* Stylelint handles the calculation of specificity incorrectly. */
 /* stylelint-disable no-descending-specificity */

@@ -8,9 +8,7 @@
 // Settings / variables
 //
 @import "../../node_modules/zss/src/variables/zss-defaults";
-// @import "variables/global";
 @import "variables/zss-overrides";
-@import "variables/global";
 
 //
 // Mixins and helpers
@@ -19,8 +17,6 @@
 @import "../../node_modules/zss/src/helpers/grid";
 @import "../../node_modules/zss/src/helpers/hover";
 @import "../../node_modules/zss/src/helpers/responsive";
-// @import "helpers/ratio";
-// @import "helpers/themed-gradient";
 
 //
 // Generic: common resets
@@ -33,9 +29,6 @@
 // Base: un-classed HTML and page setup
 //
 @import "../../node_modules/zss/src/base/typography";
-// @import "base/responsive";
-// @import "base/web-font--museo-sans";
-@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;400;500;600&display=swap");
 
 //
 // Abstract objects
@@ -43,8 +36,6 @@
 @import "../../node_modules/zss/src/objects/button";
 @import "../../node_modules/zss/src/objects/grid";
 @import "../../node_modules/zss/src/objects/list-reset";
-// @import "objects/full";
-// @import "objects/ratio";
 
 //
 // Components
@@ -52,42 +43,25 @@
 @import "components/buttons";
 @import "components/infobanner";
 @import "components/forms";
-// @import "components/header";
-// @import "components/icons";
-// @import "components/info-card";
-// @import "components/input";
 @import "components/links";
 @import "components/menu";
 @import "components/sold-sticker";
-// @import "components/slant";
-// @import "components/visual";
+
 //
-// Scopes
+// Font Families
 //
-// @import "scopes/cms-content";
-// @import "scopes/forms";
-//
-// Themes
-//
-// @import "theming/general";
+@import "fonts/fonts";
+
 //
 // Visual effects
 //
 @import "visuals/background";
-// @import "visuals/blobs";
 @import "visuals/border";
 @import "visuals/clip";
-// @import "visuals/forms";
-// @import "visuals/gradient";
 @import "visuals/hover";
-// @import "visuals/icons";
-// @import "visuals/input";
-// @import "visuals/lists";
 @import "visuals/overlay";
 @import "visuals/rectangle";
 @import "visuals/transform";
-// @import "visuals/triangle";
-// @import "visuals/shadow";
 
 //
 // Utility classes
@@ -121,15 +95,8 @@
 @import "../../node_modules/zss/src/utilities/width";
 @import "../../node_modules/zss/src/utilities/z-index";
 @import "utilities/box-shadow";
-// @import "utilities/flex";
-// @import "utilities/font-family";
 @import "utilities/height";
-// @import "utilities/outline";
-// @import "utilities/padding";
 @import "utilities/position";
-// @import "utilities/text-decoration";
-// @import "utilities/transition";
-// @import "utilities/width";
 
 //
 // Hacks
@@ -142,10 +109,6 @@
 @import "hacks/width";
 @import "hacks/z-index";
 
-//
-// Development tools
-//
-// @import "../../node_modules/zss/src/dev/strict";
 
 p {
   font-weight: 200;
