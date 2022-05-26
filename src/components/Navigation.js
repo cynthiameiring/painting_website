@@ -56,7 +56,7 @@ class Navigation extends Component {
     render() {
         return (
             <header className="u-width--100  u-sticky  u-sticky--safari  u-top--0  u-bg--white--white-smoke  u-box-shadow--1  z-index--hamburger">
-                <div style={{ letterSpacing: "1px", backgroundColor: "#dfdfdf" }} className="js-newsletterBanner  u-width--100  u-weight--300  u-size--10  u-size--9@sm  u-padding--y4  u-text--center">
+                <div style={{ letterSpacing: "1px", backgroundColor: "#dfdfdf" }} className="js-newsletterBanner  u-width--100  u-weight--400  u-size--10  u-size--9@sm  u-padding--y4  u-text--center">
                     <a className="u-black" href="/#newsletter-banner">
                         Subscribe to the newsletter (no spam, I promise)
                     </a>
