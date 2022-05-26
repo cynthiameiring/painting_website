@@ -44,6 +44,10 @@ import frameDetail1 from "./media/Frame/FrameDetail1.jpg"
 import frameDetail2 from "./media/Frame/FrameDetail2.jpg"
 import frameDetail3 from "./media/Frame/FrameDetail3.jpg"
 import origamiSquirrelFramed from "./media/Origami_squirrel/origami_squirrel_framed.jpg"
+import origamiSnailFinished from "./media/Origami_snail/origami_snail_finished.jpg"
+import origamiSnailFinished2 from "./media/Origami_snail/origami_snail_finished2.jpg"
+import origamiSnailDetail1 from "./media/Origami_snail/origami_snail_detail1.jpg"
+import origamiSnailDetail2 from "./media/Origami_snail/origami_snail_detail2.jpg"
 
 
 
@@ -97,7 +101,37 @@ export default {
             "Size with frame: 450 x 450 mm",
           ],
         },
-
+        {
+          id: 10,
+          title: `"Origami snail"`,
+          status: "Available",
+          teaserImage: {
+            url: origamiSnailFinished,
+            alt: "Finished origami snail drawing",
+          },
+          productImages: [
+            {
+              url: origamiSnailDetail1,
+              alt: "Detail of origami snail drawing",
+            },
+            {
+              url: origamiSnailFinished2,
+              alt: "Finished origami snail drawing",
+            },
+            {
+              url: origamiSnailDetail2,
+              alt: "Detail of origami snail drawing",
+            }
+          ],
+          productDetails: [
+            "Certificate of Authentication is included",
+            "Paper: Acid free, 640 gr/m2 paper from Fabriano Artistico",
+            "Medium: Caran d'Ache Luminance coloured pencils",
+            "The piece is framed behind Optium UV protective acrylic in a white wooden frame",
+            "Size without frame: 350 x 350 mm",
+            "Size with frame: 450 x 450 mm",
+          ],
+        },
         {
           id:   6,
           title: `"The one and only"`,
