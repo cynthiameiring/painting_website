@@ -5,8 +5,6 @@ import TextImage from "../components/TextImage";
 import NewsletterBanner from "../components/NewsletterBanner";
 import { connect } from "react-redux";
 import Card from "../components/Card";
-import processVideo from "../media/Videos/puzzled_teaser_website.mp4";
-import shoes from "../media/shoe.jpg";
 import data from "../data.js";
 
 class Home extends Component {
@@ -76,7 +74,7 @@ class Home extends Component {
                 </div>
                 <div className="o-grid__col  o-grid__col--6@xs  o-grid__col--4@lg">
                   <Card
-                    image={shoes}
+                    image="/media/shoe.jpg"
                     title={this.state.about.title}
                     url="/about"
                     buttonText="Read more"
@@ -101,7 +99,7 @@ class Home extends Component {
             text={this.state.process.teaserText}
             src="/process"
             title={"Process"}
-            videoUrl={processVideo}
+            videoUrl="/media/Videos/puzzled_teaser_website.mp4"
             imagePosition="right"
             buttonText="Watch the process"
           />

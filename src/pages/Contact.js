@@ -1,9 +1,4 @@
 import React, { Component } from "react";
-import email from "../media/email.png";
-import instagram from "../media/instagram.png";
-import youtube from "../media/youtube.png";
-import facebook from "../media/facebook.png";
-import logoDLD from "../media/Logo_DLD.jpg"
 import data from "../data.js";
 
 export default class Contact extends Component {
@@ -53,7 +48,7 @@ export default class Contact extends Component {
               {' '}In October 2022 I'll take part in the group exhibition, so my work will be on display. If you would like to receive updates about this exhibition, you can {' '}
               <a className="u-black" href="/#newsletter-banner">sign up for my newsletter</a>.
             </span>
-            <a className="u-black" href="https://dutchluxurydesign.com/en/our-artists/cynthia-meiring" target="_blank" rel="noopener noreferrer"><img alt="logo Dutch Luxury Design" style={{width:"300px"}} src={logoDLD}/></a>
+            <a className="u-black" href="https://dutchluxurydesign.com/en/our-artists/cynthia-meiring" target="_blank" rel="noopener noreferrer"><img alt="logo Dutch Luxury Design" style={{width:"300px"}} src="/media/Logo/Logo_DLD.jpg"/></a>
           </div>
         </div>
 
@@ -74,7 +69,7 @@ export default class Contact extends Component {
               <span className="u-flex  u-flex--items--center  u-margin--b4">
                 <img
                   className="u-margin--r4"
-                  src={email}
+                  src="/media/Icons/email.png"
                   alt=""
                   width="30"
                   height="24"
@@ -91,7 +86,7 @@ export default class Contact extends Component {
               <span className="u-flex  u-flex--items--center  u-margin--b4">
                 <img
                   className="u-margin--r4"
-                  src={instagram}
+                  src="/media/Icons/instagram.png"
                   alt=""
                   width="30"
                   height="30"
@@ -109,7 +104,7 @@ export default class Contact extends Component {
               <span className="u-flex  u-flex--items--center  u-margin--b4">
                 <img
                   className="u-margin--r4"
-                  src={youtube}
+                  src="/media/Icons/youtube.png"
                   alt=""
                   width="30"
                   height="30"
@@ -126,7 +121,7 @@ export default class Contact extends Component {
               <span className="u-flex  u-flex--items--center  u-margin--b4">
                 <img
                   className="u-margin--r4"
-                  src={facebook}
+                  src="/media/Icons/facebook.png"
                   alt=""
                   width="30"
                   height="30"

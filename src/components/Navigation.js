@@ -1,13 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import logo from "../media/Logo-black-bold.png";
 import HamburgerMenu from "react-hamburger-menu";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { toggleMenu } from "../actions/menu";
-import instagram from "../media/instagram.png";
-import youtube from "../media/youtube.png";
-import facebook from "../media/facebook.png";
 
 class Navigation extends Component {
     state = {
@@ -17,17 +13,17 @@ class Navigation extends Component {
         socials: [
             {
                 name: "instagram",
-                icon: instagram,
+                icon: "/media/Icons/instagram.png",
                 url: "https://www.instagram.com/cynthia_meiring_studio"
             },
             {
                 name: "youtube",
-                icon: youtube,
+                icon: "/media/Icons/youtube.png",
                 url: "https://www.youtube.com/channel/UC7MrD_YgKrcwKgEYPHzOc-A"
             },
             {
                 name: "facebook",
-                icon: facebook,
+                icon: "/media/Icons/facebook.png",
                 url: "https://www.facebook.com/CynthiaMeiringStudio"
             },
         ]
@@ -95,7 +91,7 @@ class Navigation extends Component {
                               onClick={() =>
                                   this.setState({ activePage: '' })
                               }>
-                            <img src={logo} className="_height--logo" alt="logo" />
+                            <img src="/media/Logo/Logo-black-bold.png" className="_height--logo" alt="logo" />
                         </Link>
                         <div className="u-width--33  u-flex  u-flex--items--center  u-flex--justify--end">
                             {this.state.socials.map((social, index) => (
@@ -170,7 +166,7 @@ class Navigation extends Component {
                           onClick={() =>
                               this.setState({ activePage: '' })
                           }>
-                        <img src={logo} className="_height--logo" alt="logo" />
+                        <img src="/media/Logo/Logo-black-bold.png" className="_height--logo" alt="logo" />
                     </Link>
 
                     <div className="u-width--33  u-flex  u-flex--items--center  u-flex--justify--end">

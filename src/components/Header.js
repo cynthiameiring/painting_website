@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import headerImageMedium from "../media/banner_website_large.jpg";
-import headerImageSmall from "../media/banner_website_small.jpg";
-import headerImageMobile from "../media/banner_website_small.jpg";
 import { headerImageLoaded } from "../actions/menu";
 import { connect } from "react-redux";
 
@@ -36,10 +33,10 @@ class Header extends Component {
                     </div>
                 </div>
                 <picture>
-                    <source media="(min-width: 990px)" srcSet={headerImageMedium} />
-                    <source media="(min-width: 0px)" srcSet={headerImageMobile} />
+                    <source media="(min-width: 990px)" srcSet="/media/banner_website_large.jpg" />
+                    <source media="(min-width: 0px)" srcSet="/media/banner_website_small.jpg" />
                     <img
-                        srcSet={headerImageSmall}
+                        srcSet="/media/banner_website_small.jpg"
                         alt="header"
                         className="u-width--100  u-block  u-z--0"
                         style={{opacity:"0.7"}}

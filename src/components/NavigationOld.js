@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import logo from "../media/LogoBlack.png";
 import HamburgerMenu from "react-hamburger-menu";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
@@ -26,7 +25,7 @@ class NavigationOld extends Component {
         {/* Desktop view */}
         <div className="u-hidden  u-flex@lg  u-padding--l5  u-padding--y4  u-padding--r8">
           <Link to="/">
-            <img src={logo} style={{ height: "60px" }} alt="logo" />
+            <img src="/media/Logo/LogoBlack.png" style={{ height: "60px" }} alt="logo" />
           </Link>
 
           <nav
@@ -61,7 +60,7 @@ class NavigationOld extends Component {
           <div className="u-flex  u-hidden@lg  u-padding--4">
             <Link to="/" className="u-no-decoration  u-flex">
               <img
-                src={logo}
+                src="/media/Logo/LogoBlack.png"
                 className="u-margin--r4  _height--logo"
                 alt="logo"
               />

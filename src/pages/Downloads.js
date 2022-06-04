@@ -2,14 +2,6 @@ import React, { Component } from "react";
 import IntroContentPage from "../components/IntroContentPage";
 import data from "../data.js";
 import NewsletterBanner from "../components/NewsletterBanner";
-import lineArtDiamondPreview from "../media/LineArt/line_art_diamond_preview.jpg";
-import lineArtDiamondDownload from "../media/LineArt/Line_art_diamond.pdf";
-import lineArtBotanicalPreview from "../media/LineArt/line_art_botanical_preview.jpg";
-import lineArtBotanicalDownload from "../media/LineArt/Line_art_botanical.pdf";
-import lineArtTriangulartPreview from "../media/LineArt/line_art_triangulart_preview.jpg";
-import lineArtTriangulartDownload from "../media/LineArt/Line_art_triangulart.pdf";
-import lineArtSquirrelPreview from "../media/LineArt/line_art_squirrel_preview.jpg";
-import lineArtSquirrelDownload from "../media/LineArt/Line_art_squirrel.pdf";
 import {connect} from "react-redux";
 import Cookies from 'js-cookie';
 import {setSubmittedNewsletterForm} from "../actions/newsletterForm";
@@ -20,10 +12,10 @@ class Downloads extends Component {
         overlayIsOpen: false,
         fileToDownload: '',
         files: [
-            [lineArtDiamondPreview, lineArtDiamondDownload],
-            [lineArtTriangulartPreview, lineArtTriangulartDownload],
-            [lineArtBotanicalPreview, lineArtBotanicalDownload],
-            [lineArtSquirrelPreview, lineArtSquirrelDownload],
+            ["/media/LineArt/line_art_diamond_preview.jpg", "/media/LineArt/Line_art_diamond.pdf"],
+            ["/media/LineArt/line_art_triangulart_preview.jpg", "/media/LineArt/Line_art_triangulart.pdf"],
+            ["/media/LineArt/line_art_botanical_preview.jpg", "/media/LineArt/Line_art_botanical.pdf"],
+            ["/media/LineArt/line_art_squirrel_preview.jpg", "/media/LineArt/Line_art_squirrel.pdf"],
         ]
     };
 

@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 import data from "../data.js";
-import frameDetail3 from "../media/Frame/FrameDetail3.jpg"
-import frameDetail4 from "../media/Frame/FrameDetail4.JPG"
-import nutanFrameDetail from "../media/OrangeFlower/nutan_frame_detail.jpg";
-import nutanFinishedFrame from "../media/OrangeFlower/nutan_finished_frame.jpg";
 import ButtonText2 from "../components/ButtonText2";
 
 
@@ -32,23 +28,23 @@ export default class Frame extends Component {
             </span>
             <div className="u-flex  u-flex--wrap  u-width--100">
               <img
-                src={nutanFinishedFrame}
+                src="/media/Artworks/OrangeFlower/nutan_finished_frame.jpg"
                 alt="Posing with shoe painting"
                 className="u-flex  u-width--50  u-padding--2  u-padding--3@md"
               />
               <img
-                  src={frameDetail4}
+                src="/media/Frame/FrameDetail4.JPG"
                   alt="Posing with shoe painting"
                   className="u-flex  u-width--50  u-padding--2  u-padding--3@md"
               />
               <img
-                  src={frameDetail3}
+                  src="/media/Frame/FrameDetail3.jpg"
                   alt="Posing with shoe painting"
                   className="u-flex  u-width--50  u-padding--2  u-padding--3@md"
               />
 
               <img
-                  src={nutanFrameDetail}
+                  src="/media/Artworks/OrangeFlower/nutan_frame_detail.jpg"
                   alt="Posing with shoe painting"
                   className="u-flex  u-width--50  u-padding--2  u-padding--3@md"
               />
