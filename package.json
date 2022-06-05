@@ -24,6 +24,7 @@
     "redux": "^4.0.5",
     "redux-burger-menu": "^0.2.8",
     "redux-thunk": "^2.3.0",
+    "superagent": "^7.1.6",
     "zss": "^2.1.5"
   },
   "watch": {
